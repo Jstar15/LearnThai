@@ -20,6 +20,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -30,6 +31,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlinx.coroutines.delay
 
 @Composable
 fun KedmaneeKeyboardView(
@@ -41,6 +43,13 @@ fun KedmaneeKeyboardView(
 ) {
     var isShifted by remember { mutableStateOf(false) }
     var shakingKey by remember { mutableStateOf<Char?>(null) }
+
+    LaunchedEffect(shakingKey) {
+        if (shakingKey != null) {
+            delay(400)
+            shakingKey = null
+        }
+    }
 
     val isTargetOnShiftLayer = currentTargetChar?.let { KedmaneeLayout.isShiftedChar(it) } == true
     val isShiftExpected = isGuidedMode && isTargetOnShiftLayer && !isShifted

@@ -90,6 +90,17 @@ fun KeyboardPracticeScreen(
     var sessionSeed by remember { mutableIntStateOf(0) }
 
     // Session state
+    var sessionPhase by remember { mutableIntStateOf(selectedPhase) }
+    var lastSessionSeed by remember { mutableIntStateOf(sessionSeed) }
+    var isMistakeActive by remember { mutableStateOf(false) }
+
+    LaunchedEffect(isMistakeActive) {
+        if (isMistakeActive) {
+            delay(400)
+            isMistakeActive = false
+        }
+    }
+
     var currentWordIndex by remember { mutableIntStateOf(0) }
     var isSessionCompleted by remember { mutableStateOf(false) }
     val typedKeystrokes = remember { mutableStateListOf<String>() }
@@ -101,16 +112,24 @@ fun KeyboardPracticeScreen(
     val wordsWithMistakes = remember { mutableStateMapOf<String, WordEntity>() }
     var currentWordHadMistake by remember { mutableStateOf(false) }
 
-    // Initialize or re-shuffle session words when raw words load, phase changes, or play again is triggered
+    // Initialize or re-shuffle session words only on initial load, phase switch, or Play Again click
     LaunchedEffect(rawWords, selectedPhase, sessionSeed) {
         if (rawWords.isNotEmpty()) {
-            sessionWords = rawWords.shuffled()
-            currentWordIndex = 0
-            isSessionCompleted = false
-            typedKeystrokes.clear()
-            wordsWithMistakes.clear()
-            currentWordHadMistake = false
-            errorMessage = null
+            val phaseChanged = selectedPhase != sessionPhase
+            val seedChanged = sessionSeed != lastSessionSeed
+            val needsInit = sessionWords.isEmpty()
+
+            if (needsInit || phaseChanged || seedChanged) {
+                sessionPhase = selectedPhase
+                lastSessionSeed = sessionSeed
+                sessionWords = rawWords.shuffled()
+                currentWordIndex = 0
+                isSessionCompleted = false
+                typedKeystrokes.clear()
+                wordsWithMistakes.clear()
+                currentWordHadMistake = false
+                errorMessage = null
+            }
         }
     }
 
@@ -471,13 +490,18 @@ fun KeyboardPracticeScreen(
                                     .background(
                                         when {
                                             isTyped -> Color(0xFFE8F5E9)
+                                            isCurrentTarget && isMistakeActive -> MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.6f)
                                             isCurrentTarget -> MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.4f)
                                             else -> Color.Transparent
                                         }
                                     )
                                     .border(
                                         width = if (isCurrentTarget) 1.5.dp else 0.dp,
-                                        color = if (isCurrentTarget) MaterialTheme.colorScheme.primary else Color.Transparent,
+                                        color = when {
+                                            isCurrentTarget && isMistakeActive -> MaterialTheme.colorScheme.error
+                                            isCurrentTarget -> MaterialTheme.colorScheme.primary
+                                            else -> Color.Transparent
+                                        },
                                         shape = RoundedCornerShape(6.dp)
                                     ),
                                 contentAlignment = Alignment.Center
@@ -488,6 +512,7 @@ fun KeyboardPracticeScreen(
                                     fontWeight = FontWeight.Bold,
                                     color = when {
                                         isTyped -> Color(0xFF2E7D32)
+                                        isCurrentTarget && isMistakeActive -> MaterialTheme.colorScheme.error
                                         isCurrentTarget -> MaterialTheme.colorScheme.primary
                                         else -> MaterialTheme.colorScheme.outlineVariant
                                     }
@@ -571,6 +596,7 @@ fun KeyboardPracticeScreen(
                     currentWordHadMistake = true
                     wordsWithMistakes[currentWord.thaiWord] = currentWord
                     soundFxManager.playErrorBuzz()
+                    isMistakeActive = true
                     val targetDisplay = currentTargetChar?.let { KedmaneeLayout.getDisplayString(it) } ?: ""
                     errorMessage = "Oops! Look for '${targetDisplay}'"
                     CoroutineScope(Dispatchers.IO).launch {
