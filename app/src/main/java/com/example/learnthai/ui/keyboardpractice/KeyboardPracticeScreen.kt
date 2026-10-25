@@ -80,7 +80,7 @@ fun KeyboardPracticeScreen(
 ) {
     var selectedPhase by remember(initialPhase) { mutableIntStateOf(initialPhase) }
     var isGuidedMode by remember { mutableStateOf(true) }
-    var isAudioOnlyMode by remember { mutableStateOf(false) }
+    var isBlindMode by remember { mutableStateOf(false) }
 
     val rawWordsState = wordRepository.getWordsByPhase(selectedPhase).collectAsState(initial = emptyList())
     val rawWords = rawWordsState.value
@@ -194,18 +194,37 @@ fun KeyboardPracticeScreen(
                 }
             }
 
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    text = if (isGuidedMode) "Guided" else "Blind",
-                    fontSize = 11.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.primary
-                )
-                Switch(
-                    checked = isGuidedMode,
-                    onCheckedChange = { isGuidedMode = it },
-                    modifier = Modifier.padding(start = 4.dp)
-                )
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = "Guided",
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = if (isGuidedMode) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline
+                    )
+                    Switch(
+                        checked = isGuidedMode,
+                        onCheckedChange = { isGuidedMode = it },
+                        modifier = Modifier.padding(start = 2.dp)
+                    )
+                }
+
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = "Blind",
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = if (isBlindMode) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline
+                    )
+                    Switch(
+                        checked = isBlindMode,
+                        onCheckedChange = { isBlindMode = it },
+                        modifier = Modifier.padding(start = 2.dp)
+                    )
+                }
             }
         }
 
@@ -474,13 +493,13 @@ fun KeyboardPracticeScreen(
 
                             val rawChar = if (isTyped) {
                                 typedKeystrokes[index]
-                            } else if (!isAudioOnlyMode) {
+                            } else if (!isBlindMode) {
                                 charStr
                             } else {
-                                "?"
+                                ""
                             }
-                            val isCombining = KedmaneeLayout.isCombiningMark(rawChar)
-                            val displayText = if (rawChar != "?") KedmaneeLayout.getDisplayString(rawChar) else "?"
+                            val isCombining = rawChar.isNotEmpty() && KedmaneeLayout.isCombiningMark(rawChar)
+                            val displayText = if (rawChar.isNotEmpty()) KedmaneeLayout.getDisplayString(rawChar) else ""
 
                             Box(
                                 modifier = Modifier
@@ -531,8 +550,8 @@ fun KeyboardPracticeScreen(
                         }
                     }
 
-                    // Romanji pronunciation guide shown below the Thai when Guided mode is ON
-                    AnimatedVisibility(visible = isGuidedMode) {
+                    // Romanji pronunciation guide shown below the Thai when Guided mode is ON (and hidden in Blind mode until word is complete)
+                    AnimatedVisibility(visible = isGuidedMode && (!isBlindMode || isWordComplete)) {
                         Surface(
                             shape = RoundedCornerShape(8.dp),
                             color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f),
@@ -598,7 +617,7 @@ fun KeyboardPracticeScreen(
                     soundFxManager.playErrorBuzz()
                     isMistakeActive = true
                     val targetDisplay = currentTargetChar?.let { KedmaneeLayout.getDisplayString(it) } ?: ""
-                    errorMessage = "Oops! Look for '${targetDisplay}'"
+                    errorMessage = if (isBlindMode) "Try again!" else "Oops! Look for '${targetDisplay}'"
                     CoroutineScope(Dispatchers.IO).launch {
                         wordRepository.recordKeystrokeMistake(
                             thaiWord = currentWord.thaiWord,
