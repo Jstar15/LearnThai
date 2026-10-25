@@ -180,7 +180,7 @@ fun KeyboardPracticeScreen(
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
                 modifier = Modifier.weight(1f)
             ) {
-                items(listOf(1, 2, 3, 4, 5)) { phase ->
+                items((1..10).toList()) { phase ->
                     FilterChip(
                         selected = selectedPhase == phase,
                         onClick = {
@@ -407,7 +407,7 @@ fun KeyboardPracticeScreen(
                             Text("Play Again", fontSize = 15.sp, fontWeight = FontWeight.Bold)
                         }
 
-                        if (selectedPhase < 5) {
+                        if (selectedPhase < 10) {
                             OutlinedButton(
                                 onClick = {
                                     selectedPhase++

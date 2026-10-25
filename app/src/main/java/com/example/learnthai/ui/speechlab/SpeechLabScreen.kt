@@ -30,6 +30,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.GraphicEq
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.PlayArrow
@@ -226,10 +227,27 @@ fun SpeechLabScreen(
         pitchError = null
     }
 
+    var deferredMicAction by remember { mutableStateOf<(() -> Unit)?>(null) }
+
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
     ) { isGranted ->
-        if (isGranted) startTranscription()
+        val action = deferredMicAction
+        deferredMicAction = null
+        if (isGranted) action?.invoke()
+    }
+
+    fun withMic(block: () -> Unit) {
+        val granted = ContextCompat.checkSelfPermission(
+            context,
+            Manifest.permission.RECORD_AUDIO
+        ) == PackageManager.PERMISSION_GRANTED
+        if (granted) {
+            block()
+        } else {
+            deferredMicAction = block
+            permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+        }
     }
 
     DisposableEffect(Unit) {
@@ -285,7 +303,7 @@ fun SpeechLabScreen(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            items(listOf(1, 2, 3, 4, 5)) { phase ->
+            items((1..10).toList()) { phase ->
                 FilterChip(
                     selected = selectedPhase == phase,
                     onClick = {
@@ -363,45 +381,99 @@ fun SpeechLabScreen(
 
                 Spacer(modifier = Modifier.height(20.dp))
 
-                // Big Record Button
-                val micButtonColor by animateColorAsState(
-                    targetValue = if (stage == Stage.IDLE) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error,
-                    label = "MicBtnColor"
-                )
-
-                Box(
-                    modifier = Modifier
-                        .size(84.dp)
-                        .clip(CircleShape)
-                        .background(micButtonColor)
-                        .border(4.dp, Color.White.copy(alpha = 0.8f), CircleShape),
-                    contentAlignment = Alignment.Center
+                // Two action buttons: Transcribe (mic) and Tone (equalizer)
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly,
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    IconButton(
-                        onClick = {
-                            val hasMicPermission = ContextCompat.checkSelfPermission(
-                                context,
-                                Manifest.permission.RECORD_AUDIO
-                            ) == PackageManager.PERMISSION_GRANTED
-
-                            if (!hasMicPermission) {
-                                permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
-                                return@IconButton
+                    // Transcribe button
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        val transcribing = stage == Stage.TRANSCRIBING
+                        val transcribeColor by animateColorAsState(
+                            targetValue = if (transcribing) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary,
+                            label = "TranscribeBtnColor"
+                        )
+                        Box(
+                            modifier = Modifier
+                                .size(72.dp)
+                                .clip(CircleShape)
+                                .background(transcribeColor)
+                                .border(3.dp, Color.White.copy(alpha = 0.8f), CircleShape),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            IconButton(
+                                onClick = {
+                                    when (stage) {
+                                        Stage.TRANSCRIBING -> cancelTranscription()
+                                        Stage.RECORDING_PITCH -> withMic {
+                                            cancelPitchRecording()
+                                            startTranscription()
+                                        }
+                                        Stage.IDLE -> withMic { startTranscription() }
+                                    }
+                                },
+                                modifier = Modifier.fillMaxSize()
+                            ) {
+                                Icon(
+                                    imageVector = if (transcribing) Icons.Default.Stop else Icons.Default.Mic,
+                                    contentDescription = "Transcribe",
+                                    tint = Color.White,
+                                    modifier = Modifier.size(30.dp)
+                                )
                             }
+                        }
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            "Transcribe",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
 
-                            when (stage) {
-                                Stage.TRANSCRIBING -> cancelTranscription()
-                                Stage.RECORDING_PITCH -> cancelPitchRecording()
-                                Stage.IDLE -> if (transcriptCaptured) startPitchRecording() else startTranscription()
+                    // Tone button
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        val recordingTone = stage == Stage.RECORDING_PITCH
+                        val toneColor by animateColorAsState(
+                            targetValue = if (recordingTone) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.secondary,
+                            label = "ToneBtnColor"
+                        )
+                        Box(
+                            modifier = Modifier
+                                .size(72.dp)
+                                .clip(CircleShape)
+                                .background(toneColor)
+                                .border(3.dp, Color.White.copy(alpha = 0.8f), CircleShape),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            IconButton(
+                                onClick = {
+                                    when (stage) {
+                                        Stage.RECORDING_PITCH -> cancelPitchRecording()
+                                        Stage.TRANSCRIBING -> withMic {
+                                            cancelTranscription()
+                                            startPitchRecording()
+                                        }
+                                        Stage.IDLE -> withMic { startPitchRecording() }
+                                    }
+                                },
+                                modifier = Modifier.fillMaxSize()
+                            ) {
+                                Icon(
+                                    imageVector = if (recordingTone) Icons.Default.Stop else Icons.Default.GraphicEq,
+                                    contentDescription = "Tone",
+                                    tint = Color.White,
+                                    modifier = Modifier.size(30.dp)
+                                )
                             }
-                        },
-                        modifier = Modifier.fillMaxSize()
-                    ) {
-                        Icon(
-                            imageVector = if (stage == Stage.IDLE) Icons.Default.Mic else Icons.Default.Stop,
-                            contentDescription = if (stage == Stage.IDLE) "Speak" else "Stop",
-                            tint = Color.White,
-                            modifier = Modifier.size(36.dp)
+                        }
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            "Tone",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     }
                 }
@@ -412,7 +484,7 @@ fun SpeechLabScreen(
                     text = when (stage) {
                         Stage.TRANSCRIBING -> "Say the word, then pause — it finishes automatically"
                         Stage.RECORDING_PITCH -> if (isPreparingPitch) "Preparing…" else "Say the word — recording (stops automatically)"
-                        Stage.IDLE -> if (transcriptCaptured) "Now record your tone — tap and say the word" else "Tap microphone to speak"
+                        Stage.IDLE -> if (transcriptCaptured) "Tap Tone to compare your pitch" else "Tap Transcribe to check the word, or Tone to compare pitch"
                     },
                     fontSize = 13.sp,
                     fontWeight = FontWeight.Medium,

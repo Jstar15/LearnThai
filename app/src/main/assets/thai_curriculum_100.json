@@ -4,7 +4,10 @@
     "thai_word": "กา",
     "english_translation": "Kettle / Crow",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ก", "า"],
+    "keystroke_sequence": [
+      "ก",
+      "า"
+    ],
     "pronunciation_guide": "gaa (Mid tone). Linear left-to-right typing.",
     "contextual_example": "ต้มน้ำในกา (Boil water in the kettle).",
     "srs_level": 0
@@ -14,7 +17,10 @@
     "thai_word": "ตา",
     "english_translation": "Eye / Maternal grandfather",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "า"],
+    "keystroke_sequence": [
+      "ต",
+      "า"
+    ],
     "pronunciation_guide": "dtaa (Mid tone). Linear left-to-right typing.",
     "contextual_example": "ตามองดู (The eye looks and sees).",
     "srs_level": 0
@@ -24,7 +30,10 @@
     "thai_word": "ปา",
     "english_translation": "To throw",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "า"],
+    "keystroke_sequence": [
+      "ป",
+      "า"
+    ],
     "pronunciation_guide": "bpaa (Mid tone). Linear left-to-right typing.",
     "contextual_example": "อย่าปาก้อนหิน (Do not throw stones).",
     "srs_level": 0
@@ -34,7 +43,10 @@
     "thai_word": "อา",
     "english_translation": "Uncle / Aunt (younger sibling of father)",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "า"],
+    "keystroke_sequence": [
+      "อ",
+      "า"
+    ],
     "pronunciation_guide": "aa (Mid tone). Linear left-to-right typing.",
     "contextual_example": "อามาหา (Uncle came to visit).",
     "srs_level": 0
@@ -44,7 +56,11 @@
     "thai_word": "จาก",
     "english_translation": "From / To depart",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["จ", "า", "ก"],
+    "keystroke_sequence": [
+      "จ",
+      "า",
+      "ก"
+    ],
     "pronunciation_guide": "jaak (Low tone due to dead syllable). Mid consonant + right vowel + mid stop.",
     "contextual_example": "เขามาจากบ้าน (He came from home).",
     "srs_level": 0
@@ -54,7 +70,11 @@
     "thai_word": "ปาก",
     "english_translation": "Mouth",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "า", "ก"],
+    "keystroke_sequence": [
+      "ป",
+      "า",
+      "ก"
+    ],
     "pronunciation_guide": "bpaak (Low tone). Linear left-to-right typing with stop final.",
     "contextual_example": "อ้าปากกว้าง (Open mouth wide).",
     "srs_level": 0
@@ -64,7 +84,11 @@
     "thai_word": "ตาก",
     "english_translation": "To sun-dry / To expose to air",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "า", "ก"],
+    "keystroke_sequence": [
+      "ต",
+      "า",
+      "ก"
+    ],
     "pronunciation_guide": "dtaak (Low tone). Linear left-to-right typing.",
     "contextual_example": "ตากผ้าข้างนอก (Dry clothes outside).",
     "srs_level": 0
@@ -74,7 +98,11 @@
     "thai_word": "ดาบ",
     "english_translation": "Sword",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "า", "บ"],
+    "keystroke_sequence": [
+      "ด",
+      "า",
+      "บ"
+    ],
     "pronunciation_guide": "daap (Low tone). Mid consonant + right vowel + mid final.",
     "contextual_example": "ดาบเล่มยาว (A long sword).",
     "srs_level": 0
@@ -84,7 +112,11 @@
     "thai_word": "อาบ",
     "english_translation": "To bathe",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "า", "บ"],
+    "keystroke_sequence": [
+      "อ",
+      "า",
+      "บ"
+    ],
     "pronunciation_guide": "aap (Low tone). Linear left-to-right typing.",
     "contextual_example": "อาบน้ำตอนเช้า (Take a bath in the morning).",
     "srs_level": 0
@@ -94,7 +126,11 @@
     "thai_word": "บอก",
     "english_translation": "To tell / To inform",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["บ", "อ", "ก"],
+    "keystroke_sequence": [
+      "บ",
+      "อ",
+      "ก"
+    ],
     "pronunciation_guide": "baawk (Low tone). อ functions as a right-side vowel.",
     "contextual_example": "บอกความจริง (Tell the truth).",
     "srs_level": 0
@@ -104,7 +140,11 @@
     "thai_word": "ออก",
     "english_translation": "To leave / Exit",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "อ", "ก"],
+    "keystroke_sequence": [
+      "อ",
+      "อ",
+      "ก"
+    ],
     "pronunciation_guide": "aawk (Low tone). Initial อ followed by vowel อ and final ก.",
     "contextual_example": "ออกไปข้างนอก (Go outside).",
     "srs_level": 0
@@ -114,7 +154,11 @@
     "thai_word": "กอด",
     "english_translation": "To hug / To embrace",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ก", "อ", "ด"],
+    "keystroke_sequence": [
+      "ก",
+      "อ",
+      "ด"
+    ],
     "pronunciation_guide": "gaawt (Low tone). Consonant + vowel อ + mid stop final.",
     "contextual_example": "กอดแม่แน่นๆ (Hug mom tightly).",
     "srs_level": 0
@@ -124,7 +168,11 @@
     "thai_word": "จอด",
     "english_translation": "To park / To stop a vehicle",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["จ", "อ", "ด"],
+    "keystroke_sequence": [
+      "จ",
+      "อ",
+      "ด"
+    ],
     "pronunciation_guide": "jawt (Low tone). Linear left-to-right typing.",
     "contextual_example": "จอดรถตรงนี้ (Park the car here).",
     "srs_level": 0
@@ -134,7 +182,11 @@
     "thai_word": "ดอก",
     "english_translation": "Flower / Classifier for flowers",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "อ", "ก"],
+    "keystroke_sequence": [
+      "ด",
+      "อ",
+      "ก"
+    ],
     "pronunciation_guide": "daawk (Low tone). Linear left-to-right typing.",
     "contextual_example": "ดอกไม้สีแดง (Red flower).",
     "srs_level": 0
@@ -144,7 +196,11 @@
     "thai_word": "ตอบ",
     "english_translation": "To reply / To answer",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "อ", "บ"],
+    "keystroke_sequence": [
+      "ต",
+      "อ",
+      "บ"
+    ],
     "pronunciation_guide": "dtaawp (Low tone). Linear left-to-right typing.",
     "contextual_example": "ตอบคำถาม (Answer the question).",
     "srs_level": 0
@@ -154,7 +210,11 @@
     "thai_word": "ปอด",
     "english_translation": "Lung",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "อ", "ด"],
+    "keystroke_sequence": [
+      "ป",
+      "อ",
+      "ด"
+    ],
     "pronunciation_guide": "bpaawt (Low tone). Linear left-to-right typing.",
     "contextual_example": "หายใจเข้าปอด (Breathe into the lungs).",
     "srs_level": 0
@@ -164,7 +224,11 @@
     "thai_word": "ปอก",
     "english_translation": "To peel / To pare",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "อ", "ก"],
+    "keystroke_sequence": [
+      "ป",
+      "อ",
+      "ก"
+    ],
     "pronunciation_guide": "bpaawk (Low tone). Linear left-to-right typing.",
     "contextual_example": "ปอกเปลือกผลไม้ (Peel the fruit).",
     "srs_level": 0
@@ -174,7 +238,11 @@
     "thai_word": "ตอก",
     "english_translation": "To hammer / To strike",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "อ", "ก"],
+    "keystroke_sequence": [
+      "ต",
+      "อ",
+      "ก"
+    ],
     "pronunciation_guide": "dtaawk (Low tone). Linear left-to-right typing.",
     "contextual_example": "ตอกตะปู (Hammer a nail).",
     "srs_level": 0
@@ -184,7 +252,11 @@
     "thai_word": "บอด",
     "english_translation": "Blind / Sightless",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["บ", "อ", "ด"],
+    "keystroke_sequence": [
+      "บ",
+      "อ",
+      "ด"
+    ],
     "pronunciation_guide": "baawt (Low tone). Linear left-to-right typing.",
     "contextual_example": "ตาบอด (Blind eyes).",
     "srs_level": 0
@@ -194,7 +266,11 @@
     "thai_word": "ออด",
     "english_translation": "Buzzer / Doorbell",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "อ", "ด"],
+    "keystroke_sequence": [
+      "อ",
+      "อ",
+      "ด"
+    ],
     "pronunciation_guide": "awt (Low tone). Linear left-to-right typing.",
     "contextual_example": "กดออดหน้าบ้าน (Ring the buzzer in front of the house).",
     "srs_level": 0
@@ -204,7 +280,10 @@
     "thai_word": "ไป",
     "english_translation": "To go",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ไ", "ป"],
+    "keystroke_sequence": [
+      "ไ",
+      "ป"
+    ],
     "pronunciation_guide": "bpai (Mid tone). Pre-posed vowel ไ is typed first.",
     "contextual_example": "ฉันจะไปตลาด (I will go to the market).",
     "srs_level": 0
@@ -214,7 +293,10 @@
     "thai_word": "ใจ",
     "english_translation": "Heart / Mind / Spirit",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ใ", "จ"],
+    "keystroke_sequence": [
+      "ใ",
+      "จ"
+    ],
     "pronunciation_guide": "jai (Mid tone). Pre-posed vowel ใ is typed first.",
     "contextual_example": "ดีใจมาก (Very happy / pleased heart).",
     "srs_level": 0
@@ -224,7 +306,10 @@
     "thai_word": "ใด",
     "english_translation": "Any / Whichever",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ใ", "ด"],
+    "keystroke_sequence": [
+      "ใ",
+      "ด"
+    ],
     "pronunciation_guide": "dai (Mid tone). Pre-posed vowel ใ is typed first.",
     "contextual_example": "สิ่งใดก็ดี (Whatever thing is good).",
     "srs_level": 0
@@ -234,7 +319,10 @@
     "thai_word": "ใบ",
     "english_translation": "Leaf / Classifier for sheets and containers",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ใ", "บ"],
+    "keystroke_sequence": [
+      "ใ",
+      "บ"
+    ],
     "pronunciation_guide": "bai (Mid tone). Pre-posed vowel ใ is typed first.",
     "contextual_example": "ใบไม้สีเขียว (Green leaf).",
     "srs_level": 0
@@ -244,7 +332,10 @@
     "thai_word": "โต",
     "english_translation": "To grow / Big",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["โ", "ต"],
+    "keystroke_sequence": [
+      "โ",
+      "ต"
+    ],
     "pronunciation_guide": "dtoh (Mid tone). Pre-posed vowel โ is typed first.",
     "contextual_example": "เด็กโตเร็ว (The child grows fast).",
     "srs_level": 0
@@ -254,7 +345,10 @@
     "thai_word": "โบ",
     "english_translation": "Bow / Ribbon",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["โ", "บ"],
+    "keystroke_sequence": [
+      "โ",
+      "บ"
+    ],
     "pronunciation_guide": "boh (Mid tone). Pre-posed vowel โ is typed first.",
     "contextual_example": "ผูกโบสีแดง (Tie a red bow).",
     "srs_level": 0
@@ -264,7 +358,11 @@
     "thai_word": "เอา",
     "english_translation": "To take / To want",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["เ", "อ", "า"],
+    "keystroke_sequence": [
+      "เ",
+      "อ",
+      "า"
+    ],
     "pronunciation_guide": "ao (Mid tone). Pre-posed เ typed before base อ, followed by า.",
     "contextual_example": "เอาอันนี้ (I want this one).",
     "srs_level": 0
@@ -274,7 +372,11 @@
     "thai_word": "เบา",
     "english_translation": "Light (weight) / Gentle",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["เ", "บ", "า"],
+    "keystroke_sequence": [
+      "เ",
+      "บ",
+      "า"
+    ],
     "pronunciation_guide": "bao (Mid tone). Pre-posed เ typed before base บ.",
     "contextual_example": "เสียงเบามาก (Very soft sound).",
     "srs_level": 0
@@ -284,7 +386,11 @@
     "thai_word": "เดา",
     "english_translation": "To guess",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["เ", "ด", "า"],
+    "keystroke_sequence": [
+      "เ",
+      "ด",
+      "า"
+    ],
     "pronunciation_guide": "dao (Mid tone). Pre-posed เ typed before base ด.",
     "contextual_example": "ลองเดาดู (Try to guess).",
     "srs_level": 0
@@ -294,7 +400,11 @@
     "thai_word": "เตา",
     "english_translation": "Stove / Furnace",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["เ", "ต", "า"],
+    "keystroke_sequence": [
+      "เ",
+      "ต",
+      "า"
+    ],
     "pronunciation_guide": "dtao (Mid tone). Pre-posed เ typed before base ต.",
     "contextual_example": "เปิดเตาแก๊ส (Turn on the gas stove).",
     "srs_level": 0
@@ -304,7 +414,11 @@
     "thai_word": "เจอ",
     "english_translation": "To meet / To find",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["เ", "จ", "อ"],
+    "keystroke_sequence": [
+      "เ",
+      "จ",
+      "อ"
+    ],
     "pronunciation_guide": "juhr (Mid tone). Pre-posed เ typed before base จ.",
     "contextual_example": "เจอกันพรุ่งนี้ (See you tomorrow).",
     "srs_level": 0
@@ -314,7 +428,11 @@
     "thai_word": "เตะ",
     "english_translation": "To kick",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["เ", "ต", "ะ"],
+    "keystroke_sequence": [
+      "เ",
+      "ต",
+      "ะ"
+    ],
     "pronunciation_guide": "dte (Low tone). Pre-posed เ typed first, followed by ต and ะ.",
     "contextual_example": "เตะลูกบอล (Kick the ball).",
     "srs_level": 0
@@ -324,7 +442,11 @@
     "thai_word": "แตก",
     "english_translation": "To break / To shatter",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["แ", "ต", "ก"],
+    "keystroke_sequence": [
+      "แ",
+      "ต",
+      "ก"
+    ],
     "pronunciation_guide": "dtaaek (Low tone). Pre-posed vowel แ typed before base ต.",
     "contextual_example": "แก้วแตก (The glass is broken).",
     "srs_level": 0
@@ -334,7 +456,11 @@
     "thai_word": "แจก",
     "english_translation": "To distribute / To give out",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["แ", "จ", "ก"],
+    "keystroke_sequence": [
+      "แ",
+      "จ",
+      "ก"
+    ],
     "pronunciation_guide": "jaaek (Low tone). Pre-posed vowel แ typed before base จ.",
     "contextual_example": "แจกของขวัญ (Distribute gifts).",
     "srs_level": 0
@@ -344,7 +470,11 @@
     "thai_word": "แปด",
     "english_translation": "Eight",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["แ", "ป", "ด"],
+    "keystroke_sequence": [
+      "แ",
+      "ป",
+      "ด"
+    ],
     "pronunciation_guide": "bpaaet (Low tone). Pre-posed vowel แ typed before base ป.",
     "contextual_example": "แปดโมงเช้า (Eight o'clock in the morning).",
     "srs_level": 0
@@ -354,7 +484,11 @@
     "thai_word": "แบบ",
     "english_translation": "Model / Pattern / Style",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["แ", "บ", "บ"],
+    "keystroke_sequence": [
+      "แ",
+      "บ",
+      "บ"
+    ],
     "pronunciation_guide": "baaep (Low tone). Pre-posed vowel แ typed before base บ.",
     "contextual_example": "ทำแบบนี้ (Do it this way).",
     "srs_level": 0
@@ -364,7 +498,11 @@
     "thai_word": "แอบ",
     "english_translation": "To hide / Secretly",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["แ", "อ", "บ"],
+    "keystroke_sequence": [
+      "แ",
+      "อ",
+      "บ"
+    ],
     "pronunciation_guide": "aaep (Low tone). Pre-posed vowel แ typed before base อ.",
     "contextual_example": "แอบดูอยู่ (Secretly watching).",
     "srs_level": 0
@@ -374,7 +512,11 @@
     "thai_word": "แดด",
     "english_translation": "Sunlight / Sunshine",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["แ", "ด", "ด"],
+    "keystroke_sequence": [
+      "แ",
+      "ด",
+      "ด"
+    ],
     "pronunciation_guide": "daaet (Low tone). Pre-posed vowel แ typed before base ด.",
     "contextual_example": "แดดร้อนมาก (The sunlight is very hot).",
     "srs_level": 0
@@ -384,7 +526,11 @@
     "thai_word": "โดด",
     "english_translation": "To jump / To skip",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["โ", "ด", "ด"],
+    "keystroke_sequence": [
+      "โ",
+      "ด",
+      "ด"
+    ],
     "pronunciation_guide": "doht (Low tone). Pre-posed vowel โ typed before base ด.",
     "contextual_example": "กระโดดสูง (Jump high).",
     "srs_level": 0
@@ -394,7 +540,11 @@
     "thai_word": "โบก",
     "english_translation": "To wave (hands/flag)",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["โ", "บ", "ก"],
+    "keystroke_sequence": [
+      "โ",
+      "บ",
+      "ก"
+    ],
     "pronunciation_guide": "bohk (Low tone). Pre-posed vowel โ typed before base บ.",
     "contextual_example": "โบกมือลา (Wave hands goodbye).",
     "srs_level": 0
@@ -404,7 +554,10 @@
     "thai_word": "ดี",
     "english_translation": "Good / Nice",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "ี"],
+    "keystroke_sequence": [
+      "ด",
+      "ี"
+    ],
     "pronunciation_guide": "dee (Mid tone). Consonant typed first, then vertical top vowel ี.",
     "contextual_example": "คนนี้เป็นคนดี (This person is a good person).",
     "srs_level": 0
@@ -414,7 +567,10 @@
     "thai_word": "ตี",
     "english_translation": "To hit / To strike",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "ี"],
+    "keystroke_sequence": [
+      "ต",
+      "ี"
+    ],
     "pronunciation_guide": "dtee (Mid tone). Consonant typed first, then vertical top vowel ี.",
     "contextual_example": "ตีระฆัง (Strike the bell).",
     "srs_level": 0
@@ -424,7 +580,10 @@
     "thai_word": "ปี",
     "english_translation": "Year",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "ี"],
+    "keystroke_sequence": [
+      "ป",
+      "ี"
+    ],
     "pronunciation_guide": "bpee (Mid tone). Consonant typed first, then vertical top vowel ี.",
     "contextual_example": "ปีใหม่นี้ (This new year).",
     "srs_level": 0
@@ -434,7 +593,10 @@
     "thai_word": "ดู",
     "english_translation": "To look / To watch",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "ู"],
+    "keystroke_sequence": [
+      "ด",
+      "ู"
+    ],
     "pronunciation_guide": "doo (Mid tone). Consonant typed first, then vertical bottom vowel ู.",
     "contextual_example": "ดูโทรทัศน์ (Watch television).",
     "srs_level": 0
@@ -444,7 +606,10 @@
     "thai_word": "ปู",
     "english_translation": "Crab / To pave",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "ู"],
+    "keystroke_sequence": [
+      "ป",
+      "ู"
+    ],
     "pronunciation_guide": "bpoo (Mid tone). Consonant typed first, then vertical bottom vowel ู.",
     "contextual_example": "ปูเดินช้า (The crab walks slowly).",
     "srs_level": 0
@@ -454,7 +619,11 @@
     "thai_word": "อีก",
     "english_translation": "Again / More",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "ี", "ก"],
+    "keystroke_sequence": [
+      "อ",
+      "ี",
+      "ก"
+    ],
     "pronunciation_guide": "eek (Low tone). Base อ -> top vowel ี -> final stop ก.",
     "contextual_example": "เอาอีกครั้ง (Take one more time).",
     "srs_level": 0
@@ -464,7 +633,11 @@
     "thai_word": "ปีก",
     "english_translation": "Wing",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "ี", "ก"],
+    "keystroke_sequence": [
+      "ป",
+      "ี",
+      "ก"
+    ],
     "pronunciation_guide": "bpeek (Low tone). Base ป -> top vowel ี -> final stop ก.",
     "contextual_example": "นกมีปีกสองข้าง (Birds have two wings).",
     "srs_level": 0
@@ -474,7 +647,11 @@
     "thai_word": "จูบ",
     "english_translation": "To kiss",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["จ", "ู", "บ"],
+    "keystroke_sequence": [
+      "จ",
+      "ู",
+      "บ"
+    ],
     "pronunciation_guide": "joop (Low tone). Base จ -> bottom vowel ู -> final stop บ.",
     "contextual_example": "จูบแก้มเบาๆ (Kiss the cheek gently).",
     "srs_level": 0
@@ -484,7 +661,11 @@
     "thai_word": "ตึก",
     "english_translation": "Building / High-rise",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "ึ", "ก"],
+    "keystroke_sequence": [
+      "ต",
+      "ึ",
+      "ก"
+    ],
     "pronunciation_guide": "dteuk (Low tone). Base ต -> top vowel ึ -> final stop ก.",
     "contextual_example": "ตึกสูงมาก (The building is very tall).",
     "srs_level": 0
@@ -494,7 +675,11 @@
     "thai_word": "ดึก",
     "english_translation": "Late at night",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "ึ", "ก"],
+    "keystroke_sequence": [
+      "ด",
+      "ึ",
+      "ก"
+    ],
     "pronunciation_guide": "deuk (Low tone). Base ด -> top vowel ึ -> final stop ก.",
     "contextual_example": "นอนดึกทุกวัน (Sleep late at night every day).",
     "srs_level": 0
@@ -504,7 +689,11 @@
     "thai_word": "บิด",
     "english_translation": "To twist / To turn",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["บ", "ิ", "ด"],
+    "keystroke_sequence": [
+      "บ",
+      "ิ",
+      "ด"
+    ],
     "pronunciation_guide": "beet (Low tone). Base บ -> top vowel ิ -> final stop ด.",
     "contextual_example": "บิดลูกบิดประตู (Turn the door knob).",
     "srs_level": 0
@@ -514,7 +703,11 @@
     "thai_word": "ติด",
     "english_translation": "To stick / To attach / Stuck",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "ิ", "ด"],
+    "keystroke_sequence": [
+      "ต",
+      "ิ",
+      "ด"
+    ],
     "pronunciation_guide": "dteet (Low tone). Base ต -> top vowel ิ -> final stop ด.",
     "contextual_example": "รถติดมาก (Traffic is very stuck).",
     "srs_level": 0
@@ -524,7 +717,11 @@
     "thai_word": "ปิด",
     "english_translation": "To close / To shut / To turn off",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "ิ", "ด"],
+    "keystroke_sequence": [
+      "ป",
+      "ิ",
+      "ด"
+    ],
     "pronunciation_guide": "bpeet (Low tone). Base ป -> top vowel ิ -> final stop ด.",
     "contextual_example": "ปิดไฟก่อนนอน (Turn off the light before sleeping).",
     "srs_level": 0
@@ -534,7 +731,11 @@
     "thai_word": "ดิบ",
     "english_translation": "Raw / Unripe",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "ิ", "บ"],
+    "keystroke_sequence": [
+      "ด",
+      "ิ",
+      "บ"
+    ],
     "pronunciation_guide": "deep (Low tone). Base ด -> top vowel ิ -> final stop บ.",
     "contextual_example": "กินเนื้อดิบ (Eat raw meat).",
     "srs_level": 0
@@ -544,7 +745,11 @@
     "thai_word": "จิบ",
     "english_translation": "To sip",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["จ", "ิ", "บ"],
+    "keystroke_sequence": [
+      "จ",
+      "ิ",
+      "บ"
+    ],
     "pronunciation_guide": "jeep (Low tone). Base จ -> top vowel ิ -> final stop บ.",
     "contextual_example": "จิบชาร้อน (Sip hot tea).",
     "srs_level": 0
@@ -554,7 +759,11 @@
     "thai_word": "จุด",
     "english_translation": "Point / Dot / To ignite",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["จ", "ุ", "ด"],
+    "keystroke_sequence": [
+      "จ",
+      "ุ",
+      "ด"
+    ],
     "pronunciation_guide": "joot (Low tone). Base จ -> bottom vowel ุ -> final stop ด.",
     "contextual_example": "จุดเทียน (Light a candle).",
     "srs_level": 0
@@ -564,7 +773,11 @@
     "thai_word": "บุก",
     "english_translation": "To invade / To advance",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["บ", "ุ", "ก"],
+    "keystroke_sequence": [
+      "บ",
+      "ุ",
+      "ก"
+    ],
     "pronunciation_guide": "book (Low tone). Base บ -> bottom vowel ุ -> final stop ก.",
     "contextual_example": "บุกไปข้างหน้า (Advance forward).",
     "srs_level": 0
@@ -574,7 +787,11 @@
     "thai_word": "ดุก",
     "english_translation": "Fierce / Catfish",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "ุ", "ก"],
+    "keystroke_sequence": [
+      "ด",
+      "ุ",
+      "ก"
+    ],
     "pronunciation_guide": "dook (Low tone). Base ด -> bottom vowel ุ -> final stop ก.",
     "contextual_example": "ปลาดุกตัวใหญ่ (Big catfish).",
     "srs_level": 0
@@ -584,7 +801,11 @@
     "thai_word": "ตูด",
     "english_translation": "Bottom / Rear / Buttocks",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "ู", "ด"],
+    "keystroke_sequence": [
+      "ต",
+      "ู",
+      "ด"
+    ],
     "pronunciation_guide": "dtoot (Low tone). Base ต -> bottom vowel ู -> final stop ด.",
     "contextual_example": "ตูดเป็ด (Duck rear).",
     "srs_level": 0
@@ -594,7 +815,11 @@
     "thai_word": "อึด",
     "english_translation": "Enduring / Tough / Resilient",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "ึ", "ด"],
+    "keystroke_sequence": [
+      "อ",
+      "ึ",
+      "ด"
+    ],
     "pronunciation_guide": "eut (Low tone). Base อ -> top vowel ึ -> final stop ด.",
     "contextual_example": "เขาทำงานอึดมาก (He works with great endurance).",
     "srs_level": 0
@@ -604,7 +829,11 @@
     "thai_word": "ที่",
     "english_translation": "At / Place / That (relative pronoun)",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ท", "ี", "่"],
+    "keystroke_sequence": [
+      "ท",
+      "ี",
+      "่"
+    ],
     "pronunciation_guide": "thee (Falling tone). Strict order: Consonant ท -> Vowel ี -> Tone Mark ่.",
     "contextual_example": "อยู่ที่บ้าน (Stay at home).",
     "srs_level": 0
@@ -614,7 +843,11 @@
     "thai_word": "พี่",
     "english_translation": "Older sibling",
     "consonant_class": "Low",
-    "keystroke_sequence": ["พ", "ี", "่"],
+    "keystroke_sequence": [
+      "พ",
+      "ี",
+      "่"
+    ],
     "pronunciation_guide": "phee (Falling tone). Strict order: Consonant พ -> Vowel ี -> Tone Mark ่.",
     "contextual_example": "พี่ชายใจดี (Older brother is kind).",
     "srs_level": 0
@@ -624,7 +857,11 @@
     "thai_word": "นี่",
     "english_translation": "This / Here",
     "consonant_class": "Low",
-    "keystroke_sequence": ["น", "ี", "่"],
+    "keystroke_sequence": [
+      "น",
+      "ี",
+      "่"
+    ],
     "pronunciation_guide": "nee (Falling tone). Strict order: Consonant น -> Vowel ี -> Tone Mark ่.",
     "contextual_example": "อยู่นี่เอง (Right here).",
     "srs_level": 0
@@ -634,7 +871,11 @@
     "thai_word": "นี้",
     "english_translation": "This (demonstrative)",
     "consonant_class": "Low",
-    "keystroke_sequence": ["น", "ี", "้"],
+    "keystroke_sequence": [
+      "น",
+      "ี",
+      "้"
+    ],
     "pronunciation_guide": "nee (High tone). Strict order: Consonant น -> Vowel ี -> Tone Mark ้.",
     "contextual_example": "วันนี้อากาศดี (Today this weather is good).",
     "srs_level": 0
@@ -644,7 +885,11 @@
     "thai_word": "รู้",
     "english_translation": "To know",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ร", "ู", "้"],
+    "keystroke_sequence": [
+      "ร",
+      "ู",
+      "้"
+    ],
     "pronunciation_guide": "roo (High tone). Strict order: Consonant ร -> Vowel ู -> Tone Mark ้.",
     "contextual_example": "ฉันรู้เรื่องนี้แล้ว (I already know this matter).",
     "srs_level": 0
@@ -654,7 +899,12 @@
     "thai_word": "ขึ้น",
     "english_translation": "To go up / To ascend",
     "consonant_class": "High",
-    "keystroke_sequence": ["ข", "ึ", "้", "น"],
+    "keystroke_sequence": [
+      "ข",
+      "ึ",
+      "้",
+      "น"
+    ],
     "pronunciation_guide": "kheun (Falling tone). Consonant ข -> Vowel ึ -> Tone Mark ้ -> Final น.",
     "contextual_example": "เดินขึ้นบันได (Walk up the stairs).",
     "srs_level": 0
@@ -664,7 +914,11 @@
     "thai_word": "ซื้อ",
     "english_translation": "To buy / To purchase",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ซ", "ื", "้"],
+    "keystroke_sequence": [
+      "ซ",
+      "ื",
+      "้"
+    ],
     "pronunciation_guide": "seu (High tone). Strict order: Consonant ซ -> Vowel ื -> Tone Mark ้.",
     "contextual_example": "ไปซื้อของที่ตลาด (Go buy things at the market).",
     "srs_level": 0
@@ -674,7 +928,12 @@
     "thai_word": "ดื่ม",
     "english_translation": "To drink",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ด", "ื", "่", "ม"],
+    "keystroke_sequence": [
+      "ด",
+      "ื",
+      "่",
+      "ม"
+    ],
     "pronunciation_guide": "deum (Low tone). Consonant ด -> Vowel ื -> Tone Mark ่ -> Final ม.",
     "contextual_example": "ดื่มน้ำเยอะๆ (Drink lots of water).",
     "srs_level": 0
@@ -684,7 +943,12 @@
     "thai_word": "ตื่น",
     "english_translation": "To wake up",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ต", "ื", "่", "น"],
+    "keystroke_sequence": [
+      "ต",
+      "ื",
+      "่",
+      "น"
+    ],
     "pronunciation_guide": "dteun (Low tone). Consonant ต -> Vowel ื -> Tone Mark ่ -> Final น.",
     "contextual_example": "ตื่นนอนแต่เช้า (Wake up early in the morning).",
     "srs_level": 0
@@ -694,7 +958,12 @@
     "thai_word": "วิ่ง",
     "english_translation": "To run",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ว", "ิ", "่", "ง"],
+    "keystroke_sequence": [
+      "ว",
+      "ิ",
+      "่",
+      "ง"
+    ],
     "pronunciation_guide": "wing (Falling tone). Consonant ว -> Vowel ิ -> Tone Mark ่ -> Final ง.",
     "contextual_example": "วิ่งออกกำลังกาย (Run for exercise).",
     "srs_level": 0
@@ -704,7 +973,12 @@
     "thai_word": "ทิ้ง",
     "english_translation": "To throw away / To abandon",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ท", "ิ", "้", "ง"],
+    "keystroke_sequence": [
+      "ท",
+      "ิ",
+      "้",
+      "ง"
+    ],
     "pronunciation_guide": "thing (High tone). Consonant ท -> Vowel ิ -> Tone Mark ้ -> Final ง.",
     "contextual_example": "ทิ้งขยะลงถัง (Throw garbage into the bin).",
     "srs_level": 0
@@ -714,7 +988,12 @@
     "thai_word": "ยิ้ม",
     "english_translation": "To smile",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ย", "ิ", "้", "ม"],
+    "keystroke_sequence": [
+      "ย",
+      "ิ",
+      "้",
+      "ม"
+    ],
     "pronunciation_guide": "yim (High tone). Consonant ย -> Vowel ิ -> Tone Mark ้ -> Final ม.",
     "contextual_example": "ยิ้มแย้มแจ่มใส (Smiling and cheerful).",
     "srs_level": 0
@@ -724,7 +1003,12 @@
     "thai_word": "อิ่ม",
     "english_translation": "Full / Satiated",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["อ", "ิ", "่", "ม"],
+    "keystroke_sequence": [
+      "อ",
+      "ิ",
+      "่",
+      "ม"
+    ],
     "pronunciation_guide": "im (Low tone). Consonant อ -> Vowel ิ -> Tone Mark ่ -> Final ม.",
     "contextual_example": "กินข้าวอิ่มแล้ว (Full from eating already).",
     "srs_level": 0
@@ -734,7 +1018,11 @@
     "thai_word": "สี่",
     "english_translation": "Four",
     "consonant_class": "High",
-    "keystroke_sequence": ["ส", "ี", "่"],
+    "keystroke_sequence": [
+      "ส",
+      "ี",
+      "่"
+    ],
     "pronunciation_guide": "see (Low tone). High consonant + Mai Ek = Low tone. Order: ส -> ี -> ่.",
     "contextual_example": "มีสี่คน (There are four people).",
     "srs_level": 0
@@ -744,7 +1032,11 @@
     "thai_word": "ผู้",
     "english_translation": "Person / Prefix for persons",
     "consonant_class": "High",
-    "keystroke_sequence": ["ผ", "ู", "้"],
+    "keystroke_sequence": [
+      "ผ",
+      "ู",
+      "้"
+    ],
     "pronunciation_guide": "phoo (Falling tone). High consonant + Mai Tho = Falling tone. Order: ผ -> ู -> ้.",
     "contextual_example": "ผู้ใหญ่บ้าน (Village headman).",
     "srs_level": 0
@@ -754,7 +1046,11 @@
     "thai_word": "คู่",
     "english_translation": "Pair / Couple / Partner",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ค", "ู", "่"],
+    "keystroke_sequence": [
+      "ค",
+      "ู",
+      "่"
+    ],
     "pronunciation_guide": "khoo (Falling tone). Low consonant + Mai Ek = Falling tone. Order: ค -> ู -> ่.",
     "contextual_example": "รองเท้าหนึ่งคู่ (One pair of shoes).",
     "srs_level": 0
@@ -764,7 +1060,11 @@
     "thai_word": "ขี่",
     "english_translation": "To ride (bicycle, horse)",
     "consonant_class": "High",
-    "keystroke_sequence": ["ข", "ี", "่"],
+    "keystroke_sequence": [
+      "ข",
+      "ี",
+      "่"
+    ],
     "pronunciation_guide": "khee (Low tone). Strict order: Consonant ข -> Vowel ี -> Tone Mark ่.",
     "contextual_example": "ขี่จักรยานไปโรงเรียน (Ride a bicycle to school).",
     "srs_level": 0
@@ -774,7 +1074,11 @@
     "thai_word": "ชี้",
     "english_translation": "To point",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ช", "ี", "้"],
+    "keystroke_sequence": [
+      "ช",
+      "ี",
+      "้"
+    ],
     "pronunciation_guide": "chee (High tone). Low consonant + Mai Tho = High tone. Order: ช -> ี -> ้.",
     "contextual_example": "ชี้มือไปทางนั้น (Point a hand that way).",
     "srs_level": 0
@@ -784,7 +1088,11 @@
     "thai_word": "ปู่",
     "english_translation": "Paternal grandfather",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ป", "ู", "่"],
+    "keystroke_sequence": [
+      "ป",
+      "ู",
+      "่"
+    ],
     "pronunciation_guide": "bpoo (Low tone). Mid consonant + Mai Ek = Low tone. Order: ป -> ู -> ่.",
     "contextual_example": "คุณปู่อายุมากแล้ว (Grandfather is quite old).",
     "srs_level": 0
@@ -794,7 +1102,12 @@
     "thai_word": "กุ้ง",
     "english_translation": "Shrimp / Prawn",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ก", "ุ", "้", "ง"],
+    "keystroke_sequence": [
+      "ก",
+      "ุ",
+      "้",
+      "ง"
+    ],
     "pronunciation_guide": "goong (Falling tone). Consonant ก -> Vowel ุ -> Tone Mark ้ -> Final ง.",
     "contextual_example": "ต้มยำกุ้ง (Tom Yum Goong / spicy shrimp soup).",
     "srs_level": 0
@@ -804,7 +1117,13 @@
     "thai_word": "อาหาร",
     "english_translation": "Food / Meal",
     "consonant_class": "Mid / High",
-    "keystroke_sequence": ["อ", "า", "ห", "า", "ร"],
+    "keystroke_sequence": [
+      "อ",
+      "า",
+      "ห",
+      "า",
+      "ร"
+    ],
     "pronunciation_guide": "aa-haan. Irregular final ร pronounced as /n/ (Mae Kon). High-class ห dictates rising tone on second syllable.",
     "contextual_example": "อาหารไทยอร่อยมาก (Thai food is very delicious).",
     "srs_level": 0
@@ -814,7 +1133,10 @@
     "thai_word": "ผล",
     "english_translation": "Fruit / Result / Outcome",
     "consonant_class": "High",
-    "keystroke_sequence": ["ผ", "ล"],
+    "keystroke_sequence": [
+      "ผ",
+      "ล"
+    ],
     "pronunciation_guide": "phon (Rising tone). Inherent short /o/ vowel. Irregular final ล pronounced as /n/.",
     "contextual_example": "ผลการสอบออกมาดี (The exam results came out well).",
     "srs_level": 0
@@ -824,7 +1146,11 @@
     "thai_word": "การ",
     "english_translation": "Work / Affair / Prefix for nominalizing verbs",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["ก", "า", "ร"],
+    "keystroke_sequence": [
+      "ก",
+      "า",
+      "ร"
+    ],
     "pronunciation_guide": "gaan (Mid tone). Irregular final ร pronounced as /n/ (Mae Kon).",
     "contextual_example": "การบ้านเยอะมาก (There is a lot of homework).",
     "srs_level": 0
@@ -834,7 +1160,11 @@
     "thai_word": "ควร",
     "english_translation": "Should / Ought to",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ค", "ว", "ร"],
+    "keystroke_sequence": [
+      "ค",
+      "ว",
+      "ร"
+    ],
     "pronunciation_guide": "khuan (Mid tone). Diphthong -ua reduces to ว before final; irregular final ร pronounced as /n/.",
     "contextual_example": "เราควรช่วยกัน (We should help one another).",
     "srs_level": 0
@@ -844,7 +1174,11 @@
     "thai_word": "บอล",
     "english_translation": "Ball / Football",
     "consonant_class": "Mid",
-    "keystroke_sequence": ["บ", "อ", "ล"],
+    "keystroke_sequence": [
+      "บ",
+      "อ",
+      "ล"
+    ],
     "pronunciation_guide": "baawn (Mid tone). Irregular final ล pronounced as /n/ (Mae Kon).",
     "contextual_example": "เล่นเตะบอล (Play football).",
     "srs_level": 0
@@ -854,7 +1188,11 @@
     "thai_word": "คุณ",
     "english_translation": "You / Polite title (Mr./Ms.)",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ค", "ุ", "ณ"],
+    "keystroke_sequence": [
+      "ค",
+      "ุ",
+      "ณ"
+    ],
     "pronunciation_guide": "khun (Mid tone). Irregular retroflex final consonant ณ pronounced as /n/ (Mae Kon).",
     "contextual_example": "ขอบคุณมากครับ (Thank you very much).",
     "srs_level": 0
@@ -864,7 +1202,10 @@
     "thai_word": "รถ",
     "english_translation": "Car / Vehicle",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ร", "ถ"],
+    "keystroke_sequence": [
+      "ร",
+      "ถ"
+    ],
     "pronunciation_guide": "rot (High tone). Inherent /o/ vowel. Irregular final ถ pronounced as stop /t/ (Mae Kot).",
     "contextual_example": "ขึ้นรถเมล์ (Board the public bus).",
     "srs_level": 0
@@ -874,7 +1215,11 @@
     "thai_word": "ภาพ",
     "english_translation": "Picture / Image",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ภ", "า", "พ"],
+    "keystroke_sequence": [
+      "ภ",
+      "า",
+      "พ"
+    ],
     "pronunciation_guide": "phaap (Falling tone). Low class ภ with dead syllable. Irregular final พ pronounced as stop /p/ (Mae Kop).",
     "contextual_example": "ดูภาพวาด (Look at the painting).",
     "srs_level": 0
@@ -884,7 +1229,10 @@
     "thai_word": "คน",
     "english_translation": "Person / Human",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ค", "น"],
+    "keystroke_sequence": [
+      "ค",
+      "น"
+    ],
     "pronunciation_guide": "khon (Mid tone). Low class initial with unwritten inherent short /o/ vowel.",
     "contextual_example": "มีคนอยู่ที่นี่ (There is someone here).",
     "srs_level": 0
@@ -894,7 +1242,11 @@
     "thai_word": "งาน",
     "english_translation": "Work / Job / Task",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ง", "า", "น"],
+    "keystroke_sequence": [
+      "ง",
+      "า",
+      "น"
+    ],
     "pronunciation_guide": "ngaan (Mid tone). Demonstrates live syllable with low-class sonorant initial producing natural mid tone.",
     "contextual_example": "ทำงานหนัก (Work hard).",
     "srs_level": 0
@@ -904,7 +1256,11 @@
     "thai_word": "วัน",
     "english_translation": "Day",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ว", "ั", "น"],
+    "keystroke_sequence": [
+      "ว",
+      "ั",
+      "น"
+    ],
     "pronunciation_guide": "wan (Mid tone). Low class consonant with vowel shortening symbol Mai Han-Akat (ั).",
     "contextual_example": "วันหยุดสุดสัปดาห์ (Weekend holiday).",
     "srs_level": 0
@@ -914,7 +1270,12 @@
     "thai_word": "ข้าว",
     "english_translation": "Rice / Meal",
     "consonant_class": "High",
-    "keystroke_sequence": ["ข", "้", "า", "ว"],
+    "keystroke_sequence": [
+      "ข",
+      "้",
+      "า",
+      "ว"
+    ],
     "pronunciation_guide": "khaao (Falling tone). High class ข with Mai Tho = Falling tone. Tone typed over consonant before า.",
     "contextual_example": "กินข้าวกัน (Let's eat rice / a meal).",
     "srs_level": 0
@@ -924,7 +1285,11 @@
     "thai_word": "เขา",
     "english_translation": "He / She / They / Mountain",
     "consonant_class": "High",
-    "keystroke_sequence": ["เ", "ข", "า"],
+    "keystroke_sequence": [
+      "เ",
+      "ข",
+      "า"
+    ],
     "pronunciation_guide": "khao (Rising tone). High-class live syllable produces an inherent rising tone with no tone mark.",
     "contextual_example": "เขาชอบอ่านหนังสือ (He likes to read books).",
     "srs_level": 0
@@ -934,7 +1299,11 @@
     "thai_word": "เรา",
     "english_translation": "We / Us",
     "consonant_class": "Low",
-    "keystroke_sequence": ["เ", "ร", "า"],
+    "keystroke_sequence": [
+      "เ",
+      "ร",
+      "า"
+    ],
     "pronunciation_guide": "rao (Mid tone). Contrast with เขา: Low-class live syllable produces an inherent mid tone.",
     "contextual_example": "เราไปด้วยกัน (We go together).",
     "srs_level": 0
@@ -944,7 +1313,11 @@
     "thai_word": "มาก",
     "english_translation": "Very / Much / A lot",
     "consonant_class": "Low",
-    "keystroke_sequence": ["ม", "า", "ก"],
+    "keystroke_sequence": [
+      "ม",
+      "า",
+      "ก"
+    ],
     "pronunciation_guide": "maak (Falling tone). Low-class initial with long vowel dead syllable automatically creates falling tone.",
     "contextual_example": "ขอบคุณมาก (Thank you very much).",
     "srs_level": 0
@@ -954,7 +1327,11 @@
     "thai_word": "พูด",
     "english_translation": "To speak / To talk",
     "consonant_class": "Low",
-    "keystroke_sequence": ["พ", "ู", "ด"],
+    "keystroke_sequence": [
+      "พ",
+      "ู",
+      "ด"
+    ],
     "pronunciation_guide": "phoot (Falling tone). Low-class initial + long vertical vowel + dead stop final creates falling tone.",
     "contextual_example": "พูดภาษาไทย (Speak the Thai language).",
     "srs_level": 0
@@ -964,7 +1341,11 @@
     "thai_word": "หมอ",
     "english_translation": "Doctor / Physician",
     "consonant_class": "High leading (ห นำ)",
-    "keystroke_sequence": ["ห", "ม", "อ"],
+    "keystroke_sequence": [
+      "ห",
+      "ม",
+      "อ"
+    ],
     "pronunciation_guide": "maw (Rising tone). Silent high-class leading ห shifts low-class ม into high-class tone rules (rising).",
     "contextual_example": "ไปหาหมอที่โรงพยาบาล (Go see a doctor at the hospital).",
     "srs_level": 0
@@ -974,7 +1355,12 @@
     "thai_word": "ใหญ่",
     "english_translation": "Big / Large",
     "consonant_class": "High leading (ห นำ)",
-    "keystroke_sequence": ["ใ", "ห", "ญ", "่"],
+    "keystroke_sequence": [
+      "ใ",
+      "ห",
+      "ญ",
+      "่"
+    ],
     "pronunciation_guide": "yai (Low tone). Pre-posed ใ typed first; leading ห makes low-class ญ behave as high class with Mai Ek = low tone.",
     "contextual_example": "บ้านหลังใหญ่ (A large house).",
     "srs_level": 0
@@ -984,7 +1370,12 @@
     "thai_word": "ใหม่",
     "english_translation": "New / Fresh",
     "consonant_class": "High leading (ห นำ)",
-    "keystroke_sequence": ["ใ", "ห", "ม", "่"],
+    "keystroke_sequence": [
+      "ใ",
+      "ห",
+      "ม",
+      "่"
+    ],
     "pronunciation_guide": "mai (Low tone). Pre-posed ใ typed first; leading ห shifts low-class ม to high-class behavior with Mai Ek = low tone.",
     "contextual_example": "ซื้อเสื้อตัวใหม่ (Buy a new shirt).",
     "srs_level": 0
@@ -994,9 +1385,1590 @@
     "thai_word": "เพื่อน",
     "english_translation": "Friend / Companion",
     "consonant_class": "Low",
-    "keystroke_sequence": ["เ", "พ", "ื", "่", "อ", "น"],
+    "keystroke_sequence": [
+      "เ",
+      "พ",
+      "ื",
+      "่",
+      "อ",
+      "น"
+    ],
     "pronunciation_guide": "pheuan (Falling tone). Full spatial complex: Pre-posed เ -> Consonant พ -> Top vowel ื -> Tone ่ -> Vowel component อ -> Final น.",
     "contextual_example": "เพื่อนสนิท (Close friend).",
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ผม",
+    "english_translation": "I / Me (polite male)",
+    "consonant_class": "High",
+    "pronunciation_guide": "phǒm (Rising tone). High consonant + sonorant ending.",
+    "contextual_example": "ผมชื่อทอม (My name is Tom).",
+    "keystroke_sequence": [
+      "ผ",
+      "ม"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ฉัน",
+    "english_translation": "I / Me (female / casual)",
+    "consonant_class": "High",
+    "pronunciation_guide": "chǎn (Rising tone). High consonant + short vowel + nasal.",
+    "contextual_example": "ฉันชอบเมืองไทย (I like Thailand).",
+    "keystroke_sequence": [
+      "ฉ",
+      "ั",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "มัน",
+    "english_translation": "It / Oily / Fun",
+    "consonant_class": "Low",
+    "pronunciation_guide": "man (Mid tone). Low consonant + short vowel + nasal.",
+    "contextual_example": "มันอร่อยมาก (It is very delicious).",
+    "keystroke_sequence": [
+      "ม",
+      "ั",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "เป็น",
+    "english_translation": "To be / Alive / Can do",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "bpen (Mid tone). Mid consonant + short e vowel.",
+    "contextual_example": "เขาเป็นครู (He is a teacher).",
+    "keystroke_sequence": [
+      "เ",
+      "ป",
+      "็",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "อยู่",
+    "english_translation": "To stay / To live / To be at",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "yùu (Low tone). Mid consonant cluster lead by อ.",
+    "contextual_example": "ผมอยู่ที่บ้าน (I am at home).",
+    "keystroke_sequence": [
+      "อ",
+      "ย",
+      "ู",
+      "่"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "คือ",
+    "english_translation": "To be (is / means / definition)",
+    "consonant_class": "Low",
+    "pronunciation_guide": "kheu (Mid tone). Low consonant + long eu vowel.",
+    "contextual_example": "นี่คืออะไร (What is this?).",
+    "keystroke_sequence": [
+      "ค",
+      "ื",
+      "อ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "มี",
+    "english_translation": "To have / There is",
+    "consonant_class": "Low",
+    "pronunciation_guide": "mii (Mid tone). Low consonant + long ee vowel.",
+    "contextual_example": "เขามีเงิน (He has money).",
+    "keystroke_sequence": [
+      "ม",
+      "ี"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "และ",
+    "english_translation": "And",
+    "consonant_class": "Low",
+    "pronunciation_guide": "láe (High tone). Low consonant + short ae vowel.",
+    "contextual_example": "พ่อและแม่ (Father and mother).",
+    "keystroke_sequence": [
+      "แ",
+      "ล",
+      "ะ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "แต่",
+    "english_translation": "But / However",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "dtàe (Low tone). Mid consonant + mai ek.",
+    "contextual_example": "สวยแต่แพง (Beautiful but expensive).",
+    "keystroke_sequence": [
+      "แ",
+      "ต",
+      "่"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "หรือ",
+    "english_translation": "Or",
+    "consonant_class": "High",
+    "pronunciation_guide": "rěu (Rising tone). Leading ห + low consonant + long eu vowel.",
+    "contextual_example": "น้ำชาหรือกาแฟ (Tea or coffee?).",
+    "keystroke_sequence": [
+      "ห",
+      "ร",
+      "ื",
+      "อ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ถ้า",
+    "english_translation": "If",
+    "consonant_class": "Low",
+    "pronunciation_guide": "thâa (Falling tone). Low consonant + mai tho + long aa vowel.",
+    "contextual_example": "ถ้าฝนตกจะไม่ไป (If it rains I will not go).",
+    "keystroke_sequence": [
+      "ถ",
+      "้",
+      "า"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "เพราะ",
+    "english_translation": "Because / Melodious",
+    "consonant_class": "Low",
+    "pronunciation_guide": "phró (High tone). Low consonant cluster + short aw vowel.",
+    "contextual_example": "เพราะเขาน่ารัก (Because he is cute).",
+    "keystroke_sequence": [
+      "เ",
+      "พ",
+      "ร",
+      "า",
+      "ะ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "อะไร",
+    "english_translation": "What / Anything",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "à-rai (Low-Mid tone). อ + short a, ร + ai vowel.",
+    "contextual_example": "คุณต้องการอะไร (What do you need?).",
+    "keystroke_sequence": [
+      "อ",
+      "ะ",
+      "ไ",
+      "ร"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ที่ไหน",
+    "english_translation": "Where",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "thîi-nǎi (Falling-Rising tone). Compound location question.",
+    "contextual_example": "ห้องน้ำอยู่ที่ไหน (Where is the restroom?).",
+    "keystroke_sequence": [
+      "ท",
+      "ี",
+      "่",
+      "ไ",
+      "ห",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "เมื่อไหร่",
+    "english_translation": "When",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "mûea-rài (Falling-Low tone). Time interrogative.",
+    "contextual_example": "เขาจะมาเมื่อไหร่ (When will he come?).",
+    "keystroke_sequence": [
+      "เ",
+      "ม",
+      "ื",
+      "่",
+      "อ",
+      "ไ",
+      "ห",
+      "ร",
+      "่"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ทำไม",
+    "english_translation": "Why",
+    "consonant_class": "Low",
+    "pronunciation_guide": "tham-mai (Mid-Mid tone). Low consonants with short vowels.",
+    "contextual_example": "ทำไมมาช้า (Why did you come late?).",
+    "keystroke_sequence": [
+      "ท",
+      "ำ",
+      "ไ",
+      "ม"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "อย่างไร",
+    "english_translation": "How",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "yàang-rai (Low-Mid tone). Method / manner interrogative.",
+    "contextual_example": "ทำอย่างไร (How to do it?).",
+    "keystroke_sequence": [
+      "อ",
+      "ย",
+      "่",
+      "า",
+      "ง",
+      "ไ",
+      "ร"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ใคร",
+    "english_translation": "Who / Someone",
+    "consonant_class": "Low",
+    "pronunciation_guide": "khrai (Mid tone). Low consonant cluster with ai vowel.",
+    "contextual_example": "ใครมาหาคุณ (Who came to see you?).",
+    "keystroke_sequence": [
+      "ใ",
+      "ค",
+      "ร"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "ไหน",
+    "english_translation": "Which",
+    "consonant_class": "High",
+    "pronunciation_guide": "nǎi (Rising tone). Leading ห + น with ai vowel.",
+    "contextual_example": "อันไหนดีกว่า (Which one is better?).",
+    "keystroke_sequence": [
+      "ไ",
+      "ห",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 6,
+    "thai_word": "โน่น",
+    "english_translation": "That over there (yonder)",
+    "consonant_class": "Low",
+    "pronunciation_guide": "nôon (Falling tone). Low consonant + long o + mai tho.",
+    "contextual_example": "อยู่ตรงโน่น (It is over there).",
+    "keystroke_sequence": [
+      "โ",
+      "น",
+      "่",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "กิน",
+    "english_translation": "To eat",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "gin (Mid tone). Mid consonant + short i + sonorant ending.",
+    "contextual_example": "กินข้าวด้วยกัน (Eat a meal together).",
+    "keystroke_sequence": [
+      "ก",
+      "ิ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "นอน",
+    "english_translation": "To sleep / To lie down",
+    "consonant_class": "Low",
+    "pronunciation_guide": "nawn (Mid tone). Low consonant + vowel aw + sonorant ending.",
+    "contextual_example": "ได้เวลานอนแล้ว (It is time to sleep now).",
+    "keystroke_sequence": [
+      "น",
+      "อ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ฟัง",
+    "english_translation": "To listen",
+    "consonant_class": "Low",
+    "pronunciation_guide": "fang (Mid tone). Low consonant + short vowel + nasal.",
+    "contextual_example": "ฟังเพลงไทย (Listen to Thai music).",
+    "keystroke_sequence": [
+      "ฟ",
+      "ั",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "อ่าน",
+    "english_translation": "To read",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "àan (Low tone). Mid consonant + mai ek + long aa.",
+    "contextual_example": "อ่านหนังสือพิมพ์ (Read the newspaper).",
+    "keystroke_sequence": [
+      "อ",
+      "่",
+      "า",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "เขียน",
+    "english_translation": "To write",
+    "consonant_class": "High",
+    "pronunciation_guide": "khǐan (Rising tone). High consonant + diphthong ia.",
+    "contextual_example": "เขียนภาษาไทย (Write Thai language).",
+    "keystroke_sequence": [
+      "เ",
+      "ข",
+      "ี",
+      "ย",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ทำ",
+    "english_translation": "To do / To make",
+    "consonant_class": "Low",
+    "pronunciation_guide": "tham (Mid tone). Low consonant + short am vowel.",
+    "contextual_example": "ทำอะไรอยู่ (What are you doing?).",
+    "keystroke_sequence": [
+      "ท",
+      "ำ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "เข้าใจ",
+    "english_translation": "To understand",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "khâo-jai (Falling-Mid tone). Compound verb of comprehension.",
+    "contextual_example": "ผมเข้าใจแล้ว (I understand now).",
+    "keystroke_sequence": [
+      "เ",
+      "ข",
+      "้",
+      "า",
+      "ใ",
+      "จ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "คิด",
+    "english_translation": "To think",
+    "consonant_class": "Low",
+    "pronunciation_guide": "khít (High tone). Low consonant + short i + stop ending.",
+    "contextual_example": "คิดถึงเพื่อน (Thinking of a friend).",
+    "keystroke_sequence": [
+      "ค",
+      "ิ",
+      "ด"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ชอบ",
+    "english_translation": "To like / Fond of",
+    "consonant_class": "Low",
+    "pronunciation_guide": "châwp (Falling tone). Low consonant + dead syllable.",
+    "contextual_example": "ฉันชอบอาหารไทย (I like Thai food).",
+    "keystroke_sequence": [
+      "ช",
+      "อ",
+      "บ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "อยาก",
+    "english_translation": "To want (to do something)",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "yàak (Low tone). Mid class leading อ cluster.",
+    "contextual_example": "อยากไปเที่ยว (I want to go on a trip).",
+    "keystroke_sequence": [
+      "อ",
+      "ย",
+      "า",
+      "ก"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ช่วย",
+    "english_translation": "To help",
+    "consonant_class": "Low",
+    "pronunciation_guide": "chûay (Falling tone). Low consonant + diphthong uea + mai ek.",
+    "contextual_example": "ช่วยด้วยครับ (Please help me!).",
+    "keystroke_sequence": [
+      "ช",
+      "่",
+      "ว",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ขาย",
+    "english_translation": "To sell",
+    "consonant_class": "High",
+    "pronunciation_guide": "khǎai (Rising tone). High consonant + long aa + semi-vowel.",
+    "contextual_example": "ร้านนี้ขายดี (This shop sells well).",
+    "keystroke_sequence": [
+      "ข",
+      "า",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "รอ",
+    "english_translation": "To wait",
+    "consonant_class": "Low",
+    "pronunciation_guide": "raw (Mid tone). Low consonant + aw vowel.",
+    "contextual_example": "รอสักครู่ (Wait a moment).",
+    "keystroke_sequence": [
+      "ร",
+      "อ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "พบ",
+    "english_translation": "To meet / To find",
+    "consonant_class": "Low",
+    "pronunciation_guide": "phóp (High tone). Low consonant + short o + stop ending.",
+    "contextual_example": "ยินดีที่ได้พบคุณ (Pleased to meet you).",
+    "keystroke_sequence": [
+      "พ",
+      "บ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "เปิด",
+    "english_translation": "To open / Turn on",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "bpòoet (Low tone). Mid consonant + diphthong oe + stop.",
+    "contextual_example": "เปิดประตู (Open the door).",
+    "keystroke_sequence": [
+      "เ",
+      "ป",
+      "ิ",
+      "ด"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "เดิน",
+    "english_translation": "To walk",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "dooen (Mid tone). Mid consonant + diphthong oe + sonorant.",
+    "contextual_example": "เดินไปตลาด (Walk to the market).",
+    "keystroke_sequence": [
+      "เ",
+      "ด",
+      "ิ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ให้",
+    "english_translation": "To give / For",
+    "consonant_class": "High",
+    "pronunciation_guide": "hâi (Falling tone). High consonant + mai tho + ai mai muan.",
+    "contextual_example": "ให้ของขวัญ (Give a gift).",
+    "keystroke_sequence": [
+      "ใ",
+      "ห",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ได้",
+    "english_translation": "Can / Able to / To obtain",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "dâi (Falling tone). Mid consonant + mai tho + ai mai malai.",
+    "contextual_example": "ผมพูดไทยได้ (I can speak Thai).",
+    "keystroke_sequence": [
+      "ไ",
+      "ด",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "ถาม",
+    "english_translation": "To ask",
+    "consonant_class": "High",
+    "pronunciation_guide": "thǎam (Rising tone). High consonant + long aa + sonorant.",
+    "contextual_example": "ขอถามทางหน่อย (May I ask for directions?).",
+    "keystroke_sequence": [
+      "ถ",
+      "า",
+      "ม"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 7,
+    "thai_word": "สอน",
+    "english_translation": "To teach",
+    "consonant_class": "High",
+    "pronunciation_guide": "sǎawn (Rising tone). High consonant + aw vowel + sonorant.",
+    "contextual_example": "ครูสอนภาษา (The teacher teaches language).",
+    "keystroke_sequence": [
+      "ส",
+      "อ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "สวย",
+    "english_translation": "Beautiful / Pretty",
+    "consonant_class": "High",
+    "pronunciation_guide": "sǔay (Rising tone). High consonant + uea diphthong.",
+    "contextual_example": "ดอกไม้สวยมาก (The flower is very beautiful).",
+    "keystroke_sequence": [
+      "ส",
+      "ว",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "อร่อย",
+    "english_translation": "Delicious / Tasty",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "à-ròy (Low-Low tone). Prefix อ with ร + oy diphthong.",
+    "contextual_example": "ต้มยำกุ้งอร่อย (Tom Yum Goong is delicious).",
+    "keystroke_sequence": [
+      "อ",
+      "ร",
+      "่",
+      "อ",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "ร้อน",
+    "english_translation": "Hot (temperature)",
+    "consonant_class": "Low",
+    "pronunciation_guide": "ráawn (High tone). Low consonant + long aw + mai tho.",
+    "contextual_example": "อากาศร้อนมาก (The weather is very hot).",
+    "keystroke_sequence": [
+      "ร",
+      "้",
+      "อ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "หนาว",
+    "english_translation": "Cold (weather)",
+    "consonant_class": "High",
+    "pronunciation_guide": "nǎao (Rising tone). Leading ห + low consonant + long aa.",
+    "contextual_example": "วันนี้หนาวจัง (Today is really cold).",
+    "keystroke_sequence": [
+      "ห",
+      "น",
+      "า",
+      "ว"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "หิว",
+    "english_translation": "Hungry",
+    "consonant_class": "High",
+    "pronunciation_guide": "hǐw (Rising tone). High consonant + short i + w.",
+    "contextual_example": "หิวข้าวแล้ว (I am hungry for food now).",
+    "keystroke_sequence": [
+      "ห",
+      "ิ",
+      "ว"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "เหนื่อย",
+    "english_translation": "Tired / Exhausted",
+    "consonant_class": "High",
+    "pronunciation_guide": "nùeay (Low tone). Leading ห + low consonant + mai ek.",
+    "contextual_example": "ทำงานเหนื่อยมาก (Tired from working).",
+    "keystroke_sequence": [
+      "เ",
+      "ห",
+      "น",
+      "ื",
+      "่",
+      "อ",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "สนุก",
+    "english_translation": "Fun / Entertaining",
+    "consonant_class": "High",
+    "pronunciation_guide": "sà-nùk (Low-Low tone). High consonant leading syllable.",
+    "contextual_example": "เที่ยวเมืองไทยสนุก (Traveling in Thailand is fun).",
+    "keystroke_sequence": [
+      "ส",
+      "น",
+      "ุ",
+      "ก"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "ง่าย",
+    "english_translation": "Easy / Simple",
+    "consonant_class": "Low",
+    "pronunciation_guide": "ngâai (Falling tone). Low consonant + mai tho + long aa.",
+    "contextual_example": "บทเรียนนี้ง่าย (This lesson is easy).",
+    "keystroke_sequence": [
+      "ง",
+      "่",
+      "า",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "ยาก",
+    "english_translation": "Difficult / Hard",
+    "consonant_class": "Low",
+    "pronunciation_guide": "yâak (Falling tone). Low consonant + dead syllable.",
+    "contextual_example": "ข้อสอบยากมาก (The exam is very difficult).",
+    "keystroke_sequence": [
+      "ย",
+      "า",
+      "ก"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "เร็ว",
+    "english_translation": "Fast / Quick",
+    "consonant_class": "Low",
+    "pronunciation_guide": "reo (Mid tone). Low consonant + short e vowel.",
+    "contextual_example": "ขับรถเร็วเกินไป (Driving too fast).",
+    "keystroke_sequence": [
+      "เ",
+      "ร",
+      "็",
+      "ว"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "ช้า",
+    "english_translation": "Slow",
+    "consonant_class": "Low",
+    "pronunciation_guide": "cháa (High tone). Low consonant + mai tho + long aa.",
+    "contextual_example": "พูดช้าๆ หน่อย (Please speak slowly).",
+    "keystroke_sequence": [
+      "ช",
+      "้",
+      "า"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "นิดหน่อย",
+    "english_translation": "A little bit",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "nít-nòy (High-Low tone). Degree adverb.",
+    "contextual_example": "พูดไทยได้นิดหน่อย (I speak a little Thai).",
+    "keystroke_sequence": [
+      "น",
+      "ิ",
+      "ด",
+      "ห",
+      "น",
+      "่",
+      "อ",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "จริง",
+    "english_translation": "True / Real",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "jing (Mid tone). False cluster จร pronounced j-.",
+    "contextual_example": "เรื่องจริงหรือ (Is it true?).",
+    "keystroke_sequence": [
+      "จ",
+      "ร",
+      "ิ",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "เก่า",
+    "english_translation": "Old (objects)",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "gào (Low tone). Mid consonant + mai ek + ao vowel.",
+    "contextual_example": "หนังสือเล่มเก่า (An old book).",
+    "keystroke_sequence": [
+      "เ",
+      "ก",
+      "่",
+      "า"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "น้อย",
+    "english_translation": "Few / Little quantity",
+    "consonant_class": "Low",
+    "pronunciation_guide": "náwy (High tone). Low consonant + mai tho + aw vowel.",
+    "contextual_example": "มีคนน้อย (There are few people).",
+    "keystroke_sequence": [
+      "น",
+      "้",
+      "อ",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "สะอาด",
+    "english_translation": "Clean / Hygienic",
+    "consonant_class": "High",
+    "pronunciation_guide": "sà-àat (Low-Low tone). High consonant + stop syllable.",
+    "contextual_example": "ห้องนี้สะอาดดี (This room is very clean).",
+    "keystroke_sequence": [
+      "ส",
+      "ะ",
+      "อ",
+      "า",
+      "ด"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "ไกล",
+    "english_translation": "Far / Distant",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "glai (Mid tone). Mid consonant cluster + ai vowel.",
+    "contextual_example": "บ้านอยู่ไกลมาก (Home is very far away).",
+    "keystroke_sequence": [
+      "ไ",
+      "ก",
+      "ล"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "ใกล้",
+    "english_translation": "Near / Close by",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "glâi (Falling tone). Mid consonant + mai tho + ai mai muan.",
+    "contextual_example": "ร้านอยู่ใกล้บ้าน (The shop is near home).",
+    "keystroke_sequence": [
+      "ใ",
+      "ก",
+      "ล",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "พร้อม",
+    "english_translation": "Ready / Prepared",
+    "consonant_class": "Low",
+    "pronunciation_guide": "phráawm (High tone). Low consonant cluster + mai tho.",
+    "contextual_example": "ทุกคนพร้อมแล้ว (Everyone is ready now).",
+    "keystroke_sequence": [
+      "พ",
+      "ร",
+      "้",
+      "อ",
+      "ม"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 8,
+    "thai_word": "แพง",
+    "english_translation": "Expensive",
+    "consonant_class": "Low",
+    "pronunciation_guide": "phaaeng (Mid tone). Low consonant + long ae vowel.",
+    "contextual_example": "ของชิ้นนี้แพง (This item is expensive).",
+    "keystroke_sequence": [
+      "แ",
+      "พ",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "สวัสดี",
+    "english_translation": "Hello / Good day / Goodbye",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "sà-wàt-dii (Low-Low-Mid tone). Universal Thai greeting.",
+    "contextual_example": "สวัสดีครับคุณหมอ (Hello doctor).",
+    "keystroke_sequence": [
+      "ส",
+      "ว",
+      "ั",
+      "ส",
+      "ด",
+      "ี"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ขอบคุณ",
+    "english_translation": "Thank you",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "khàawp-khun (Low-Mid tone). Expression of gratitude.",
+    "contextual_example": "ขอบคุณมากครับ (Thank you very much).",
+    "keystroke_sequence": [
+      "ข",
+      "อ",
+      "บ",
+      "ค",
+      "ุ",
+      "ณ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ขอโทษ",
+    "english_translation": "Sorry / Excuse me",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "khǎaw-thôot (Rising-Falling tone). Apology or polite interjection.",
+    "contextual_example": "ขอโทษที่มาช้า (Sorry for coming late).",
+    "keystroke_sequence": [
+      "ข",
+      "อ",
+      "โ",
+      "ท",
+      "ษ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ใช่",
+    "english_translation": "Yes / Right / Correct",
+    "consonant_class": "Low",
+    "pronunciation_guide": "châi (Falling tone). Low consonant + mai ek + ai mai muan.",
+    "contextual_example": "ใช่แล้วถูกต้อง (Yes, that is correct).",
+    "keystroke_sequence": [
+      "ใ",
+      "ช",
+      "่"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ไม่ใช่",
+    "english_translation": "No / Not correct",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "mâi-châi (Falling-Falling tone). Negative affirmation.",
+    "contextual_example": "อันนี้ไม่ใช่ของฉัน (This is not mine).",
+    "keystroke_sequence": [
+      "ไ",
+      "ม",
+      "่",
+      "ใ",
+      "ช",
+      "่"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "วันนี้",
+    "english_translation": "Today",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "wan-níi (Mid-High tone). Current day time marker.",
+    "contextual_example": "วันนี้อากาศดี (Today the weather is nice).",
+    "keystroke_sequence": [
+      "ว",
+      "ั",
+      "น",
+      "น",
+      "ี",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "พรุ่งนี้",
+    "english_translation": "Tomorrow",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "phrûng-níi (Falling-High tone). Next day time marker.",
+    "contextual_example": "เจอกันพรุ่งนี้ (See you tomorrow).",
+    "keystroke_sequence": [
+      "พ",
+      "ร",
+      "ุ",
+      "่",
+      "ง",
+      "น",
+      "ี",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "เมื่อวาน",
+    "english_translation": "Yesterday",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "mûea-waan (Falling-Mid tone). Past day time marker.",
+    "contextual_example": "เมื่อวานไปเที่ยว (Yesterday went on a trip).",
+    "keystroke_sequence": [
+      "เ",
+      "ม",
+      "ื",
+      "่",
+      "อ",
+      "ว",
+      "า",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ตอนนี้",
+    "english_translation": "Right now / Currently",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "dtaawn-níi (Mid-High tone). Present moment marker.",
+    "contextual_example": "ตอนนี้อยู่ที่ไหน (Where are you right now?).",
+    "keystroke_sequence": [
+      "ต",
+      "อ",
+      "น",
+      "น",
+      "ี",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "บ้าน",
+    "english_translation": "Home / House",
+    "consonant_class": "Mid",
+    "pronunciation_guide": "bâan (Falling tone). Mid consonant + mai tho + long aa.",
+    "contextual_example": "ยินดีต้อนรับสู่บ้าน (Welcome to the house).",
+    "keystroke_sequence": [
+      "บ",
+      "้",
+      "า",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "โรงเรียน",
+    "english_translation": "School",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "roong-rian (Mid-Mid tone). Place of education.",
+    "contextual_example": "เด็กๆ ไปโรงเรียน (Children go to school).",
+    "keystroke_sequence": [
+      "โ",
+      "ร",
+      "ง",
+      "เ",
+      "ร",
+      "ี",
+      "ย",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "โรงพยาบาล",
+    "english_translation": "Hospital",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "roong-phá-yaa-baan (Mid-High-Mid-Mid tone). Medical facility.",
+    "contextual_example": "หมออยู่ที่โรงพยาบาล (Doctor is at the hospital).",
+    "keystroke_sequence": [
+      "โ",
+      "ร",
+      "ง",
+      "พ",
+      "ย",
+      "า",
+      "บ",
+      "า",
+      "ล"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ร้านอาหาร",
+    "english_translation": "Restaurant",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "ráan-aa-hǎan (High-Mid-Rising tone). Dining venue.",
+    "contextual_example": "ร้านอาหารนี้อร่อย (This restaurant is delicious).",
+    "keystroke_sequence": [
+      "ร",
+      "้",
+      "า",
+      "น",
+      "อ",
+      "า",
+      "ห",
+      "า",
+      "ร"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ห้องน้ำ",
+    "english_translation": "Restroom / Bathroom",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "hâwng-nám (Falling-High tone). Essential survival facility.",
+    "contextual_example": "ขอเข้าห้องน้ำครับ (May I use the restroom?).",
+    "keystroke_sequence": [
+      "ห",
+      "้",
+      "อ",
+      "ง",
+      "น",
+      "้",
+      "ำ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "เงิน",
+    "english_translation": "Money / Silver",
+    "consonant_class": "Low",
+    "pronunciation_guide": "ngoen (Mid tone). Low consonant + diphthong oe + nasal.",
+    "contextual_example": "ไม่มีเงินสด (Do not have cash).",
+    "keystroke_sequence": [
+      "เ",
+      "ง",
+      "ิ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "เวลา",
+    "english_translation": "Time / Duration",
+    "consonant_class": "Low",
+    "pronunciation_guide": "wee-laa (Mid-Mid tone). Universal time concept.",
+    "contextual_example": "มีเวลาว่างไหม (Do you have free time?).",
+    "keystroke_sequence": [
+      "เ",
+      "ว",
+      "ล",
+      "า"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "น้ำ",
+    "english_translation": "Water / Liquid",
+    "consonant_class": "Low",
+    "pronunciation_guide": "nám (High tone). Low consonant + short am + mai tho.",
+    "contextual_example": "ขอน้ำดื่มหนึ่งแก้ว (May I have a glass of water?).",
+    "keystroke_sequence": [
+      "น",
+      "้",
+      "ำ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ชา",
+    "english_translation": "Tea",
+    "consonant_class": "Low",
+    "pronunciation_guide": "chaa (Mid tone). Low consonant + long aa.",
+    "contextual_example": "ดื่มชาร้อน (Drink hot tea).",
+    "keystroke_sequence": [
+      "ช",
+      "า"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "กาแฟ",
+    "english_translation": "Coffee",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "gaa-faae (Mid-Mid tone). Mid & Low consonant loanword.",
+    "contextual_example": "กาแฟเย็นหวานน้อย (Iced coffee less sweet).",
+    "keystroke_sequence": [
+      "ก",
+      "า",
+      "แ",
+      "ฟ"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 9,
+    "thai_word": "ผลไม้",
+    "english_translation": "Fruit",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "phǒn-lá-máai (Rising-High-High tone). Fresh fruit.",
+    "contextual_example": "ผลไม้ไทยอร่อย (Thai fruits are delicious).",
+    "keystroke_sequence": [
+      "ผ",
+      "ล",
+      "ไ",
+      "ม",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "กลับบ้าน",
+    "english_translation": "To go home / Return home",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "glàp-bâan (Low-Falling tone). Common end-of-day action.",
+    "contextual_example": "เลิกงานแล้วกลับบ้าน (Finished work, going home).",
+    "keystroke_sequence": [
+      "ก",
+      "ล",
+      "ั",
+      "บ",
+      "บ",
+      "้",
+      "า",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ทานข้าว",
+    "english_translation": "To have a meal (polite)",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "thaan-khâao (Mid-Falling tone). Polite dining expression.",
+    "contextual_example": "ทานข้าวด้วยกันนะ (Let's have a meal together).",
+    "keystroke_sequence": [
+      "ท",
+      "า",
+      "น",
+      "ข",
+      "้",
+      "า",
+      "ว"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ทำงาน",
+    "english_translation": "To work / On the job",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "tham-ngaan (Mid-Mid tone). Daily occupational activity.",
+    "contextual_example": "ทำงานวันจันทร์ถึงศุกร์ (Work Monday to Friday).",
+    "keystroke_sequence": [
+      "ท",
+      "ำ",
+      "ง",
+      "า",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ไปเที่ยว",
+    "english_translation": "To travel / Go out for leisure",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "bpai-thîao (Mid-Falling tone). Recreation expression.",
+    "contextual_example": "วันหยุดไปเที่ยวทะเล (Holiday going to the beach).",
+    "keystroke_sequence": [
+      "ไ",
+      "ป",
+      "เ",
+      "ท",
+      "ี",
+      "่",
+      "ย",
+      "ว"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "รถติด",
+    "english_translation": "Traffic jam",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "rót-dtìt (High-Low tone). Everyday city experience.",
+    "contextual_example": "ตอนเช้ารถติดมาก (In the morning traffic is very jammed).",
+    "keystroke_sequence": [
+      "ร",
+      "ถ",
+      "ต",
+      "ิ",
+      "ด"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "สบายดี",
+    "english_translation": "Fine / Doing well / Healthy",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "sà-baai-dii (Low-Mid-Mid tone). Well-being response.",
+    "contextual_example": "ผมสบายดีขอบคุณครับ (I am doing well, thank you).",
+    "keystroke_sequence": [
+      "ส",
+      "บ",
+      "า",
+      "ย",
+      "ด",
+      "ี"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ห้องนอน",
+    "english_translation": "Bedroom",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "hâwng-nawn (Falling-Mid tone). Domestic space.",
+    "contextual_example": "ห้องนอนกว้างขวาง (The bedroom is spacious).",
+    "keystroke_sequence": [
+      "ห",
+      "้",
+      "อ",
+      "ง",
+      "น",
+      "อ",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "โทรศัพท์",
+    "english_translation": "Telephone / Smartphone",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "thoo-rá-sàp (Mid-High-Low tone). Communication device.",
+    "contextual_example": "โทรศัพท์อยู่ที่ไหน (Where is the phone?).",
+    "keystroke_sequence": [
+      "โ",
+      "ท",
+      "ร",
+      "ศ",
+      "ั",
+      "พ",
+      "ท",
+      "์"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "เข้ามา",
+    "english_translation": "To come in / Enter",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "khâo-maa (Falling-Mid tone). Directional motion verb.",
+    "contextual_example": "เชิญเข้ามาข้างใน (Please come inside).",
+    "keystroke_sequence": [
+      "เ",
+      "ข",
+      "้",
+      "า",
+      "ม",
+      "า"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ออกไป",
+    "english_translation": "To go out / Exit",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "àawk-bpai (Low-Mid tone). Directional motion verb.",
+    "contextual_example": "ออกไปซื้อของ (Go out to buy things).",
+    "keystroke_sequence": [
+      "อ",
+      "อ",
+      "ก",
+      "ไ",
+      "ป"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "เดินทาง",
+    "english_translation": "To travel / Journey",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "dooen-thaang (Mid-Mid tone). Formal travel verb.",
+    "contextual_example": "เดินทางโดยเครื่องบิน (Travel by airplane).",
+    "keystroke_sequence": [
+      "เ",
+      "ด",
+      "ิ",
+      "น",
+      "ท",
+      "า",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "พบกัน",
+    "english_translation": "To meet each other",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "phóp-gan (High-Mid tone). Reciprocal meeting verb.",
+    "contextual_example": "พบกันใหม่คราวหน้า (See each other again next time).",
+    "keystroke_sequence": [
+      "พ",
+      "บ",
+      "ก",
+      "ั",
+      "น"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "เรียนรู้",
+    "english_translation": "To learn / Acquire knowledge",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "rian-rúu (Mid-High tone). Academic & skill learning.",
+    "contextual_example": "เรียนรู้ภาษาไทย (Learn the Thai language).",
+    "keystroke_sequence": [
+      "เ",
+      "ร",
+      "ี",
+      "ย",
+      "น",
+      "ร",
+      "ู",
+      "้"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ดูหนัง",
+    "english_translation": "To watch a movie",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "duu-nǎng (Mid-Rising tone). Popular recreation.",
+    "contextual_example": "ชอบดูหนังวันเสาร์ (Like to watch movies on Saturdays).",
+    "keystroke_sequence": [
+      "ด",
+      "ู",
+      "ห",
+      "น",
+      "ั",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ฟังเพลง",
+    "english_translation": "To listen to music",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "fang-phleeng (Mid-Mid tone). Audio recreation.",
+    "contextual_example": "ฟังเพลงก่อนนอน (Listen to music before bed).",
+    "keystroke_sequence": [
+      "ฟ",
+      "ั",
+      "ง",
+      "เ",
+      "พ",
+      "ล",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ซื้อของ",
+    "english_translation": "To go shopping / Buy things",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "súue-khǎawng (High-Rising tone). Commercial activity.",
+    "contextual_example": "ไปซื้อของที่ซูเปอร์ (Go shopping at the supermarket).",
+    "keystroke_sequence": [
+      "ซ",
+      "ื",
+      "้",
+      "อ",
+      "ข",
+      "อ",
+      "ง"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "มีความสุข",
+    "english_translation": "To be happy / Content",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "mii-khwaam-sùk (Mid-Mid-Low tone). Emotional fulfillment.",
+    "contextual_example": "ขอให้มีความสุข (Wish you happiness).",
+    "keystroke_sequence": [
+      "ม",
+      "ี",
+      "ค",
+      "ว",
+      "า",
+      "ม",
+      "ส",
+      "ุ",
+      "ข"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "โชคดี",
+    "english_translation": "Good luck / Blessed",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "chôok-dii (Falling-Mid tone). Auspicious wish.",
+    "contextual_example": "ขอให้โชคดี (May good luck be with you).",
+    "keystroke_sequence": [
+      "โ",
+      "ช",
+      "ค",
+      "ด",
+      "ี"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ปลอดภัย",
+    "english_translation": "Safe / Secure",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "bplàawt-phai (Low-Mid tone). Safety expression.",
+    "contextual_example": "ขอให้เดินทางปลอดภัย (Have a safe trip).",
+    "keystroke_sequence": [
+      "ป",
+      "ล",
+      "อ",
+      "ด",
+      "ภ",
+      "ั",
+      "ย"
+    ],
+    "srs_level": 0
+  },
+  {
+    "phase": 10,
+    "thai_word": "ยินดี",
+    "english_translation": "Pleased / Glad / Welcome",
+    "consonant_class": "Compound",
+    "pronunciation_guide": "yin-dii (Mid-Mid tone). Polite social response.",
+    "contextual_example": "ด้วยความยินดี (With pleasure / You're welcome).",
+    "keystroke_sequence": [
+      "ย",
+      "ิ",
+      "น",
+      "ด",
+      "ี"
+    ],
     "srs_level": 0
   }
 ]

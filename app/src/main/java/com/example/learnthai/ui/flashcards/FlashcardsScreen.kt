@@ -87,7 +87,7 @@ fun FlashcardsScreen(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            items(listOf(1, 2, 3, 4, 5)) { phase ->
+            items((1..10).toList()) { phase ->
                 FilterChip(
                     selected = selectedPhase == phase,
                     onClick = {
