@@ -51,14 +51,40 @@ object PitchDetector {
         val maxTau = (sampleRate / minF0).toInt().coerceAtMost(frameSize / 2 - 1)
         if (minTau >= maxTau) return result
 
+        // First pass: f0 + frame energy.
+        val f0s = ArrayList<Float>()
+        val energies = ArrayList<Float>()
         var start = 0
         while (start + frameSize <= samples.size) {
             val frame = samples.copyOfRange(start, start + frameSize)
-            val f0 = yin(frame, sampleRate, minTau, maxTau)
-            result.add(PitchPoint(start * 1000f / sampleRate, f0, f0 > 0f))
+            f0s.add(yin(frame, sampleRate, minTau, maxTau))
+            energies.add(rmsOf(frame))
             start += hopSize
         }
+        if (f0s.isEmpty()) return result
+
+        // Energy gate relative to the loudest frame — rejects silence/noise where YIN
+        // would otherwise hallucinate a low pitch.
+        val maxEnergy = energies.maxOrNull() ?: 0f
+        val energyThreshold = maxEnergy * 0.06f
+        val voiced = BooleanArray(f0s.size) { i -> f0s[i] > 0f && energies[i] > energyThreshold }
+
+        // Trim to the first..last voiced frame so leading/trailing silence is dropped.
+        val first = voiced.indexOfFirst { it }
+        val last = voiced.indexOfLast { it }
+
+        for (i in f0s.indices) {
+            val isVoiced = first >= 0 && i in first..last && voiced[i]
+            val timeMs = i * hopSize * 1000f / sampleRate
+            result.add(PitchPoint(timeMs, if (isVoiced) f0s[i] else 0f, isVoiced))
+        }
         return result
+    }
+
+    private fun rmsOf(frame: FloatArray): Float {
+        var sum = 0f
+        for (s in frame) sum += s * s
+        return sqrt(sum / frame.size)
     }
 
     private fun yin(frame: FloatArray, fs: Int, minTau: Int, maxTau: Int, threshold: Float = 0.15f): Float {

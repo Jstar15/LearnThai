@@ -52,6 +52,7 @@ import com.example.learnthai.data.model.LessonCharacter
 import com.example.learnthai.data.model.LessonItem
 import com.example.learnthai.data.model.LessonSentence
 import com.example.learnthai.data.repository.LessonRepository
+import com.example.learnthai.ui.components.keyboard.KedmaneeLayout
 
 @Composable
 fun LessonsScreen(
@@ -328,6 +329,9 @@ private fun CharacterRowItem(
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
+                    val displayText = remember(charItem.char) {
+                        KedmaneeLayout.getDisplayString(charItem.char)
+                    }
                     Box(
                         modifier = Modifier
                             .size(34.dp)
@@ -336,8 +340,8 @@ private fun CharacterRowItem(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = charItem.char,
-                            fontSize = 18.sp,
+                            text = displayText,
+                            fontSize = if (displayText.length > 1) 14.sp else 18.sp,
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.primary
                         )

@@ -87,6 +87,15 @@ object KedmaneeLayout {
         }
     }
 
+    // Overload for String inputs (e.g. from JSON lesson models)
+    fun getDisplayString(str: String): String {
+        return if (str.length == 1) {
+            getDisplayString(str.first())
+        } else {
+            str
+        }
+    }
+
     // Quick lookup to find row index (0..3) for any character
     fun findCharPosition(char: Char): Pair<Int, Boolean>? {
         normalRows.forEachIndexed { rowIndex, row ->
