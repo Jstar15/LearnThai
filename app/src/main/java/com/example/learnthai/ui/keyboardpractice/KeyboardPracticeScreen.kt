@@ -62,6 +62,7 @@ import com.example.learnthai.data.model.WordEntity
 import com.example.learnthai.data.repository.WordRepository
 import com.example.learnthai.ui.components.WordBreakdownDialog
 import com.example.learnthai.ui.components.keyboard.KedmaneeKeyboardView
+import com.example.learnthai.ui.components.keyboard.KedmaneeLayout
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.CoroutineScope
@@ -452,6 +453,16 @@ fun KeyboardPracticeScreen(
                             val isTyped = index < typedKeystrokes.size
                             val isCurrentTarget = index == typedKeystrokes.size
 
+                            val rawChar = if (isTyped) {
+                                typedKeystrokes[index]
+                            } else if (!isAudioOnlyMode) {
+                                charStr
+                            } else {
+                                "?"
+                            }
+                            val isCombining = KedmaneeLayout.isCombiningMark(rawChar)
+                            val displayText = if (rawChar != "?") KedmaneeLayout.getDisplayString(rawChar) else "?"
+
                             Box(
                                 modifier = Modifier
                                     .padding(horizontal = 4.dp)
@@ -472,14 +483,8 @@ fun KeyboardPracticeScreen(
                                 contentAlignment = Alignment.Center
                             ) {
                                 Text(
-                                    text = if (isTyped) {
-                                        typedKeystrokes[index]
-                                    } else if (!isAudioOnlyMode) {
-                                        charStr
-                                    } else {
-                                        "?"
-                                    },
-                                    fontSize = 20.sp,
+                                    text = displayText,
+                                    fontSize = if (isCombining) 14.sp else 20.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = when {
                                         isTyped -> Color(0xFF2E7D32)
@@ -566,7 +571,8 @@ fun KeyboardPracticeScreen(
                     currentWordHadMistake = true
                     wordsWithMistakes[currentWord.thaiWord] = currentWord
                     soundFxManager.playErrorBuzz()
-                    errorMessage = "Oops! Look for '${currentTargetChar}'"
+                    val targetDisplay = currentTargetChar?.let { KedmaneeLayout.getDisplayString(it) } ?: ""
+                    errorMessage = "Oops! Look for '${targetDisplay}'"
                     CoroutineScope(Dispatchers.IO).launch {
                         wordRepository.recordKeystrokeMistake(
                             thaiWord = currentWord.thaiWord,

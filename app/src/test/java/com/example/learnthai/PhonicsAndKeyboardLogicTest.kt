@@ -54,4 +54,25 @@ class PhonicsAndKeyboardLogicTest {
         assertEquals(ConsonantClass.HIGH, analysis.consonantClass)
         assertEquals(ToneType.RISING, analysis.calculatedTone)
     }
+
+    @Test
+    fun testCombiningVowelsAndToneMarksAreAnchoredWithDottedCircle() {
+        // Keystroke sequences for words with modifiers:
+        // "This" (นี้): น (consonant), ี (top vowel), ้ (tone mark)
+        // "Pair / Couple" (คู่): ค (consonant), ู (bottom vowel), ่ (tone mark)
+        // "To know" (รู้): ร (consonant), ู (bottom vowel), ้ (tone mark)
+
+        val consonants = listOf("น", "ค", "ร")
+        val modifiers = listOf("ี", "้", "ู", "่")
+
+        for (c in consonants) {
+            assertEquals("Base consonant $c should NOT be combining mark", false, KedmaneeLayout.isCombiningMark(c))
+            assertEquals("Base consonant $c should render directly", c, KedmaneeLayout.getDisplayString(c))
+        }
+
+        for (m in modifiers) {
+            assertEquals("Modifier $m should be identified as combining mark", true, KedmaneeLayout.isCombiningMark(m))
+            assertEquals("Modifier $m must be prepended with dotted circle anchor", "\u25CC$m", KedmaneeLayout.getDisplayString(m))
+        }
+    }
 }

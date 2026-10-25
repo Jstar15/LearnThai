@@ -78,6 +78,10 @@ object KedmaneeLayout {
         return code == 0x0E31 || (code in 0x0E34..0x0E3A) || (code in 0x0E47..0x0E4E)
     }
 
+    fun isCombiningMark(str: String): Boolean {
+        return str.length == 1 && isCombiningMark(str.first())
+    }
+
     // Returns a display-safe string for standalone rendering on keyboard keys
     fun getDisplayString(char: Char): String {
         return if (isCombiningMark(char)) {
