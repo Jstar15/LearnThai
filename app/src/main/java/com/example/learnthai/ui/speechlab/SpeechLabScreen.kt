@@ -107,6 +107,7 @@ fun SpeechLabScreen(
 
     var pitchComparison by remember { mutableStateOf<PitchComparison?>(null) }
     var isAnalyzingPitch by remember { mutableStateOf(false) }
+    var isPreparingPitch by remember { mutableStateOf(false) }
     var pitchError by remember { mutableStateOf<String?>(null) }
     var cancelled by remember { mutableStateOf(false) }
 
@@ -129,6 +130,7 @@ fun SpeechLabScreen(
         pitchError = null
         transcriptCaptured = false
         isAnalyzingPitch = false
+        isPreparingPitch = false
         cancelled = false
         stage = Stage.IDLE
     }
@@ -167,34 +169,61 @@ fun SpeechLabScreen(
         recognitionNote = "Cancelled — tap to try again."
     }
 
-    fun startPitchRecording() {
-        pitchComparison = null
-        pitchError = null
-        stage = Stage.RECORDING_PITCH
-        audioRecorderManager.startRecording()
-    }
-
-    fun stopAndAnalyzePitch() {
+    fun analyzePitchAfterRecording(refPcm: WavFile.Pcm) {
         audioRecorderManager.stopRecording()
         stage = Stage.IDLE
-
-        val word = currentWordRef.value
-        if (word == null) return
+        isPreparingPitch = false
         if (!audioRecorderManager.hasRecording()) {
             pitchError = "No audio captured — tap Retry and speak clearly."
             return
         }
-
         isAnalyzingPitch = true
         pitchError = null
         scope.launch {
-            val comparison = computePitchComparison(word, ttsManager, audioRecorderManager)
+            val comparison = computePitchComparison(refPcm, audioRecorderManager)
             pitchComparison = comparison
-            if (comparison == null) {
-                pitchError = "Couldn't build a pitch reference (TTS synthesis unavailable on this device)."
-            }
             isAnalyzingPitch = false
         }
+    }
+
+    fun startPitchRecording() {
+        pitchComparison = null
+        pitchError = null
+        stage = Stage.RECORDING_PITCH
+        isPreparingPitch = true
+        scope.launch {
+            val word = currentWordRef.value
+            if (word == null) {
+                stage = Stage.IDLE
+                isPreparingPitch = false
+                return@launch
+            }
+            val refPcm = synthesizeReference(word, ttsManager)
+            if (refPcm == null || stageRef.value != Stage.RECORDING_PITCH) {
+                stage = Stage.IDLE
+                isPreparingPitch = false
+                if (refPcm == null) pitchError = "Couldn't build a pitch reference (TTS synthesis unavailable on this device)."
+                return@launch
+            }
+
+            val refDurationMs = refPcm.samples.size * 1000f / refPcm.sampleRate
+            audioRecorderManager.startRecording()
+            isPreparingPitch = false
+
+            // Record for the reference duration plus a small reaction buffer, then auto-stop.
+            val recordMs = (refDurationMs + 1200f).toLong().coerceIn(2500L, 6000L)
+            delay(recordMs)
+            if (stageRef.value == Stage.RECORDING_PITCH) {
+                analyzePitchAfterRecording(refPcm)
+            }
+        }
+    }
+
+    fun cancelPitchRecording() {
+        audioRecorderManager.stopRecording()
+        stage = Stage.IDLE
+        isPreparingPitch = false
+        pitchError = null
     }
 
     val permissionLauncher = rememberLauncherForActivityResult(
@@ -362,7 +391,7 @@ fun SpeechLabScreen(
 
                             when (stage) {
                                 Stage.TRANSCRIBING -> cancelTranscription()
-                                Stage.RECORDING_PITCH -> stopAndAnalyzePitch()
+                                Stage.RECORDING_PITCH -> cancelPitchRecording()
                                 Stage.IDLE -> if (transcriptCaptured) startPitchRecording() else startTranscription()
                             }
                         },
@@ -382,8 +411,8 @@ fun SpeechLabScreen(
                 Text(
                     text = when (stage) {
                         Stage.TRANSCRIBING -> "Say the word, then pause — it finishes automatically"
-                        Stage.RECORDING_PITCH -> "Recording tone — tap to stop"
-                        Stage.IDLE -> if (transcriptCaptured) "Now record your tone — tap, speak, tap to stop" else "Tap microphone to speak"
+                        Stage.RECORDING_PITCH -> if (isPreparingPitch) "Preparing…" else "Say the word — recording (stops automatically)"
+                        Stage.IDLE -> if (transcriptCaptured) "Now record your tone — tap and say the word" else "Tap microphone to speak"
                     },
                     fontSize = 13.sp,
                     fontWeight = FontWeight.Medium,
@@ -453,12 +482,16 @@ fun SpeechLabScreen(
                 }
 
                 // Pitch visualization + score
-                if (isAnalyzingPitch) {
+                if (isPreparingPitch || isAnalyzingPitch) {
                     Spacer(modifier = Modifier.height(12.dp))
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         CircularProgressIndicator(modifier = Modifier.size(16.dp), strokeWidth = 2.dp)
                         Spacer(modifier = Modifier.size(8.dp))
-                        Text("Analyzing pitch…", fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(
+                            text = if (isPreparingPitch) "Preparing…" else "Analyzing pitch…",
+                            fontSize = 13.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
                 } else if (pitchComparison != null) {
                     Spacer(modifier = Modifier.height(12.dp))
@@ -626,18 +659,17 @@ private fun friendlyError(error: Int): String = when (error) {
     else -> "Recognition unavailable (code $error)."
 }
 
+private suspend fun synthesizeReference(word: WordEntity, ttsManager: TtsManager): WavFile.Pcm? =
+    withContext(Dispatchers.Default) {
+        val file = ttsManager.synthesizeToFile(word.thaiWord, 0.85f)
+        file?.let { WavFile.readPcm16(it) }
+    }
+
 private suspend fun computePitchComparison(
-    word: WordEntity,
-    ttsManager: TtsManager,
+    refPcm: WavFile.Pcm,
     audioRecorderManager: AudioRecorderManager
 ): PitchComparison? = withContext(Dispatchers.Default) {
     val userSamples = audioRecorderManager.getPcmSamples() ?: return@withContext null
     val userRate = AudioRecorderManager.SAMPLE_RATE
-
-    val refFile = ttsManager.synthesizeToFile(word.thaiWord, 0.85f)
-    val refPcm = refFile?.let { WavFile.readPcm16(it) }
-    val refSamples = refPcm?.samples ?: return@withContext null
-    val refRate = refPcm.sampleRate
-
-    PitchDetector.compare(userSamples, userRate, refSamples, refRate)
+    PitchDetector.compare(userSamples, userRate, refPcm.samples, refPcm.sampleRate)
 }

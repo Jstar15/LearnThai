@@ -114,11 +114,20 @@ object PitchDetector {
     fun compare(userSamples: FloatArray, userRate: Int, refSamples: FloatArray, refRate: Int): PitchComparison? {
         if (userSamples.isEmpty() || refSamples.isEmpty()) return null
 
-        val userDurationMs = userSamples.size * 1000f / userRate
-        val refDurationMs = refSamples.size * 1000f / refRate
-
         val userVoiced = detect(userSamples, userRate).filter { it.voiced }
         val refVoiced = detect(refSamples, refRate).filter { it.voiced }
+
+        // Durations from the voiced span (speech only), so leading/trailing silence is ignored.
+        val userDurationMs = if (userVoiced.size >= 2) {
+            userVoiced.last().timeMs - userVoiced.first().timeMs
+        } else {
+            userSamples.size * 1000f / userRate
+        }
+        val refDurationMs = if (refVoiced.size >= 2) {
+            refVoiced.last().timeMs - refVoiced.first().timeMs
+        } else {
+            refSamples.size * 1000f / refRate
+        }
 
         if (userVoiced.size < 3 || refVoiced.size < 3) {
             return PitchComparison(
