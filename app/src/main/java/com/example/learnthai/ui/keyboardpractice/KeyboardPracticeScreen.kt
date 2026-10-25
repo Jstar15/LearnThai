@@ -74,9 +74,10 @@ fun KeyboardPracticeScreen(
     wordRepository: WordRepository,
     ttsManager: TtsManager,
     soundFxManager: SoundFxManager,
+    initialPhase: Int = 1,
     modifier: Modifier = Modifier
 ) {
-    var selectedPhase by remember { mutableIntStateOf(1) }
+    var selectedPhase by remember(initialPhase) { mutableIntStateOf(initialPhase) }
     var isGuidedMode by remember { mutableStateOf(true) }
     var isAudioOnlyMode by remember { mutableStateOf(false) }
 

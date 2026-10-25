@@ -1,0 +1,672 @@
+[
+  {
+    "lesson_number": 1,
+    "title": "The Zero-Point Canvas",
+    "subtitle": "Linear Left-to-Right Anchors & Unaspirated Stops",
+    "target_phase": 1,
+    "summary": "Thai is written left-to-right without spaces between words. Mid-class consonants with long open vowels default to a natural Mid tone without tone marks.",
+    "characters": [
+      {
+        "char": "ก",
+        "name_thai": "ก ไก่",
+        "name_roman": "gor gai",
+        "meaning": "Chicken",
+        "class": "Mid",
+        "kedmanee_key": "D",
+        "sound_guide": "Unaspirated 'g / k' sound, like 'k' in English 'skill' (never aspirated like 'kill').",
+        "lookalike_warning": "No head loop! Do not confuse with ภ (outward head) or ถ (inward head)."
+      },
+      {
+        "char": "อ",
+        "name_thai": "อ อ่าง",
+        "name_roman": "or aang",
+        "meaning": "Basin",
+        "class": "Mid",
+        "kedmanee_key": "V",
+        "sound_guide": "Silent initial bearer for standalone vowels, or long 'aw' vowel sound.",
+        "lookalike_warning": "Head loop starts top-left and sweeps down clockwise."
+      },
+      {
+        "char": "จ",
+        "name_thai": "จ จาน",
+        "name_roman": "jor jaan",
+        "meaning": "Plate",
+        "class": "Mid",
+        "kedmanee_key": "0",
+        "sound_guide": "Unaspirated 'j / ch' sound, like 'j' in 'jeep' but crisp.",
+        "lookalike_warning": "Single smooth downward arch with a small top loop."
+      },
+      {
+        "char": "า",
+        "name_thai": "สระ อา",
+        "name_roman": "sara aa",
+        "meaning": "Long 'aa' vowel",
+        "class": "Vowel",
+        "kedmanee_key": "K",
+        "sound_guide": "Long open 'aa' sound as in 'father'. Sits on the right side of the consonant.",
+        "lookalike_warning": "Always typed AFTER the base consonant."
+      }
+    ],
+    "key_takeaways": [
+      "Thai has no spaces between words in a clause.",
+      "ก is Mid-class and unaspirated: keep your vocal cords relaxed with no burst of air.",
+      "Consonant + า forms a natural, neutral Mid Tone."
+    ],
+    "example_sentences": [
+      {
+        "thai": "กาตัวนี้มีตา",
+        "roman": "gaa dtua níi mii dtaa",
+        "english": "This crow has eyes.",
+        "target_word": "กา"
+      },
+      {
+        "thai": "ตามาหาอา",
+        "roman": "dtaa maa hǎa aa",
+        "english": "Grandfather comes to see uncle.",
+        "target_word": "ตา"
+      },
+      {
+        "thai": "อาจารย์สอนดี",
+        "roman": "aa-jaan sɔ̌ɔn dii",
+        "english": "The teacher teaches well.",
+        "target_word": "อาจารย์"
+      }
+    ]
+  },
+  {
+    "lesson_number": 2,
+    "title": "Anatomy of the Head-Loop",
+    "subtitle": "The Lookalike Code & Visual Anchors",
+    "target_phase": 1,
+    "summary": "The circular head-loop (หัว) is the single most critical feature of Thai letters. Master head loops to distinguish lookalikes immediately.",
+    "characters": [
+      {
+        "char": "ด",
+        "name_thai": "ด เด็ก",
+        "name_roman": "dor dek",
+        "meaning": "Child",
+        "class": "Mid",
+        "kedmanee_key": "F",
+        "sound_guide": "Standard 'd' sound as in 'dog'.",
+        "lookalike_warning": "Head loop goes inside and down with a smooth rounded crown. Look out for ต!"
+      },
+      {
+        "char": "ต",
+        "name_thai": "ต เต่า",
+        "name_roman": "dtor dtao",
+        "meaning": "Turtle",
+        "class": "Mid",
+        "kedmanee_key": "9",
+        "sound_guide": "Unaspirated 'dt' sound, like 't' in 'stop' (no breath of air).",
+        "lookalike_warning": "Identical to ด except its crown has a cleft (dented zigzag notch on top)."
+      },
+      {
+        "char": "บ",
+        "name_thai": "บ ใบไม้",
+        "name_roman": "bor bai-máai",
+        "meaning": "Leaf",
+        "class": "Mid",
+        "kedmanee_key": "[",
+        "sound_guide": "Standard 'b' sound as in 'boy'.",
+        "lookalike_warning": "Square base, short vertical tail level with the letter height."
+      },
+      {
+        "char": "ป",
+        "name_thai": "ป ปลา",
+        "name_roman": "bpor bplaa",
+        "meaning": "Fish",
+        "class": "Mid",
+        "kedmanee_key": "X",
+        "sound_guide": "Unaspirated 'bp' sound, like 'p' in 'spin'.",
+        "lookalike_warning": "Exact same body as บ, but its right tail shoots straight up above the line!"
+      }
+    ],
+    "key_takeaways": [
+      "ด (smooth crown) vs ต (dented crown) — look closely at the very top of the letter.",
+      "บ (short tail) vs ป (tall tail) — height difference determines 'b' vs 'bp'.",
+      "Both ด and ต are Mid-class consonants."
+    ],
+    "example_sentences": [
+      {
+        "thai": "ตาดูปลาในบ่อ",
+        "roman": "dtaa duu bplaa nai bɔ̀ɔ",
+        "english": "Grandfather looks at fish in the pond.",
+        "target_word": "ปลา"
+      },
+      {
+        "thai": "ปิดประตูบ้านดีๆ",
+        "roman": "bpit bprà-dtuu bâan dii-dii",
+        "english": "Close the house door properly.",
+        "target_word": "ประตู"
+      },
+      {
+        "thai": "เด็กกินต้มจืด",
+        "roman": "dèk gin dtôm jʉ̀ʉt",
+        "english": "The child eats clear soup.",
+        "target_word": "เด็ก"
+      }
+    ]
+  },
+  {
+    "lesson_number": 3,
+    "title": "The Left-Shift Shock",
+    "subtitle": "Pre-posed Vowels & Temporal Typing Paradox",
+    "target_phase": 2,
+    "summary": "Pre-posed vowels sit to the left of the consonant. Although pronounced after the consonant in speech, on the keyboard you MUST type the vowel first!",
+    "characters": [
+      {
+        "char": "เ",
+        "name_thai": "สระ เอ",
+        "name_roman": "sara ay",
+        "meaning": "Vowel 'ay / e'",
+        "class": "Vowel",
+        "kedmanee_key": "G",
+        "sound_guide": "Long 'ay' sound as in 'say' (monophthong).",
+        "lookalike_warning": "Must be typed BEFORE the consonant (e.g. เท = เ + ท)."
+      },
+      {
+        "char": "แ",
+        "name_thai": "สระ แอ",
+        "name_roman": "sara ae",
+        "meaning": "Vowel 'ae'",
+        "class": "Vowel",
+        "kedmanee_key": "C",
+        "sound_guide": "Broad 'ae' sound as in English 'cat' or 'bad'.",
+        "lookalike_warning": "A single key (C), do NOT press เ twice!"
+      },
+      {
+        "char": "โ",
+        "name_thai": "สระ โอ",
+        "name_roman": "sara oh",
+        "meaning": "Vowel 'oh'",
+        "class": "Vowel",
+        "kedmanee_key": "Shift + F",
+        "sound_guide": "Long 'oh' sound as in 'go'. Tall ascender swings above standard height.",
+        "lookalike_warning": "Lives on the Shift layer (Shift + F)."
+      },
+      {
+        "char": "ไ",
+        "name_thai": "สระ ไอ ไม้มลาย",
+        "name_roman": "sara ai mai-malai",
+        "meaning": "Vowel 'ai' (zigzag)",
+        "class": "Vowel",
+        "kedmanee_key": "W",
+        "sound_guide": "Diphthong 'ai' as in 'eye' or 'sky'.",
+        "lookalike_warning": "Has a zigzag crown. Used for general words like ไป (go), ไกล (far)."
+      },
+      {
+        "char": "ใ",
+        "name_thai": "สระ ใอ ไม้ม้วน",
+        "name_roman": "sara ai mai-muan",
+        "meaning": "Vowel 'ai' (curled)",
+        "class": "Vowel",
+        "kedmanee_key": ". (period)",
+        "sound_guide": "Identical 'ai' sound to ไ, but used strictly in exactly 20 special Thai words.",
+        "lookalike_warning": "Has a curled spiral loop on top. Used in ใน (in), ให้ (give), ใหม่ (new)."
+      }
+    ],
+    "key_takeaways": [
+      "Typing paradox: If you say 'bpai' (ไป), your fingers must press ไ (w) then ป (x).",
+      "Do NOT type two เ to make แ; always press the dedicated แ key (c).",
+      "ใ (curled loop) appears in only 20 common words; all other 'ai' words use ไ."
+    ],
+    "example_sentences": [
+      {
+        "thai": "เราจะไปกินข้าว",
+        "roman": "rao jà bpai gin kâao",
+        "english": "We will go eat rice.",
+        "target_word": "ไป"
+      },
+      {
+        "thai": "ตอนนี้เวลาเท่าไหร่",
+        "roman": "dtaawn-níi wee-laa tâo-rài",
+        "english": "What time is it right now?",
+        "target_word": "เวลา"
+      },
+      {
+        "thai": "คุณเข้าใจไหม",
+        "roman": "kun kâo-jai mǎi",
+        "english": "Do you understand?",
+        "target_word": "เข้าใจ"
+      }
+    ]
+  },
+  {
+    "lesson_number": 4,
+    "title": "Vertical Stacking",
+    "subtitle": "The Y-Axis Vowels & Cap Anatomy",
+    "target_phase": 3,
+    "summary": "Vertical vowels sit directly above (Y+1) or below (Y-1) the base consonant. On the keyboard, the consonant is typed FIRST, then the vertical vowel.",
+    "characters": [
+      {
+        "char": "ิ",
+        "name_thai": "สระ อิ",
+        "name_roman": "sara i",
+        "meaning": "Short 'i' cap",
+        "class": "Vowel",
+        "kedmanee_key": "B",
+        "sound_guide": "Short 'i' sound as in 'sit'. Sits on top of the consonant.",
+        "lookalike_warning": "Smooth curved cap with NO vertical stroke."
+      },
+      {
+        "char": "ี",
+        "name_thai": "สระ อี",
+        "name_roman": "sara ii",
+        "meaning": "Long 'ii' cap with stroke",
+        "class": "Vowel",
+        "kedmanee_key": "U",
+        "sound_guide": "Long 'ee' sound as in 'see'. Sits on top of the consonant.",
+        "lookalike_warning": "Curved cap WITH one vertical tick on the top right."
+      },
+      {
+        "char": "ึ",
+        "name_thai": "สระ อึ",
+        "name_roman": "sara ue",
+        "meaning": "Short 'ue' cap with loop",
+        "class": "Vowel",
+        "kedmanee_key": "7",
+        "sound_guide": "Guttural short 'ue' sound made with teeth closed and tongue pulled back.",
+        "lookalike_warning": "Curved cap with a small closed circular loop on the top right."
+      },
+      {
+        "char": "ุ",
+        "name_thai": "สระ อุ",
+        "name_roman": "sara u",
+        "meaning": "Short 'u' ribbon",
+        "class": "Vowel",
+        "kedmanee_key": "6",
+        "sound_guide": "Short 'u' sound as in 'put'. Sits underneath the consonant.",
+        "lookalike_warning": "Small ribbon loop hanging below the baseline."
+      },
+      {
+        "char": "ู",
+        "name_thai": "สระ อู",
+        "name_roman": "sara uu",
+        "meaning": "Long 'uu'",
+        "class": "Vowel",
+        "kedmanee_key": "Shift + 6",
+        "sound_guide": "Long 'oo' sound as in 'moon'. Sits underneath the consonant.",
+        "lookalike_warning": "Looks like a miniature บ underneath the letter. Lives on Shift+6."
+      }
+    ],
+    "key_takeaways": [
+      "Always type the base consonant first, then the cap or bottom vowel.",
+      "Cap markings: Plain = short i; 1 vertical tick = long ii; small loop = ue.",
+      "Bottom vowels: ุ is on key 6; ู is on Shift+6."
+    ],
+    "example_sentences": [
+      {
+        "thai": "วันนี้อากาศดีมาก",
+        "roman": "wan-níi aa-gàat dii mâak",
+        "english": "Today the weather is very good.",
+        "target_word": "ดี"
+      },
+      {
+        "thai": "ดูรูปถ่ายสวยๆ",
+        "roman": "duu rûup-tàai sǔay-sǔay",
+        "english": "Look at the beautiful photos.",
+        "target_word": "ดู"
+      },
+      {
+        "thai": "ตื่นนอนตอนเช้า",
+        "roman": "dtʉ̀ʉn nɔɔn dtaawn cháo",
+        "english": "Wake up in the morning.",
+        "target_word": "ตื่น"
+      }
+    ]
+  },
+  {
+    "lesson_number": 5,
+    "title": "The Tone Algebra Engine",
+    "subtitle": "Live vs. Dead Syllables & Natural Base Tones",
+    "target_phase": 4,
+    "summary": "Thai tones are computed mathematically: Consonant Class × Syllable Nature (Live or Dead) = Tone. You can know the exact tone before ever looking at a tone mark.",
+    "characters": [
+      {
+        "char": "ง",
+        "name_thai": "ง งู",
+        "name_roman": "ngor nguu",
+        "meaning": "Snake",
+        "class": "Low",
+        "kedmanee_key": "' (quote)",
+        "sound_guide": "Crisp 'ng' sound as in 'sing', even at the start of a word.",
+        "lookalike_warning": "Single diagonal slant with an inward loop."
+      },
+      {
+        "char": "น",
+        "name_thai": "น หนู",
+        "name_roman": "nor nǔu",
+        "meaning": "Mouse",
+        "class": "Low",
+        "kedmanee_key": "O",
+        "sound_guide": "Standard 'n' sound as in 'no'. Creates a Live syllable ending.",
+        "lookalike_warning": "Bottom loop sits on the right. Compare with ม where the loop is on the left!"
+      },
+      {
+        "char": "ม",
+        "name_thai": "ม ม้า",
+        "name_roman": "mor máa",
+        "meaning": "Horse",
+        "class": "Low",
+        "kedmanee_key": "M",
+        "sound_guide": "Standard 'm' sound as in 'mom'. Creates a Live syllable ending.",
+        "lookalike_warning": "Bottom loop sits on the left front."
+      }
+    ],
+    "key_takeaways": [
+      "Live Syllable (คำเป็น): Ends in long vowel or m/n/ng. Sound rings on. Mid class + Live = Mid Tone.",
+      "Dead Syllable (คำตาย): Ends in short vowel or abrupt p/t/k stop. Mid class + Dead = Low Tone automatically!",
+      "Example: บิน (bin) ends in 'n' (Live) -> Mid tone; ปิด (bpit) ends in 'd' (Dead stop) -> Low tone."
+    ],
+    "example_sentences": [
+      {
+        "thai": "ปิดไฟก่อนออกจากห้อง",
+        "roman": "bpit fai gɔ̀ɔn ɔ̀ɔk jàak hɔ̂ng",
+        "english": "Turn off the light before leaving the room.",
+        "target_word": "ปิด"
+      },
+      {
+        "thai": "นกบินอยู่บนท้องฟ้า",
+        "roman": "nók bin yùu bon tɔ́ɔng-fáa",
+        "english": "Birds are flying in the sky.",
+        "target_word": "บิน"
+      },
+      {
+        "thai": "มองดูดวงดาวตอนกลางคืน",
+        "roman": "mɔɔng duu duang-daao dtaawn glaang-kʉʉn",
+        "english": "Look at the stars during the night.",
+        "target_word": "มอง"
+      }
+    ]
+  },
+  {
+    "lesson_number": 6,
+    "title": "The Consonant Class War",
+    "subtitle": "High Class Rising Tones & Low Class Resonators",
+    "target_phase": 5,
+    "summary": "Thai consonants belong to three classes: Mid, High, and Low. High-class consonants naturally produce a Rising tone on live syllables without needing any tone mark!",
+    "characters": [
+      {
+        "char": "ข",
+        "name_thai": "ข ไข่",
+        "name_roman": "khor kài",
+        "meaning": "Egg",
+        "class": "High",
+        "kedmanee_key": "-",
+        "sound_guide": "Aspirated 'kh' sound with an inherent rising pitch in live syllables.",
+        "lookalike_warning": "Narrow body with a clean top loop. Look out for ช (which has a tail)!"
+      },
+      {
+        "char": "ส",
+        "name_thai": "ส เสือ",
+        "name_roman": "sor sʉ̌a",
+        "meaning": "Tiger",
+        "class": "High",
+        "kedmanee_key": "L",
+        "sound_guide": "Crisp 's' sound as in 'sun'. Inherent rising tone on open syllables.",
+        "lookalike_warning": "Identical to ล except ส has a small tail flicking off its top right corner!"
+      },
+      {
+        "char": "ห",
+        "name_thai": "ห หีบ",
+        "name_roman": "hor hìip",
+        "meaning": "Treasure Chest",
+        "class": "High",
+        "kedmanee_key": "S",
+        "sound_guide": "Standard 'h' sound. Also acts as a silent tone-shifter (ห นำ).",
+        "lookalike_warning": "Two loops: one at top-left, one at bottom-right."
+      },
+      {
+        "char": "ค",
+        "name_thai": "ค ควาย",
+        "name_roman": "khor khwaai",
+        "meaning": "Water Buffalo",
+        "class": "Low",
+        "kedmanee_key": "8",
+        "sound_guide": "Aspirated 'kh' sound. Low-class consonant with natural Mid tone on live syllables.",
+        "lookalike_warning": "Head loop opens outward to the right. Do not confuse with ด!"
+      }
+    ],
+    "key_takeaways": [
+      "High Class + Live Syllable = Rising Tone (e.g. ขา khaa = leg, สาม saam = three).",
+      "Low Class + Live Syllable = Mid Tone (e.g. คา khaa = stuck, มา maa = come).",
+      "Compare ส (tiger, with tail) vs ล (monkey, no tail)."
+    ],
+    "example_sentences": [
+      {
+        "thai": "สุนัขตัวนี้มีสี่ขา",
+        "roman": "sù-nák dtua níi mii sìi kǎa",
+        "english": "This dog has four legs.",
+        "target_word": "ขา"
+      },
+      {
+        "thai": "ขอข้าวสวยสองจาน",
+        "roman": "kɔ̌ɔ kâao-sǔay sɔ̌ɔng jaan",
+        "english": "May I have two plates of steamed rice?",
+        "target_word": "ขอ"
+      },
+      {
+        "thai": "คนนี้ทำงานเก่งมาก",
+        "roman": "kon níi tam-ngaan gèng mâak",
+        "english": "This person works very skillfully.",
+        "target_word": "คน"
+      }
+    ]
+  },
+  {
+    "lesson_number": 7,
+    "title": "The 3-Tier Cascade",
+    "subtitle": "Tone Marks & The Low-Class Multiplier",
+    "target_phase": 4,
+    "summary": "Mastering the strict 3-tier typing sequence: Base Consonant -> Top Vowel -> Tone Mark. Learn how Mai Ek and Mai Tho shift pitches depending on consonant class.",
+    "characters": [
+      {
+        "char": "่",
+        "name_thai": "ไม้เอก",
+        "name_roman": "mai ek",
+        "meaning": "Tone mark 1 (single vertical tick)",
+        "class": "Tone Mark",
+        "kedmanee_key": "H",
+        "sound_guide": "Makes Mid/High consonants Low tone; makes Low consonants Falling tone!",
+        "lookalike_warning": "Single vertical stroke stacked on Tier 3 (topmost layer)."
+      },
+      {
+        "char": "้",
+        "name_thai": "ไม้โท",
+        "name_roman": "mai tho",
+        "meaning": "Tone mark 2 (zigzag loop)",
+        "class": "Tone Mark",
+        "kedmanee_key": "J",
+        "sound_guide": "Makes Mid/High consonants Falling tone; makes Low consonants High tone!",
+        "lookalike_warning": "Curved zigzag mark stacked on Tier 3."
+      }
+    ],
+    "key_takeaways": [
+      "Typing Syntax Rule: If a word has both a top vowel and a tone mark, type: Consonant -> Vowel -> Tone Mark.",
+      "On Mid/High class: ไม้เอก (่) = Low Tone; ไม้โท (้) = Falling Tone (e.g. ป้า = Falling).",
+      "The Low-Class Shift: On Low class: ไม้เอก (่) = Falling; ไม้โท (้) = High Tone! (e.g. น้ำ nám = water, High tone)."
+    ],
+    "example_sentences": [
+      {
+        "thai": "พ่อและแม่รักเรามาก",
+        "roman": "pɔ̂ɔ láe mâe rák rao mâak",
+        "english": "Father and mother love us very much.",
+        "target_word": "พ่อ"
+      },
+      {
+        "thai": "ดื่มน้ำสะอาดทุกวัน",
+        "roman": "dʉ̀ʉm nám sà-àat túk wan",
+        "english": "Drink clean water every day.",
+        "target_word": "น้ำ"
+      },
+      {
+        "thai": "ที่นี่มีของกินอร่อย",
+        "roman": "tîi-nîi mii kɔ̌ɔng gin à-rɔ̀y",
+        "english": "There is delicious food here.",
+        "target_word": "ที่นี่"
+      }
+    ]
+  },
+  {
+    "lesson_number": 8,
+    "title": "The Chameleon Vowels",
+    "subtitle": "Invisible Zero-Vowels & Mai Han-Akat Mutations",
+    "target_phase": 5,
+    "summary": "Thai frequently conceals or mutates vowels. Two consonants with no vowel produce an implicit short 'o'. Adding a final consonant transforms short 'a' into Mai Han-Akat.",
+    "characters": [
+      {
+        "char": "ั",
+        "name_thai": "ไม้หันอากาศ",
+        "name_roman": "mai han-aakaat",
+        "meaning": "Short 'a' with final consonant",
+        "class": "Vowel",
+        "kedmanee_key": "Y",
+        "sound_guide": "Short 'a' sound as in 'cup' or 'run'. Sits above initial consonant.",
+        "lookalike_warning": "Single curved crescent above the letter. Replaces ะ when a final consonant is present."
+      },
+      {
+        "char": "ะ",
+        "name_thai": "สระ อะ",
+        "name_roman": "sara a",
+        "meaning": "Short 'a' open syllable",
+        "class": "Vowel",
+        "kedmanee_key": "T",
+        "sound_guide": "Short abrupt 'a' sound. Follows the consonant immediately.",
+        "lookalike_warning": "Two small stacked loops on the right side."
+      }
+    ],
+    "key_takeaways": [
+      "The Invisible Vowel: When you see คน (khon), ผม (phom), or นก (nok), type ONLY the two consonants! The short 'o' is automatic.",
+      "The Mai Han-Akat Transformation: Short 'a' + final consonant = ไม้หันอากาศ on top (e.g. วัน = ว + ั + น).",
+      "Vowel เ-อ changes to เ-ิ when a final consonant is attached (e.g. เดิน = dteon, to walk)."
+    ],
+    "example_sentences": [
+      {
+        "thai": "คนไทยใจดีและยิ้มเก่ง",
+        "roman": "kon tai jai-dii láe yím gèng",
+        "english": "Thai people are kind and smile easily.",
+        "target_word": "คน"
+      },
+      {
+        "thai": "วันนี้อากาศสดใสมาก",
+        "roman": "wan-níi aa-gàat sòt-sǎi mâak",
+        "english": "Today the weather is very bright and fresh.",
+        "target_word": "วันนี้"
+      },
+      {
+        "thai": "เดินเล่นที่สวนสาธารณะ",
+        "roman": "doen lén tîi sǔan sǎa-taa-rá-ná",
+        "english": "Take a walk at the public park.",
+        "target_word": "เดิน"
+      }
+    ]
+  },
+  {
+    "lesson_number": 9,
+    "title": "Clusters & The Silent Killer",
+    "subtitle": "Consonant Blends, Karan Mark & The Repetition Symbol",
+    "target_phase": 5,
+    "summary": "Learn how Thai combines consonant blends without vowels, uses the silent killer mark (Karan ์) for loanwords, and uses the repetition symbol (ๆ).",
+    "characters": [
+      {
+        "char": "์",
+        "name_thai": "ทัณฑฆาต (การันต์)",
+        "name_roman": "thanthakhat / karan",
+        "meaning": "Silent killer mark",
+        "class": "Diacritic",
+        "kedmanee_key": "Shift + N",
+        "sound_guide": "Completely mutes the letter underneath it. Never pronounced.",
+        "lookalike_warning": "A small swirling flourish sitting above the silent letter."
+      },
+      {
+        "char": "ๆ",
+        "name_thai": "ไม้ยมก",
+        "name_roman": "mai yamok",
+        "meaning": "Repetition symbol",
+        "class": "Symbol",
+        "kedmanee_key": "Q",
+        "sound_guide": "Repeats the preceding word to intensify it (e.g. เร็วๆ = very fast).",
+        "lookalike_warning": "Resembles the number 7 with a tail."
+      }
+    ],
+    "key_takeaways": [
+      "The Karan mark (์) cancels pronunciation of consonants imported from Pali, Sanskrit, or English (e.g. วันศุกร์ = wan suk, Friday).",
+      "Mai Yamok (ๆ) on key Q saves you from typing the same word twice.",
+      "True clusters (ปล-, กล-, ตร-, คว-) are typed sequentially with no space or vowel in between."
+    ],
+    "example_sentences": [
+      {
+        "thai": "วันศุกร์นี้เจอกันนะ",
+        "roman": "wan sùk níi jooe gan ná",
+        "english": "See you this Friday!",
+        "target_word": "วันศุกร์"
+      },
+      {
+        "thai": "พูดช้าๆ หน่อยครับ",
+        "roman": "pûut cháa-cháa nɔ̀y kráp",
+        "english": "Please speak a bit slowly.",
+        "target_word": "ช้าๆ"
+      },
+      {
+        "thai": "ขอบคุณมากๆ สำหรับความช่วยเหลือ",
+        "roman": "kɔ̀ɔp-kun mâak-mâak sǎm-ràp khwaam chûay-lʉ̌a",
+        "english": "Thank you very much for your help.",
+        "target_word": "มากๆ"
+      }
+    ]
+  },
+  {
+    "lesson_number": 10,
+    "title": "Blind Dictation & Fluent Touch Typing",
+    "subtitle": "From Cognitive Reading to Subconscious Muscle Memory",
+    "target_phase": 5,
+    "summary": "The capstone synthesis: Hearing spoken Thai sounds, decomposing phonemes mentally, and typing directly on the keyboard without visual hints.",
+    "characters": [
+      {
+        "char": "ร",
+        "name_thai": "ร เรือ",
+        "name_roman": "ror rʉa",
+        "meaning": "Boat",
+        "class": "Low",
+        "kedmanee_key": "I",
+        "sound_guide": "Tapped 'r' sound. When used as a final consonant, pronounced as an 'n'!",
+        "lookalike_warning": "Heads inward and arcs upward to the right."
+      },
+      {
+        "char": "ล",
+        "name_thai": "ล ลิง",
+        "name_roman": "lor ling",
+        "meaning": "Monkey",
+        "class": "Low",
+        "kedmanee_key": "]",
+        "sound_guide": "Clear 'l' sound. When used as a final consonant, also pronounced as an 'n'!",
+        "lookalike_warning": "No tail on top (compare with ส)."
+      }
+    ],
+    "key_takeaways": [
+      "Irregular Finals: Foreign and classical words ending in ร, ล, or ฬ are pronounced with an 'n' sound (e.g. อาหาร aa-haan = food; ผล pon = result).",
+      "The Mental Loop: Hear word -> Identify class & base tone -> Note pre-posed or vertical vowels -> Type with zero hesitation.",
+      "Turn Guided Mode OFF in Keyboard Practice to verify pure subconscious muscle memory."
+    ],
+    "example_sentences": [
+      {
+        "thai": "อาหารไทยจานนี้อร่อยมาก",
+        "roman": "aa-hǎan tai jaan níi à-rɔ̀y mâak",
+        "english": "This Thai dish is very delicious.",
+        "target_word": "อาหาร"
+      },
+      {
+        "thai": "สวัสดีครับ สบายดีไหมครับ",
+        "roman": "sà-wàt-dii kráp sà-baai dii mǎi kráp",
+        "english": "Hello, how are you doing?",
+        "target_word": "สวัสดี"
+      },
+      {
+        "thai": "ขอบคุณที่ตั้งใจเรียนภาษาไทย",
+        "roman": "kɔ̀ɔp-kun tîi dtâng-jai rian paa-sǎa tai",
+        "english": "Thank you for putting your heart into learning Thai!",
+        "target_word": "ภาษาไทย"
+      }
+    ]
+  }
+]

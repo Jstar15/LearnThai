@@ -69,6 +69,24 @@ object KedmaneeLayout {
         return if (raw.length == 1 && raw.first().isLetter()) raw.lowercase() else null
     }
 
+    // Returns true if the character is a combining Thai vowel, tone mark, or diacritic mark
+    fun isCombiningMark(char: Char): Boolean {
+        val code = char.code
+        // U+0E31: Mai Han-Akat
+        // U+0E34..U+0E3A: Sara I, Ii, Ue, Uee, U, Uu, Phinthu
+        // U+0E47..U+0E4E: Maitaikhu, Mai Ek, Mai Tho, Mai Tri, Mai Chattawa, Thanthakhat (Karan), Nikhahit, Yamakkan
+        return code == 0x0E31 || (code in 0x0E34..0x0E3A) || (code in 0x0E47..0x0E4E)
+    }
+
+    // Returns a display-safe string for standalone rendering on keyboard keys
+    fun getDisplayString(char: Char): String {
+        return if (isCombiningMark(char)) {
+            "\u25CC$char" // Prepend dotted circle placeholder so font engine renders the top/bottom mark
+        } else {
+            char.toString()
+        }
+    }
+
     // Quick lookup to find row index (0..3) for any character
     fun findCharPosition(char: Char): Pair<Int, Boolean>? {
         normalRows.forEachIndexed { rowIndex, row ->

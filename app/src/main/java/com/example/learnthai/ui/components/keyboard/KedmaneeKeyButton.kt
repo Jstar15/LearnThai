@@ -108,10 +108,11 @@ fun KedmaneeKeyButton(
             ),
         contentAlignment = Alignment.Center
     ) {
+        val displayText = remember(char) { KedmaneeLayout.getDisplayString(char) }
         Text(
-            text = char.toString(),
+            text = displayText,
             color = textColor,
-            fontSize = 18.sp,
+            fontSize = if (KedmaneeLayout.isCombiningMark(char)) 14.sp else 18.sp,
             fontWeight = if (isHighlighted) FontWeight.Bold else FontWeight.Medium
         )
     }
