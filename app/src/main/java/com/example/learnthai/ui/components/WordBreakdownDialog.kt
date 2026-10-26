@@ -42,7 +42,8 @@ import com.example.learnthai.domain.tone.ToneRuleEvaluator
 fun WordBreakdownDialog(
     word: WordEntity,
     onDismiss: () -> Unit,
-    onPlayAudio: (Float) -> Unit
+    onPlayAudio: (Float) -> Unit,
+    onPlaySentence: ((String) -> Unit)? = null
 ) {
     val toneAnalysis = ToneRuleEvaluator.analyzeWord(word.thaiWord, word.consonantClass)
 
@@ -141,12 +142,41 @@ fun WordBreakdownDialog(
                     fontWeight = FontWeight.SemiBold,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
-                Text(
-                    text = word.contextualExample,
-                    fontSize = 13.sp,
-                    color = MaterialTheme.colorScheme.onSurface,
-                    modifier = Modifier.padding(top = 2.dp)
-                )
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 2.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    val thaiSentence = if (word.contextualExample.contains("(")) {
+                        word.contextualExample.substringBefore("(").trim()
+                    } else {
+                        word.contextualExample.trim()
+                    }
+
+                    Text(
+                        text = word.contextualExample,
+                        fontSize = 13.sp,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.weight(1f)
+                    )
+
+                    if (thaiSentence.isNotEmpty() && onPlaySentence != null) {
+                        IconButton(
+                            onClick = { onPlaySentence(thaiSentence) },
+                            modifier = Modifier
+                                .size(34.dp)
+                                .padding(start = 4.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Filled.VolumeUp,
+                                contentDescription = "Play Example Sentence",
+                                tint = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier.size(18.dp)
+                            )
+                        }
+                    }
+                }
 
                 Spacer(modifier = Modifier.height(16.dp))
 

@@ -619,7 +619,8 @@ fun SpeechLabScreen(
             WordBreakdownDialog(
                 word = word,
                 onDismiss = { showBreakdownDialog = null },
-                onPlayAudio = { rate -> ttsManager.speak(word.thaiWord, rate) }
+                onPlayAudio = { rate -> ttsManager.speak(word.thaiWord, rate) },
+                onPlaySentence = { sentence -> ttsManager.speak(sentence, 0.85f) }
             )
         }
     }
