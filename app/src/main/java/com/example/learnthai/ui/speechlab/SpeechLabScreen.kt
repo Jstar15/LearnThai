@@ -51,6 +51,7 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -96,8 +97,11 @@ fun SpeechLabScreen(
     val scope = rememberCoroutineScope()
 
     var selectedPhase by remember { mutableIntStateOf(1) }
-    val wordsState = wordRepository.getWordsByPhase(selectedPhase).collectAsState(initial = emptyList())
-    val words = wordsState.value
+    val rawWordsState = wordRepository.getWordsByPhase(selectedPhase).collectAsState(initial = emptyList())
+    val rawWords = rawWordsState.value
+
+    var sessionWords by remember { mutableStateOf<List<WordEntity>>(emptyList()) }
+    var sessionPhase by remember { mutableIntStateOf(selectedPhase) }
 
     var currentIndex by remember { mutableIntStateOf(0) }
     var stage by remember { mutableStateOf(Stage.IDLE) }
@@ -111,14 +115,6 @@ fun SpeechLabScreen(
     var isPreparingPitch by remember { mutableStateOf(false) }
     var pitchError by remember { mutableStateOf<String?>(null) }
     var cancelled by remember { mutableStateOf(false) }
-
-    val currentWord = if (words.isNotEmpty() && currentIndex in words.indices) {
-        words[currentIndex]
-    } else {
-        words.firstOrNull()
-    }
-    val currentWordRef = rememberUpdatedState(currentWord)
-    val stageRef = rememberUpdatedState(stage)
 
     var speechRecognizer by remember { mutableStateOf<SpeechRecognizer?>(null) }
 
@@ -135,6 +131,28 @@ fun SpeechLabScreen(
         cancelled = false
         stage = Stage.IDLE
     }
+
+    // Randomize session words per phase, matching Keyboard Practice
+    LaunchedEffect(rawWords, selectedPhase) {
+        if (rawWords.isNotEmpty()) {
+            val phaseChanged = selectedPhase != sessionPhase
+            val needsInit = sessionWords.isEmpty()
+            if (needsInit || phaseChanged) {
+                sessionPhase = selectedPhase
+                sessionWords = rawWords.shuffled()
+                currentIndex = 0
+                resetWord()
+            }
+        }
+    }
+
+    val currentWord = if (sessionWords.isNotEmpty() && currentIndex in sessionWords.indices) {
+        sessionWords[currentIndex]
+    } else {
+        sessionWords.firstOrNull()
+    }
+    val currentWordRef = rememberUpdatedState(currentWord)
+    val stageRef = rememberUpdatedState(stage)
 
     fun finishTranscription() {
         stage = Stage.IDLE
@@ -348,12 +366,22 @@ fun SpeechLabScreen(
                                 Icon(Icons.AutoMirrored.Filled.VolumeUp, contentDescription = "Play Native", tint = MaterialTheme.colorScheme.primary)
                             }
 
-                            Text(
-                                text = currentWord.englishTranslation,
-                                fontSize = 18.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colorScheme.onSurface
-                            )
+                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                Text(
+                                    text = currentWord.englishTranslation,
+                                    fontSize = 18.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colorScheme.onSurface
+                                )
+                                if (sessionWords.isNotEmpty()) {
+                                    Text(
+                                        text = "${currentIndex + 1} / ${sessionWords.size}",
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.Medium,
+                                        color = MaterialTheme.colorScheme.primary
+                                    )
+                                }
+                            }
 
                             IconButton(onClick = { showBreakdownDialog = currentWord }) {
                                 Icon(Icons.Default.Info, contentDescription = "Breakdown", tint = MaterialTheme.colorScheme.secondary)
@@ -604,7 +632,12 @@ fun SpeechLabScreen(
                 Button(
                     onClick = {
                         resetWord()
-                        if (currentIndex < words.size - 1) currentIndex++ else currentIndex = 0
+                        if (currentIndex < sessionWords.size - 1) {
+                            currentIndex++
+                        } else {
+                            sessionWords = sessionWords.shuffled()
+                            currentIndex = 0
+                        }
                     },
                     modifier = Modifier.weight(1f)
                 ) {
