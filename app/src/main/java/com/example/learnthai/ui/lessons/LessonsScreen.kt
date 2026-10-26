@@ -44,6 +44,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -51,6 +52,7 @@ import com.example.learnthai.audio.TtsManager
 import com.example.learnthai.data.model.LessonCharacter
 import com.example.learnthai.data.model.LessonItem
 import com.example.learnthai.data.model.LessonSentence
+import com.example.learnthai.data.model.LessonVideo
 import com.example.learnthai.data.repository.LessonRepository
 import com.example.learnthai.ui.components.keyboard.KedmaneeLayout
 
@@ -115,6 +117,7 @@ private fun LessonCard(
     ttsManager: TtsManager,
     onStartPractice: () -> Unit
 ) {
+    val uriHandler = LocalUriHandler.current
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -221,69 +224,93 @@ private fun LessonCard(
                     Spacer(modifier = Modifier.height(12.dp))
 
                     // Characters Deep Dive Section
-                    Text(
-                        text = "Characters Taught in This Lesson",
-                        fontSize = 13.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(bottom = 6.dp)
-                    )
+                    if (lesson.characters.isNotEmpty()) {
+                        Text(
+                            text = "Characters Taught in This Lesson",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.padding(bottom = 6.dp)
+                        )
 
-                    lesson.characters.forEach { charItem ->
-                        CharacterRowItem(charItem = charItem, ttsManager = ttsManager)
-                        Spacer(modifier = Modifier.height(6.dp))
+                        lesson.characters.forEach { charItem ->
+                            CharacterRowItem(charItem = charItem, ttsManager = ttsManager)
+                            Spacer(modifier = Modifier.height(6.dp))
+                        }
+
+                        Spacer(modifier = Modifier.height(10.dp))
                     }
-
-                    Spacer(modifier = Modifier.height(10.dp))
 
                     // Key Takeaways Section
-                    Text(
-                        text = "Rule & Phonics Checklist",
-                        fontSize = 13.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(bottom = 6.dp)
-                    )
+                    if (lesson.keyTakeaways.isNotEmpty()) {
+                        Text(
+                            text = "Rule & Phonics Checklist",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.padding(bottom = 6.dp)
+                        )
 
-                    lesson.keyTakeaways.forEach { takeaway ->
-                        Row(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(vertical = 2.dp),
-                            verticalAlignment = Alignment.Top
-                        ) {
-                            Text(
-                                text = "• ",
-                                fontSize = 13.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colorScheme.primary
-                            )
-                            Text(
-                                text = takeaway,
-                                fontSize = 12.sp,
-                                lineHeight = 16.sp,
-                                color = MaterialTheme.colorScheme.onSurface
-                            )
+                        lesson.keyTakeaways.forEach { takeaway ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 2.dp),
+                                verticalAlignment = Alignment.Top
+                            ) {
+                                Text(
+                                    text = "• ",
+                                    fontSize = 13.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colorScheme.primary
+                                )
+                                Text(
+                                    text = takeaway,
+                                    fontSize = 12.sp,
+                                    lineHeight = 16.sp,
+                                    color = MaterialTheme.colorScheme.onSurface
+                                )
+                            }
                         }
-                    }
 
-                    Spacer(modifier = Modifier.height(10.dp))
+                        Spacer(modifier = Modifier.height(10.dp))
+                    }
 
                     // Example Sentences with Audio Section
-                    Text(
-                        text = "Interactive Example Sentences",
-                        fontSize = 13.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(bottom = 6.dp)
-                    )
+                    if (lesson.exampleSentences.isNotEmpty()) {
+                        Text(
+                            text = "Interactive Example Sentences",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.padding(bottom = 6.dp)
+                        )
 
-                    lesson.exampleSentences.forEach { sentence ->
-                        SentenceAudioCard(sentence = sentence, ttsManager = ttsManager)
-                        Spacer(modifier = Modifier.height(6.dp))
+                        lesson.exampleSentences.forEach { sentence ->
+                            SentenceAudioCard(sentence = sentence, ttsManager = ttsManager)
+                            Spacer(modifier = Modifier.height(6.dp))
+                        }
+
+                        Spacer(modifier = Modifier.height(12.dp))
                     }
 
-                    Spacer(modifier = Modifier.height(12.dp))
+                    // YouTube Video Resources
+                    if (lesson.videos.isNotEmpty()) {
+                        Text(
+                            text = "🎥 Watch & Learn (YouTube)",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.padding(bottom = 6.dp)
+                        )
+
+                        lesson.videos.forEach { video ->
+                            VideoLinkRow(video = video, onClick = { uriHandler.openUri(video.url) })
+                            Spacer(modifier = Modifier.height(6.dp))
+                        }
+
+                        Spacer(modifier = Modifier.height(12.dp))
+                    }
 
                     // Launch Practice on Keyboard Button
                     Button(
@@ -487,6 +514,41 @@ private fun SentenceAudioCard(
                     Text("0.7x", fontSize = 10.sp, fontWeight = FontWeight.Bold)
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun VideoLinkRow(
+    video: LessonVideo,
+    onClick: () -> Unit
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() },
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        shape = RoundedCornerShape(10.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(10.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                Icons.Default.PlayArrow,
+                contentDescription = "Play video",
+                tint = Color(0xFFC62828),
+                modifier = Modifier.size(20.dp)
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(
+                text = video.title,
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Medium,
+                color = MaterialTheme.colorScheme.onSurface
+            )
         }
     }
 }

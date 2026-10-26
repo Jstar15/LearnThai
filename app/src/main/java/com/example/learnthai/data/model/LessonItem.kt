@@ -10,7 +10,13 @@ data class LessonItem(
     @SerializedName("summary") val summary: String,
     @SerializedName("characters") val characters: List<LessonCharacter>,
     @SerializedName("key_takeaways") val keyTakeaways: List<String>,
-    @SerializedName("example_sentences") val exampleSentences: List<LessonSentence>
+    @SerializedName("example_sentences") val exampleSentences: List<LessonSentence>,
+    @SerializedName("videos") val videos: List<LessonVideo> = emptyList()
+)
+
+data class LessonVideo(
+    @SerializedName("title") val title: String,
+    @SerializedName("url") val url: String
 )
 
 data class LessonCharacter(

@@ -1,10 +1,37 @@
 [
   {
+    "lesson_number": 0,
+    "title": "Start Here: What Is Thai?",
+    "subtitle": "The absolute basics before any letters",
+    "target_phase": 1,
+    "summary": "Thai is spoken by about 70 million people and written with its own alphabet (not A-Z). It is a tonal language: the pitch of your voice changes a word's meaning. Before learning individual letters, this lesson gives you the big picture so everything later makes sense.",
+    "characters": [],
+    "key_takeaways": [
+      "Thai uses its own alphabet - not the English letters.",
+      "Thai is tonal: the same basic sound said at a different pitch can mean a different word.",
+      "There are 5 tones: mid, low, falling, high, and rising.",
+      "Thai words run together with no spaces - you learn to find the breaks by feel.",
+      "The Thai keyboard (Kedmanee) has 44 consonants plus vowels and tone marks.",
+      "You do not need to memorise everything now - this app teaches it a little at a time."
+    ],
+    "example_sentences": [],
+    "videos": [
+      {
+        "title": "Video: Learn Thai for beginners",
+        "url": "https://www.youtube.com/results?search_query=learn+thai+for+beginners"
+      },
+      {
+        "title": "Video: Thai tones explained",
+        "url": "https://www.youtube.com/results?search_query=thai+tones+explained"
+      }
+    ]
+  },
+  {
     "lesson_number": 1,
     "title": "The Zero-Point Canvas",
     "subtitle": "Linear Left-to-Right Anchors & Unaspirated Stops",
     "target_phase": 1,
-    "summary": "Thai is written left-to-right without spaces between words. Mid-class consonants with long open vowels default to a natural Mid tone without tone marks.",
+    "summary": "Your first letters make simple left-to-right sounds. A consonant plus a long vowel like า makes a steady, neutral (mid) tone. You type these letters in the same order you read them, like English.",
     "characters": [
       {
         "char": "ก",
@@ -48,9 +75,11 @@
       }
     ],
     "key_takeaways": [
-      "Thai has no spaces between words in a clause.",
-      "ก is Mid-class and unaspirated: keep your vocal cords relaxed with no burst of air.",
-      "Consonant + า forms a natural, neutral Mid Tone."
+      "Thai is written left to right, just like English.",
+      "ก sounds like a soft 'g/k' with no puff of air (like the 'k' in 'skill').",
+      "อ is a silent holder for vowel sounds (and can also be the 'aw' vowel).",
+      "จ sounds like a crisp 'j' (like the 'j' in 'jeep').",
+      "า is a long 'aa' sound and goes AFTER the consonant (กา = 'gaa')."
     ],
     "example_sentences": [
       {
@@ -71,6 +100,16 @@
         "english": "The teacher teaches well.",
         "target_word": "อาจารย์"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai consonants for beginners",
+        "url": "https://www.youtube.com/results?search_query=thai+consonants+for+beginners"
+      },
+      {
+        "title": "Video: The Thai vowel า",
+        "url": "https://www.youtube.com/results?search_query=thai+vowel+aa"
+      }
     ]
   },
   {
@@ -78,7 +117,7 @@
     "title": "Anatomy of the Head-Loop",
     "subtitle": "The Lookalike Code & Visual Anchors",
     "target_phase": 1,
-    "summary": "The circular head-loop (หัว) is the single most critical feature of Thai letters. Master head loops to distinguish lookalikes immediately.",
+    "summary": "Some Thai letters look almost identical. The trick is the little loop at the top: ด has a smooth rounded top, while ต has a small dent. Similarly, บ and ป have the same body but different tail heights. Slow down and compare the tops.",
     "characters": [
       {
         "char": "ด",
@@ -122,9 +161,10 @@
       }
     ],
     "key_takeaways": [
-      "ด (smooth crown) vs ต (dented crown) — look closely at the very top of the letter.",
-      "บ (short tail) vs ป (tall tail) — height difference determines 'b' vs 'bp'.",
-      "Both ด and ต are Mid-class consonants."
+      "ด ('d', like 'dog') has a smooth, rounded top.",
+      "ต ('dt', like 'stop') looks like ด but has a tiny dent or notch on top.",
+      "บ ('b', like 'boy') and ป ('bp', like 'spin') share a body - ป's tail shoots up higher.",
+      "When two letters look the same, compare the very top first."
     ],
     "example_sentences": [
       {
@@ -145,6 +185,16 @@
         "english": "The child eats clear soup.",
         "target_word": "เด็ก"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai lookalike consonants",
+        "url": "https://www.youtube.com/results?search_query=thai+consonants+lookalike"
+      },
+      {
+        "title": "Video: Thai letters ด ต บ ป",
+        "url": "https://www.youtube.com/results?search_query=thai+letters+da+ta+ba+pa"
+      }
     ]
   },
   {
@@ -152,7 +202,7 @@
     "title": "The Left-Shift Shock",
     "subtitle": "Pre-posed Vowels & Temporal Typing Paradox",
     "target_phase": 2,
-    "summary": "Pre-posed vowels sit to the left of the consonant. Although pronounced after the consonant in speech, on the keyboard you MUST type the vowel first!",
+    "summary": "Some Thai vowels are written to the LEFT of the consonant, but you say them AFTER it. For example, ไป is 'bpai' - the ใ (ai) comes first in writing but last in speech. On the keyboard you must type the vowel first, then the consonant.",
     "characters": [
       {
         "char": "เ",
@@ -206,9 +256,11 @@
       }
     ],
     "key_takeaways": [
-      "Typing paradox: If you say 'bpai' (ไป), your fingers must press ไ (w) then ป (x).",
-      "Do NOT type two เ to make แ; always press the dedicated แ key (c).",
-      "ใ (curled loop) appears in only 20 common words; all other 'ai' words use ไ."
+      "Left-side vowels (เ แ โ ใ ไ) sit before the consonant but are said after it.",
+      "To type ไป, press ไ first, then ป.",
+      "แ has its own key - never type two เ to make it.",
+      "ไ and ใ sound the same 'ai'; ใ is used in only about 20 special words.",
+      "Type in the same order you see: vowel first, then consonant."
     ],
     "example_sentences": [
       {
@@ -229,6 +281,16 @@
         "english": "Do you understand?",
         "target_word": "เข้าใจ"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai leading vowels",
+        "url": "https://www.youtube.com/results?search_query=thai+leading+vowels"
+      },
+      {
+        "title": "Video: Thai vowels explained",
+        "url": "https://www.youtube.com/results?search_query=thai+vowels+explained"
+      }
     ]
   },
   {
@@ -236,7 +298,7 @@
     "title": "Vertical Stacking",
     "subtitle": "The Y-Axis Vowels & Cap Anatomy",
     "target_phase": 3,
-    "summary": "Vertical vowels sit directly above (Y+1) or below (Y-1) the base consonant. On the keyboard, the consonant is typed FIRST, then the vertical vowel.",
+    "summary": "Thai vowels can sit above (ิ ี ึ) or below (ุ ู) the consonant. You type the consonant first, then add the vowel on top or bottom. The marks look similar - the difference is a tiny tick or loop on top.",
     "characters": [
       {
         "char": "ิ",
@@ -290,9 +352,11 @@
       }
     ],
     "key_takeaways": [
-      "Always type the base consonant first, then the cap or bottom vowel.",
-      "Cap markings: Plain = short i; 1 vertical tick = long ii; small loop = ue.",
-      "Bottom vowels: ุ is on key 6; ู is on Shift+6."
+      "Top vowels: ิ (short i), ี (long ee), ึ (short ue).",
+      "Bottom vowels: ุ (short u), ู (long oo).",
+      "Type the consonant first, then the vowel (ด + ี = ดี).",
+      "Look for the small tick (long ee) or loop (ue) on top.",
+      "Bottom vowels hang under the letter (ดู = d + oo)."
     ],
     "example_sentences": [
       {
@@ -313,6 +377,16 @@
         "english": "Wake up in the morning.",
         "target_word": "ตื่น"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai vowels above and below",
+        "url": "https://www.youtube.com/results?search_query=thai+upper+lower+vowels"
+      },
+      {
+        "title": "Video: Thai vowel marks",
+        "url": "https://www.youtube.com/results?search_query=thai+vowel+marks"
+      }
     ]
   },
   {
@@ -320,7 +394,7 @@
     "title": "The Tone Algebra Engine",
     "subtitle": "Live vs. Dead Syllables & Natural Base Tones",
     "target_phase": 4,
-    "summary": "Thai tones are computed mathematically: Consonant Class × Syllable Nature (Live or Dead) = Tone. You can know the exact tone before ever looking at a tone mark.",
+    "summary": "Thai tones depend partly on whether a syllable is 'live' (it keeps ringing - ends in a long vowel or in m/n/ng) or 'dead' (it stops short - ends in a p/t/k sound). For mid-class letters: live = mid tone, dead = low tone. You can often predict the tone before seeing any tone mark.",
     "characters": [
       {
         "char": "ง",
@@ -354,9 +428,11 @@
       }
     ],
     "key_takeaways": [
-      "Live Syllable (คำเป็น): Ends in long vowel or m/n/ng. Sound rings on. Mid class + Live = Mid Tone.",
-      "Dead Syllable (คำตาย): Ends in short vowel or abrupt p/t/k stop. Mid class + Dead = Low Tone automatically!",
-      "Example: บิน (bin) ends in 'n' (Live) -> Mid tone; ปิด (bpit) ends in 'd' (Dead stop) -> Low tone."
+      "A 'live' syllable ends in a long vowel or m/n/ng - the sound continues.",
+      "A 'dead' syllable ends in a short vowel or a p/t/k stop - it cuts off.",
+      "Mid-class letter + live = mid tone (e.g. บิน = bin).",
+      "Mid-class letter + dead = low tone (e.g. ปิด = bpit).",
+      "You can often predict the tone just from how the syllable ends."
     ],
     "example_sentences": [
       {
@@ -377,6 +453,16 @@
         "english": "Look at the stars during the night.",
         "target_word": "มอง"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai live and dead syllables",
+        "url": "https://www.youtube.com/results?search_query=thai+live+dead+syllables"
+      },
+      {
+        "title": "Video: Thai tones explained",
+        "url": "https://www.youtube.com/results?search_query=thai+tones+explained"
+      }
     ]
   },
   {
@@ -384,7 +470,7 @@
     "title": "The Consonant Class War",
     "subtitle": "High Class Rising Tones & Low Class Resonators",
     "target_phase": 5,
-    "summary": "Thai consonants belong to three classes: Mid, High, and Low. High-class consonants naturally produce a Rising tone on live syllables without needing any tone mark!",
+    "summary": "Thai consonants come in three 'classes': mid, high, and low. The class changes the tone. High-class letters on an open syllable naturally rise (e.g. ขา = rising). Low-class letters stay mid (e.g. คา = mid). A letter's class matters as much as its sound.",
     "characters": [
       {
         "char": "ข",
@@ -428,9 +514,11 @@
       }
     ],
     "key_takeaways": [
-      "High Class + Live Syllable = Rising Tone (e.g. ขา khaa = leg, สาม saam = three).",
-      "Low Class + Live Syllable = Mid Tone (e.g. คา khaa = stuck, มา maa = come).",
-      "Compare ส (tiger, with tail) vs ล (monkey, no tail)."
+      "Every consonant is one of three classes: mid, high, or low.",
+      "High class + live syllable = rising tone (ขา = rising).",
+      "Low class + live syllable = mid tone (คา = mid).",
+      "ส has a tiny tail on top; ล has none - the easy way to tell them apart.",
+      "Class is about tone, not sound - two letters can sound the same but act differently."
     ],
     "example_sentences": [
       {
@@ -451,6 +539,16 @@
         "english": "This person works very skillfully.",
         "target_word": "คน"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai consonant classes",
+        "url": "https://www.youtube.com/results?search_query=thai+consonant+classes"
+      },
+      {
+        "title": "Video: Thai high, mid and low class",
+        "url": "https://www.youtube.com/results?search_query=thai+high+low+mid+class"
+      }
     ]
   },
   {
@@ -458,7 +556,7 @@
     "title": "The 3-Tier Cascade",
     "subtitle": "Tone Marks & The Low-Class Multiplier",
     "target_phase": 4,
-    "summary": "Mastering the strict 3-tier typing sequence: Base Consonant -> Top Vowel -> Tone Mark. Learn how Mai Ek and Mai Tho shift pitches depending on consonant class.",
+    "summary": "Two little marks change the tone: ่ (mai ek) and ้ (mai tho). Their effect depends on the consonant class. On mid/high letters, ่ = low tone and ้ = falling tone. On low letters, ่ = falling and ้ = high. Type them in order: consonant, then vowel, then tone mark.",
     "characters": [
       {
         "char": "่",
@@ -482,9 +580,11 @@
       }
     ],
     "key_takeaways": [
-      "Typing Syntax Rule: If a word has both a top vowel and a tone mark, type: Consonant -> Vowel -> Tone Mark.",
-      "On Mid/High class: ไม้เอก (่) = Low Tone; ไม้โท (้) = Falling Tone (e.g. ป้า = Falling).",
-      "The Low-Class Shift: On Low class: ไม้เอก (่) = Falling; ไม้โท (้) = High Tone! (e.g. น้ำ nám = water, High tone)."
+      "Tone marks sit on the top layer, above the consonant and vowel.",
+      "Mid/high class + ่ = low tone; + ้ = falling tone.",
+      "Low class + ่ = falling tone; + ้ = high tone.",
+      "Type in order: consonant, then vowel, then tone mark (ที่ = ท + ี + ่).",
+      "The consonant class decides what a tone mark does."
     ],
     "example_sentences": [
       {
@@ -505,6 +605,16 @@
         "english": "There is delicious food here.",
         "target_word": "ที่นี่"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai tone marks (mai ek, mai tho)",
+        "url": "https://www.youtube.com/results?search_query=thai+tone+marks"
+      },
+      {
+        "title": "Video: Thai tone rules",
+        "url": "https://www.youtube.com/results?search_query=thai+tone+rules"
+      }
     ]
   },
   {
@@ -512,7 +622,7 @@
     "title": "The Chameleon Vowels",
     "subtitle": "Invisible Zero-Vowels & Mai Han-Akat Mutations",
     "target_phase": 5,
-    "summary": "Thai frequently conceals or mutates vowels. Two consonants with no vowel produce an implicit short 'o'. Adding a final consonant transforms short 'a' into Mai Han-Akat.",
+    "summary": "Thai sometimes hides a vowel or changes its shape. Two consonants with no vowel make a short 'o' (คน = khon). A short 'a' turns into a small mark (ั) when a final consonant comes (วัน = wan). And the vowel เ-อ becomes เ-ิ with a final consonant (เดิน = doen).",
     "characters": [
       {
         "char": "ั",
@@ -536,9 +646,11 @@
       }
     ],
     "key_takeaways": [
-      "The Invisible Vowel: When you see คน (khon), ผม (phom), or นก (nok), type ONLY the two consonants! The short 'o' is automatic.",
-      "The Mai Han-Akat Transformation: Short 'a' + final consonant = ไม้หันอากาศ on top (e.g. วัน = ว + ั + น).",
-      "Vowel เ-อ changes to เ-ิ when a final consonant is attached (e.g. เดิน = dteon, to walk)."
+      "Two consonants with no vowel = a hidden short 'o' (คน, นก).",
+      "Short 'a' + final consonant = ั on top (วัน = ว + ั + น).",
+      "The vowel เ-อ turns into เ-ิ when a final consonant is added (เดิน).",
+      "If you cannot find a vowel key, the vowel may be invisible - just type the consonants.",
+      "Listen for the vowel; the spelling may hide it."
     ],
     "example_sentences": [
       {
@@ -559,6 +671,16 @@
         "english": "Take a walk at the public park.",
         "target_word": "เดิน"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai hidden vowels",
+        "url": "https://www.youtube.com/results?search_query=thai+hidden+vowels"
+      },
+      {
+        "title": "Video: Thai mai han akat",
+        "url": "https://www.youtube.com/results?search_query=thai+mai+han+akat"
+      }
     ]
   },
   {
@@ -566,7 +688,7 @@
     "title": "Clusters & The Silent Killer",
     "subtitle": "Consonant Blends, Karan Mark & The Repetition Symbol",
     "target_phase": 5,
-    "summary": "Learn how Thai combines consonant blends without vowels, uses the silent killer mark (Karan ์) for loanwords, and uses the repetition symbol (ๆ).",
+    "summary": "Thai can put two consonants together with no vowel (a blend, like ปล- in ปลา). It also has a silent mark ์ that kills a letter's sound (วันศุกร์ = wan suk). And ๆ repeats the word before it (เร็วๆ = very fast).",
     "characters": [
       {
         "char": "์",
@@ -590,9 +712,11 @@
       }
     ],
     "key_takeaways": [
-      "The Karan mark (์) cancels pronunciation of consonants imported from Pali, Sanskrit, or English (e.g. วันศุกร์ = wan suk, Friday).",
-      "Mai Yamok (ๆ) on key Q saves you from typing the same word twice.",
-      "True clusters (ปล-, กล-, ตร-, คว-) are typed sequentially with no space or vowel in between."
+      "Blends: two consonants typed back-to-back with no vowel (ปลา = bplaa).",
+      "The ์ (karan) mark makes the letter under it silent (วันศุกร์).",
+      "ๆ repeats the previous word to intensify it (ช้าๆ = slowly).",
+      "Blend letters are typed in order, with no space (ป + ล + า).",
+      "Look for ์ when a letter seems to disappear."
     ],
     "example_sentences": [
       {
@@ -613,6 +737,16 @@
         "english": "Thank you very much for your help.",
         "target_word": "มากๆ"
       }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai consonant clusters",
+        "url": "https://www.youtube.com/results?search_query=thai+consonant+clusters"
+      },
+      {
+        "title": "Video: Thai silent mark (karan)",
+        "url": "https://www.youtube.com/results?search_query=thai+silent+mark+karan"
+      }
     ]
   },
   {
@@ -620,7 +754,7 @@
     "title": "Blind Dictation & Fluent Touch Typing",
     "subtitle": "From Cognitive Reading to Subconscious Muscle Memory",
     "target_phase": 5,
-    "summary": "The capstone synthesis: Hearing spoken Thai sounds, decomposing phonemes mentally, and typing directly on the keyboard without visual hints.",
+    "summary": "The final step: hear a Thai word, work out its sounds, class and vowels in your head, and type it without hints. This is the skill you have been building - now without the training wheels.",
     "characters": [
       {
         "char": "ร",
@@ -644,9 +778,11 @@
       }
     ],
     "key_takeaways": [
-      "Irregular Finals: Foreign and classical words ending in ร, ล, or ฬ are pronounced with an 'n' sound (e.g. อาหาร aa-haan = food; ผล pon = result).",
-      "The Mental Loop: Hear word -> Identify class & base tone -> Note pre-posed or vertical vowels -> Type with zero hesitation.",
-      "Turn Guided Mode OFF in Keyboard Practice to verify pure subconscious muscle memory."
+      "Hear -> identify the sounds -> check class and vowels -> type.",
+      "Final letters ร and ล can sound like 'n' (อาหาร = aa-haan).",
+      "Turn off guided hints in Keyboard Practice and test yourself.",
+      "Speed comes from repetition, not from thinking harder.",
+      "When you make a mistake, the app shows the key - use it to learn."
     ],
     "example_sentences": [
       {
@@ -666,6 +802,16 @@
         "roman": "kɔ̀ɔp-kun tîi dtâng-jai rian paa-sǎa tai",
         "english": "Thank you for putting your heart into learning Thai!",
         "target_word": "ภาษาไทย"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Video: Thai typing practice",
+        "url": "https://www.youtube.com/results?search_query=thai+typing+practice"
+      },
+      {
+        "title": "Video: Learn Thai by ear",
+        "url": "https://www.youtube.com/results?search_query=learn+thai+by+ear"
       }
     ]
   }

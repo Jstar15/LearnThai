@@ -8,6 +8,8 @@ import android.media.MediaRecorder
 import android.os.Process
 import java.io.File
 import java.io.IOException
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
 import java.util.concurrent.atomic.AtomicBoolean
 
 /**
@@ -128,6 +130,16 @@ class AudioRecorderManager(private val context: Context) {
         val shorts = pcmShorts ?: return null
         if (shorts.isEmpty()) return null
         return FloatArray(shorts.size) { shorts[it] / 32768f }
+    }
+
+    /** Returns the raw 16-bit little-endian PCM bytes of the last recording. */
+    fun getPcmBytes(): ByteArray? {
+        val shorts = pcmShorts ?: return null
+        if (shorts.isEmpty()) return null
+        val bytes = ByteArray(shorts.size * 2)
+        val bb = ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN)
+        for (s in shorts) bb.putShort(s)
+        return bytes
     }
 
     fun getRecordingDurationMs(): Float {

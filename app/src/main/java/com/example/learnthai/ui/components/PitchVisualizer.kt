@@ -112,10 +112,9 @@ private fun PitchCanvas(
     Canvas(modifier = modifier) {
         if (user.isEmpty() && reference.isEmpty()) return@Canvas
 
-        // Fixed y-range so the visual gap matches the real semitone difference
-        // (auto-scaling made "close" and "far" look the same).
-        val minSt = -5f
-        val maxSt = 5f
+        // Fixed y-range so the visual gap matches the real semitone difference.
+        val minSt = -4f
+        val maxSt = 4f
 
         fun y(st: Float) = size.height * (1f - (st - minSt) / (maxSt - minSt))
         fun x(f: Float) = size.width * f.coerceIn(0f, 1f)
