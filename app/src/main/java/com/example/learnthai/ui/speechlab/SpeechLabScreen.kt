@@ -134,10 +134,10 @@ fun SpeechLabScreen(
 
     // Randomize session words per phase, matching Keyboard Practice
     LaunchedEffect(rawWords, selectedPhase) {
-        if (rawWords.isNotEmpty()) {
+        if (rawWords.isNotEmpty() && rawWords.firstOrNull()?.phase == selectedPhase) {
             val phaseChanged = selectedPhase != sessionPhase
-            val needsInit = sessionWords.isEmpty()
-            if (needsInit || phaseChanged) {
+            val wordsMismatch = sessionWords.isEmpty() || sessionWords.firstOrNull()?.phase != selectedPhase
+            if (phaseChanged || wordsMismatch) {
                 sessionPhase = selectedPhase
                 sessionWords = rawWords.shuffled()
                 currentIndex = 0
@@ -321,7 +321,7 @@ fun SpeechLabScreen(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            items((1..10).toList()) { phase ->
+            items((1..15).toList()) { phase ->
                 FilterChip(
                     selected = selectedPhase == phase,
                     onClick = {

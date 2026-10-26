@@ -114,12 +114,12 @@ fun KeyboardPracticeScreen(
 
     // Initialize or re-shuffle session words only on initial load, phase switch, or Play Again click
     LaunchedEffect(rawWords, selectedPhase, sessionSeed) {
-        if (rawWords.isNotEmpty()) {
+        if (rawWords.isNotEmpty() && rawWords.firstOrNull()?.phase == selectedPhase) {
             val phaseChanged = selectedPhase != sessionPhase
             val seedChanged = sessionSeed != lastSessionSeed
-            val needsInit = sessionWords.isEmpty()
+            val wordsMismatch = sessionWords.isEmpty() || sessionWords.firstOrNull()?.phase != selectedPhase
 
-            if (needsInit || phaseChanged || seedChanged) {
+            if (phaseChanged || seedChanged || wordsMismatch) {
                 sessionPhase = selectedPhase
                 lastSessionSeed = sessionSeed
                 sessionWords = rawWords.shuffled()
@@ -180,7 +180,7 @@ fun KeyboardPracticeScreen(
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
                 modifier = Modifier.weight(1f)
             ) {
-                items((1..10).toList()) { phase ->
+                items((1..15).toList()) { phase ->
                     FilterChip(
                         selected = selectedPhase == phase,
                         onClick = {
@@ -407,7 +407,7 @@ fun KeyboardPracticeScreen(
                             Text("Play Again", fontSize = 15.sp, fontWeight = FontWeight.Bold)
                         }
 
-                        if (selectedPhase < 10) {
+                        if (selectedPhase < 15) {
                             OutlinedButton(
                                 onClick = {
                                     selectedPhase++

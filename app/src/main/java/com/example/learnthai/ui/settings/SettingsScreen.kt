@@ -162,8 +162,8 @@ fun SettingsScreen(
                 )
                 Spacer(modifier = Modifier.height(6.dp))
                 Text(
-                    text = "• 100 high-frequency words curated from the Chulalongkorn University Thai National Corpus.\n" +
-                            "• 5 progressive orthographic phases (Anchors → Left-Shift → Vertical Stack → Tone Stack → Complex Finals).\n" +
+                    text = "• 300 high-frequency words curated from the Chulalongkorn University Thai National Corpus.\n" +
+                            "• 15 progressive phases spanning phonics, high-frequency verbs, daily life, dining, shopping, family, and time.\n" +
                             "• Leitner Spaced Repetition System (SRS) for long-term memory retention.",
                     fontSize = 13.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
