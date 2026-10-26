@@ -632,16 +632,20 @@ private fun SpeechScoreCard(
     targetWord: String,
     knownTone: ToneLabel?
 ) {
-    val wordScore = if (recognizedText != null) PitchDetector.wordScore(recognizedText, targetWord) else 0f
+    val wordScore = if (recognizedText != null) PitchDetector.wordScore(recognizedText, targetWord) else null
     val toneScore = comparison.toneScore
-    val total = 0.6f * wordScore + 0.4f * toneScore
+    val total = if (wordScore != null) {
+        0.6f * wordScore + 0.4f * toneScore
+    } else {
+        toneScore
+    }
     val totalPct = (total * 100).toInt()
     val refLabel = knownTone ?: comparison.refToneLabel
     val userLabel = comparison.userToneLabel
 
     val scoreColor = when {
-        total >= 0.8f -> Color(0xFF2E7D32)
-        total >= 0.5f -> Color(0xFFE65100)
+        total >= 0.75f -> Color(0xFF2E7D32)
+        total >= 0.50f -> Color(0xFFE65100)
         else -> Color(0xFFC62828)
     }
 
@@ -664,7 +668,11 @@ private fun SpeechScoreCard(
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = "Word ${(wordScore * 100).toInt()}% · Tone ${(toneScore * 100).toInt()}%",
+                text = if (wordScore != null) {
+                    "Word ${(wordScore * 100).toInt()}% · Tone ${(toneScore * 100).toInt()}%"
+                } else {
+                    "Tone Accuracy: ${(toneScore * 100).toInt()}%"
+                },
                 fontSize = 14.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )

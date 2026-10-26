@@ -174,8 +174,8 @@ object PitchDetector {
         val refMedian = median(refVoiced.map { it.f0Hz })
         if (userMedian <= 0f || refMedian <= 0f) return null
 
-        val userPoints = normalize(userVoiced, userMedian)
-        val refPoints = normalize(refVoiced, refMedian)
+        val userPoints = smooth(normalize(userVoiced, userMedian))
+        val refPoints = smooth(normalize(refVoiced, refMedian))
 
         val userNet = userPoints.last().semitone - userPoints.first().semitone
         val refNet = refPoints.last().semitone - refPoints.first().semitone
@@ -230,19 +230,85 @@ object PitchDetector {
         }
     }
 
-    /** Scores contour closeness (0..1) via RMSE of semitone curves on a common grid. */
+    /** Scores contour closeness (0..1) via elastic Dynamic Time Warping (DTW) and shape correlation. */
     fun toneScore(user: List<NormalizedPoint>, ref: List<NormalizedPoint>): Float {
         if (user.isEmpty() || ref.isEmpty()) return 0f
         val n = 32
         val u = resample(user, n)
         val r = resample(ref, n)
-        var sumSq = 0f
+
+        // 1. Mean-center both curves to isolate pitch movement from voice pitch differences
+        val uMean = u.average().toFloat()
+        val rMean = r.average().toFloat()
+        val uZero = FloatArray(n) { u[it] - uMean }
+        val rZero = FloatArray(n) { r[it] - rMean }
+
+        // 2. Elastic DTW with Sakoe-Chiba band (window = 4 out of 32 frames, ±12.5% time flexibility)
+        val w = 4
+        val dtw = Array(n) { FloatArray(n) { Float.POSITIVE_INFINITY } }
+        dtw[0][0] = (uZero[0] - rZero[0]) * (uZero[0] - rZero[0])
+
         for (i in 0 until n) {
-            val d = u[i] - r[i]
-            sumSq += d * d
+            val jMin = maxOf(0, i - w)
+            val jMax = minOf(n - 1, i + w)
+            for (j in jMin..jMax) {
+                if (i == 0 && j == 0) continue
+                val cost = (uZero[i] - rZero[j]) * (uZero[i] - rZero[j])
+                val m1 = if (i > 0) dtw[i - 1][j] else Float.POSITIVE_INFINITY
+                val m2 = if (j > 0) dtw[i][j - 1] else Float.POSITIVE_INFINITY
+                val m3 = if (i > 0 && j > 0) dtw[i - 1][j - 1] else Float.POSITIVE_INFINITY
+                val minPrev = minOf(m1, minOf(m2, m3))
+                if (minPrev != Float.POSITIVE_INFINITY) {
+                    dtw[i][j] = cost + minPrev
+                }
+            }
         }
-        val rmse = sqrt(sumSq / n)
-        return (1f - rmse / 2f).coerceIn(0f, 1f)
+
+        val dtwDistance = if (dtw[n - 1][n - 1] != Float.POSITIVE_INFINITY) {
+            sqrt(dtw[n - 1][n - 1] / n)
+        } else {
+            var sumSq = 0f
+            for (i in 0 until n) sumSq += (uZero[i] - rZero[i]) * (uZero[i] - rZero[i])
+            sqrt(sumSq / n)
+        }
+
+        // Soft Cauchy/Gaussian closeness: encourages close matches without falling off a cliff
+        val sigma = 3.5f
+        val closeness = 1.0f / (1.0f + (dtwDistance / sigma) * (dtwDistance / sigma))
+
+        // 3. Shape correlation (Pearson correlation between normalized contours)
+        var sumU2 = 0f
+        var sumR2 = 0f
+        var sumUR = 0f
+        for (i in 0 until n) {
+            sumU2 += uZero[i] * uZero[i]
+            sumR2 += rZero[i] * rZero[i]
+            sumUR += uZero[i] * rZero[i]
+        }
+        val denom = sqrt(sumU2 * sumR2)
+        val shapeScore = if (denom > 1e-4f) {
+            val rVal = (sumUR / denom).coerceIn(-1f, 1f)
+            if (rVal > 0f) rVal else 0f
+        } else {
+            // Contours have small variance (level/mid tones)
+            val uRange = (u.maxOrNull() ?: 0f) - (u.minOrNull() ?: 0f)
+            val rRange = (r.maxOrNull() ?: 0f) - (r.minOrNull() ?: 0f)
+            (1f - abs(uRange - rRange) / 2f).coerceIn(0f, 1f)
+        }
+
+        // 4. Direction alignment bonus
+        val userNet = user.last().semitone - user.first().semitone
+        val refNet = ref.last().semitone - ref.first().semitone
+        val userDir = direction(userNet)
+        val refDir = direction(refNet)
+        val directionScore = when {
+            userDir == refDir -> 1.0f
+            (userDir == "flat" || refDir == "flat") && abs(userNet - refNet) < 1.5f -> 0.7f
+            else -> 0.2f
+        }
+
+        // 5. Blended resilient tone score
+        return (0.50f * closeness + 0.30f * shapeScore + 0.20f * directionScore).coerceIn(0f, 1f)
     }
 
     /** Scores how well a recognized string matches the target (0..1) via Levenshtein similarity. */
@@ -308,6 +374,21 @@ object PitchDetector {
         val t1 = voiced.last().timeMs
         val span = (t1 - t0).coerceAtLeast(1f)
         return voiced.map { NormalizedPoint((it.timeMs - t0) / span, 12f * log2(it.f0Hz / medianHz)) }
+    }
+
+    /** 5-point median filter to remove spikes / octave errors from the contour. */
+    private fun smooth(points: List<NormalizedPoint>): List<NormalizedPoint> {
+        if (points.size < 3) return points
+        val out = ArrayList<NormalizedPoint>(points.size)
+        for (i in points.indices) {
+            val lo = (i - 2).coerceAtLeast(0)
+            val hi = (i + 2).coerceAtMost(points.size - 1)
+            val window = ArrayList<Float>(hi - lo + 1)
+            for (j in lo..hi) window.add(points[j].semitone)
+            window.sort()
+            out.add(NormalizedPoint(points[i].timeFraction, window[window.size / 2]))
+        }
+        return out
     }
 
     private fun direction(netSemitones: Float): String = when {
