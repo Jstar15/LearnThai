@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "id": "small_talk",
+  "title_en": "Small Talk at the Café",
+  "title_th": "คุยเล่นที่ร้านกาแฟ",
+  "teaches_label": "Small talk",
+  "teaches_detail": "Weekend plans, weather, favourite days — the chatter that turns a transaction into a friendship.",
+  "level": 2,
+  "bg": "street",
+  "phases": [5, 6, 7, 8, 9, 10, 15],
+  "aim": "Keep a casual chat going: วันหยุด, อากาศ, ฝนตก, วันไหน, วันเสาร์นี้ว่างไหม.",
+  "characters": [
+    { "id": "mai", "name_en": "Mai", "name_th": "ใหม่", "color": "#3E7A5E", "art_rig": "girl" },
+    { "id": "james", "name_en": "James", "name_th": "เจมส์", "color": "#2F5F9E", "art_rig": "man" }
+  ],
+  "extra_words": [
+    { "thai": "วันหยุด", "roman": "wan-yùt", "gloss": "day off / holiday" },
+    { "thai": "บ้าง", "roman": "bâang", "gloss": "some / what about" },
+    { "thai": "กับ", "roman": "gàp", "gloss": "with" },
+    { "thai": "อากาศ", "roman": "aa-gàat", "gloss": "weather" },
+    { "thai": "นะ", "roman": "ná", "gloss": "softening particle ('huh?')" },
+    { "thai": "ฝนตก", "roman": "fǒn dtòk", "gloss": "it's raining" },
+    { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must / have to" },
+    { "thai": "ว่าง", "roman": "wâang", "gloss": "free / available" },
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "กัน", "roman": "gan", "gloss": "together (friendly particle)" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ที่สุด", "roman": "thîi-sùt", "gloss": "the most" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" }
+  ],
+  "cards": [
+    {
+      "id": "talk_01",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/talk_01.webp",
+      "thai": "วันหยุดทำอะไรบ้าง",
+      "roman": "wan-yùt tham à-rai bâang",
+      "english": "What did you get up to on your day off?",
+      "focus": "small talk opener",
+      "register": "casual",
+      "new_words": ["วันหยุด", "บ้าง"],
+      "tip": "บ้าง at the end softens an open question — 'what sort of things?'. วันหยุด = day off. No tense needed; context says it's past.",
+      "tokens": [
+        { "thai": "วันหยุด", "roman": "wan-yùt", "gloss": "day off", "note": "วัน + หยุด (stop)." },
+        { "thai": "ทำ", "roman": "tham", "gloss": "do", "match": "ทำ" },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" },
+        { "thai": "บ้าง", "roman": "bâang", "gloss": "some / what about", "note": "Softens an open question." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_02",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/talk_02.webp",
+      "thai": "ไปดูหนังกับเพื่อนสนุกมาก",
+      "roman": "bpai duu nǎng gàp pʉ̂an sà-nùk mâak",
+      "english": "Went to a movie with friends — really fun.",
+      "focus": "weekend",
+      "register": "casual",
+      "new_words": ["กับ"],
+      "tip": "ไปดูหนัง = go see a movie (ไป + verb). กับ = with. To have fun, Thai says สนุก (fun), no 'had a good time'.",
+      "tokens": [
+        { "thai": "ไป", "roman": "bpai", "gloss": "go", "match": "ไป" },
+        { "thai": "ดูหนัง", "roman": "duu nǎng", "gloss": "watch a movie", "match": "ดูหนัง" },
+        { "thai": "กับ", "roman": "gàp", "gloss": "with" },
+        { "thai": "เพื่อน", "roman": "pʉ̂an", "gloss": "friend", "match": "เพื่อน" },
+        { "thai": "สนุก", "roman": "sà-nùk", "gloss": "fun", "match": "สนุก" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_03",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/talk_03.webp",
+      "thai": "อากาศวันนี้ดีนะ",
+      "roman": "aa-gàat wan-níi dii ná",
+      "english": "The weather's nice today, huh.",
+      "focus": "weather",
+      "register": "casual",
+      "new_words": ["อากาศ"],
+      "tip": "อากาศ = weather. นะ at the end invites agreement — the English 'huh?' or 'right?'. Perfect tiny sentence for filling a silence.",
+      "tokens": [
+        { "thai": "อากาศ", "roman": "aa-gàat", "gloss": "weather" },
+        { "thai": "วันนี้", "roman": "wan-níi", "gloss": "today", "match": "วันนี้" },
+        { "thai": "ดี", "roman": "dii", "gloss": "good", "match": "ดี" },
+        { "thai": "นะ", "roman": "ná", "gloss": "huh?" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_04",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/talk_04.webp",
+      "thai": "ใช่แต่ตอนบ่ายฝนตก",
+      "roman": "châi dtàe dtɔɔn-bàai fǒn dtòk",
+      "english": "It is — but it rained in the afternoon.",
+      "focus": "weather change",
+      "register": "casual",
+      "new_words": ["ฝนตก"],
+      "tip": "ใช่ = yes/that's right. ฝนตก is literally 'rain falls'. ตอนบ่าย = afternoon (ตอน + time of day).",
+      "tokens": [
+        { "thai": "ใช่", "roman": "châi", "gloss": "yes", "match": "ใช่" },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "ตอนบ่าย", "roman": "dtɔɔn-bàai", "gloss": "afternoon", "match": "ตอนบ่าย" },
+        { "thai": "ฝนตก", "roman": "fǒn dtòk", "gloss": "raining", "note": "ฝน = rain, ตก = fall." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_05",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/talk_05.webp",
+      "thai": "คุณชอบวันไหนมากที่สุด",
+      "roman": "khun chɔ̂ɔp wan nǎi mâak thîi-sùt",
+      "english": "Which day do you like most?",
+      "focus": "superlative question",
+      "register": "casual",
+      "new_words": [],
+      "tip": "วันไหน = which day. มากที่สุด = the most. Question words stay in place, so this is just 'you like day which most'.",
+      "tokens": [
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "ชอบ", "roman": "chɔ̂ɔp", "gloss": "like", "match": "ชอบ" },
+        { "thai": "วัน", "roman": "wan", "gloss": "day", "match": "วัน" },
+        { "thai": "ไหน", "roman": "nǎi", "gloss": "which", "match": "ไหน" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "much", "match": "มาก" },
+        { "thai": "ที่สุด", "roman": "thîi-sùt", "gloss": "the most" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_06",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/talk_06.webp",
+      "thai": "วันเสาร์เพราะไม่ต้องทำงาน",
+      "roman": "wan-sǎo phrɔ́ mâi dtâwng tham-ngaan",
+      "english": "Saturday — because I don't have to work.",
+      "focus": "reason",
+      "register": "casual",
+      "new_words": ["ต้อง"],
+      "tip": "ไม่ต้อง = don't have to (different from ไม่ได้ = can't). เพราะ introduces the reason, no 'because of' needed.",
+      "tokens": [
+        { "thai": "วันเสาร์", "roman": "wan-sǎo", "gloss": "Saturday", "match": "วันเสาร์" },
+        { "thai": "เพราะ", "roman": "phrɔ́", "gloss": "because", "match": "เพราะ" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must", "note": "ไม่ต้อง = don't have to." },
+        { "thai": "ทำงาน", "roman": "tham-ngaan", "gloss": "work", "match": "ทำงาน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_07",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/talk_07.webp",
+      "thai": "วันเสาร์นี้ว่างไหม",
+      "roman": "wan-sǎo níi wâang mǎi",
+      "english": "Are you free this Saturday?",
+      "focus": "invitation setup",
+      "register": "casual",
+      "new_words": ["ว่าง"],
+      "tip": "ว่าง = free/available. วันเสาร์นี้ = this Saturday (นี้ after the noun = this). Adjective + ไหม again.",
+      "tokens": [
+        { "thai": "วันเสาร์", "roman": "wan-sǎo", "gloss": "Saturday", "match": "วันเสาร์" },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "ว่าง", "roman": "wâang", "gloss": "free" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "talk_08",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/talk_08.webp",
+      "thai": "ว่างครับไปกินกาแฟกันไหม",
+      "roman": "wâang khráp bpai gin gaa-fɛɛ gan mǎi",
+      "english": "I'm free — shall we go for coffee?",
+      "focus": "inviting",
+      "register": "casual",
+      "new_words": ["กัน"],
+      "tip": "กัน at the end of an invitation = 'together'. กาแฟ is a Phase 9 word and a nice ก to type. ไป + verb = go do it.",
+      "tokens": [
+        { "thai": "ว่าง", "roman": "wâang", "gloss": "free" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ไป", "roman": "bpai", "gloss": "go", "match": "ไป" },
+        { "thai": "กิน", "roman": "gin", "gloss": "eat", "match": "กิน" },
+        { "thai": "กาแฟ", "roman": "gaa-fɛɛ", "gloss": "coffee", "match": "กาแฟ" },
+        { "thai": "กัน", "roman": "gan", "gloss": "together" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    }
+  ]
+}

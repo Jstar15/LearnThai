@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "id": "making_plans",
+  "title_en": "Making Plans",
+  "title_th": "นัดกัน",
+  "teaches_label": "Making plans",
+  "teaches_detail": "Agree to meet, pick a time and place, and cancel politely by phone.",
+  "level": 2,
+  "bg": "street",
+  "phases": [2, 5, 6, 9, 10, 11, 15],
+  "aim": "Set a meet-up: เจอกันไหม, กี่โมง, ที่ร้านอาหาร, โทรบอก.",
+  "characters": [
+    { "id": "mai", "name_en": "Mai", "name_th": "ใหม่", "color": "#3E7A5E", "art_rig": "girl" },
+    { "id": "james", "name_en": "James", "name_th": "เจมส์", "color": "#2F5F9E", "art_rig": "man" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time" },
+    { "thai": "หก", "roman": "hòk", "gloss": "six" },
+    { "thai": "โมง", "roman": "moong", "gloss": "o'clock (daytime)" },
+    { "thai": "เย็น", "roman": "yen", "gloss": "evening" },
+    { "thai": "ร้าน", "roman": "ráan", "gloss": "shop / restaurant" },
+    { "thai": "โอเค", "roman": "oo-khee", "gloss": "okay" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "โทรหา", "roman": "thoo-hǎa", "gloss": "to call (someone)" },
+    { "thai": "โทร", "roman": "thoo", "gloss": "to phone" },
+    { "thai": "นะ", "roman": "ná", "gloss": "softening particle ('okay?')" },
+    { "thai": "ว่าง", "roman": "wâang", "gloss": "free / available" },
+    { "thai": "เจอกัน", "roman": "jəə gan", "gloss": "to meet each other" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" }
+  ],
+  "cards": [
+    {
+      "id": "plan_01",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/plan_01.webp",
+      "thai": "พรุ่งนี้เจอกันไหม",
+      "roman": "phrûng-níi jəə gan mǎi",
+      "english": "Shall we meet tomorrow?",
+      "focus": "suggesting",
+      "register": "casual",
+      "new_words": [],
+      "tip": "เจอกัน = meet each other (เจอ + กัน). The invitation shape is statement + กัน + ไหม — 'meet each other, yes/no?'",
+      "tokens": [
+        { "thai": "พรุ่งนี้", "roman": "phrûng-níi", "gloss": "tomorrow", "match": "พรุ่งนี้" },
+        { "thai": "เจอกัน", "roman": "jəə gan", "gloss": "meet each other" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_02",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/plan_02.webp",
+      "thai": "ได้ครับเจอกี่โมง",
+      "roman": "dâi khráp jəə gìi-moong",
+      "english": "Sure — what time shall we meet?",
+      "focus": "agreeing",
+      "register": "polite",
+      "new_words": ["กี่โมง"],
+      "tip": "ได้ครับ = 'sure, can do'. เจอกี่โมง = meet at what time — verb + question word, no preposition.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "เจอ", "roman": "jəə", "gloss": "meet", "match": "เจอ" },
+        { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_03",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/plan_03.webp",
+      "thai": "หกโมงเย็นที่ร้านอาหาร",
+      "roman": "hòk moong yen thîi ráan-aa-hǎan",
+      "english": "Six in the evening, at the restaurant.",
+      "focus": "time and place",
+      "register": "casual",
+      "new_words": ["หก", "โมง", "เย็น"],
+      "tip": "Thai stacks time then place: หกโมงเย็น (6 p.m.) + ที่ร้านอาหาร (at the restaurant). No 'at' needed before the time.",
+      "tokens": [
+        { "thai": "หก", "roman": "hòk", "gloss": "six" },
+        { "thai": "โมง", "roman": "moong", "gloss": "o'clock" },
+        { "thai": "เย็น", "roman": "yen", "gloss": "evening" },
+        { "thai": "ที่", "roman": "thîi", "gloss": "at", "match": "ที่" },
+        { "thai": "ร้านอาหาร", "roman": "ráan-aa-hǎan", "gloss": "restaurant", "match": "ร้านอาหาร" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_04",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/plan_04.webp",
+      "thai": "ร้านไหน",
+      "roman": "ráan nǎi",
+      "english": "Which restaurant?",
+      "focus": "which",
+      "register": "casual",
+      "new_words": ["ร้าน"],
+      "tip": "ไหน = which, after the noun: ร้านไหน = which shop. Compare ที่ไหน (where) and วันไหน (which day).",
+      "tokens": [
+        { "thai": "ร้าน", "roman": "ráan", "gloss": "shop", "note": "ร้านอาหาร = restaurant." },
+        { "thai": "ไหน", "roman": "nǎi", "gloss": "which", "match": "ไหน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_05",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/plan_05.webp",
+      "thai": "ร้านใกล้สถานีรถไฟฟ้า",
+      "roman": "ráan glâi sà-thǎa-nii rót-fai-fáa",
+      "english": "The one near the SkyTrain station.",
+      "focus": "locating",
+      "register": "casual",
+      "new_words": [],
+      "tip": "รถไฟฟ้า = electric-train (BTS SkyTrain). สถานี = station. ใกล้ = near — no 'the one' needed, just stack the description.",
+      "tokens": [
+        { "thai": "ร้าน", "roman": "ráan", "gloss": "shop" },
+        { "thai": "ใกล้", "roman": "glâi", "gloss": "near", "match": "ใกล้" },
+        { "thai": "สถานี", "roman": "sà-thǎa-nii", "gloss": "station", "match": "สถานี" },
+        { "thai": "รถไฟฟ้า", "roman": "rót-fai-fáa", "gloss": "SkyTrain", "match": "รถไฟฟ้า" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_06",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/plan_06.webp",
+      "thai": "โอเคผมจะโทรหาคุณ",
+      "roman": "oo-khee pǒm jà thoo hǎa khun",
+      "english": "Okay — I'll call you.",
+      "focus": "closing a plan",
+      "register": "polite",
+      "new_words": ["โอเค", "โทรหา"],
+      "tip": "โทรหา = call someone (โทร alone = phone/telephone). จะ marks the plan: I will call. โอเค is everywhere in modern Thai speech.",
+      "tokens": [
+        { "thai": "โอเค", "roman": "oo-khee", "gloss": "okay" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "โทรหา", "roman": "thoo-hǎa", "gloss": "call (someone)", "note": "โทร + หา." },
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_07",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/plan_07.webp",
+      "thai": "ถ้าไม่ว่างโทรบอกนะ",
+      "roman": "thâa mâi wâang thoo bɔ̀ɔk ná",
+      "english": "If you're not free, call and tell me, okay?",
+      "focus": "conditional",
+      "register": "casual",
+      "new_words": ["โทร"],
+      "tip": "ถ้า = if at the start. No 'then' word needed — the second clause just follows. โทรบอก = call + tell.",
+      "tokens": [
+        { "thai": "ถ้า", "roman": "thâa", "gloss": "if", "match": "ถ้า" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "ว่าง", "roman": "wâang", "gloss": "free" },
+        { "thai": "โทร", "roman": "thoo", "gloss": "phone" },
+        { "thai": "บอก", "roman": "bɔ̀ɔk", "gloss": "tell", "match": "บอก" },
+        { "thai": "นะ", "roman": "ná", "gloss": "okay?" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "plan_08",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/plan_08.webp",
+      "thai": "ได้ครับเจอกันพรุ่งนี้",
+      "roman": "dâi khráp jəə gan phrûng-níi",
+      "english": "Sure — see you tomorrow.",
+      "focus": "closing",
+      "register": "polite",
+      "new_words": [],
+      "tip": "เจอกันพรุ่งนี้ = 'we meet tomorrow' — Thai's version of 'see you tomorrow'. No future tense needed beyond the time word.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "เจอกัน", "roman": "jəə gan", "gloss": "meet each other" },
+        { "thai": "พรุ่งนี้", "roman": "phrûng-níi", "gloss": "tomorrow", "match": "พรุ่งนี้" }
+      ],
+      "audio": null
+    }
+  ]
+}

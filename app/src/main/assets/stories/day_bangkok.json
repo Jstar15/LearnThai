@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "id": "day_bangkok",
+  "title_en": "A Day in Bangkok",
+  "title_th": "วันหนึ่งในกรุงเทพ",
+  "teaches_label": "Daily routine & time",
+  "teaches_detail": "Say what you did yesterday, what time you start and finish work, and how you feel.",
+  "level": 2,
+  "bg": "street",
+  "phases": [2, 3, 5, 7, 8, 9, 10, 15],
+  "aim": "Tell a simple day: เมื่อวาน, ตื่น, ทำงาน, กี่โมง, กลับบ้าน.",
+  "characters": [
+    { "id": "james", "name_en": "James", "name_th": "เจมส์", "color": "#2F5F9E", "art_rig": "man" },
+    { "id": "mai", "name_en": "Mai", "name_th": "ใหม่", "color": "#3E7A5E", "art_rig": "girl" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "เริ่ม", "roman": "rə̂əm", "gloss": "to start" },
+    { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time" },
+    { "thai": "โมง", "roman": "moong", "gloss": "o'clock (daytime)" },
+    { "thai": "เลิก", "roman": "lə̂ək", "gloss": "to finish / stop" },
+    { "thai": "หก", "roman": "hòk", "gloss": "six" },
+    { "thai": "เย็น", "roman": "yen", "gloss": "evening / cool" },
+    { "thai": "แล้ว", "roman": "láew", "gloss": "then / already" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ความสุข", "roman": "khwaam-sùk", "gloss": "happiness" }
+  ],
+  "cards": [
+    {
+      "id": "day_01",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/day_01.webp",
+      "thai": "เมื่อวานคุณทำอะไร",
+      "roman": "mʉ̂a-waan khun tham à-rai",
+      "english": "What did you do yesterday?",
+      "focus": "past time",
+      "register": "polite",
+      "new_words": [],
+      "tip": "เมื่อวาน = yesterday places the whole sentence in the past. Notice the verb ทำ doesn't change at all — Thai has no tense endings.",
+      "tokens": [
+        { "thai": "เมื่อวาน", "roman": "mʉ̂a-waan", "gloss": "yesterday", "match": "เมื่อวาน" },
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "ทำ", "roman": "tham", "gloss": "do", "match": "ทำ" },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_02",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/day_02.webp",
+      "thai": "ตื่นตอนเช้าแล้วไปทำงาน",
+      "roman": "dtʉ̀ʉn dtɔɔn-cháao láew bpai tham-ngaan",
+      "english": "I woke up in the morning and went to work.",
+      "focus": "routine",
+      "register": "casual",
+      "new_words": [],
+      "tip": "แล้ว links two actions in order: 'woke up, then went to work'. ตอนเช้า = in the morning; ตื่น is a Phase 4 word — you've typed it, now you're using it.",
+      "tokens": [
+        { "thai": "ตื่น", "roman": "dtʉ̀ʉn", "gloss": "wake up", "match": "ตื่น" },
+        { "thai": "ตอนเช้า", "roman": "dtɔɔn-cháao", "gloss": "in the morning", "match": "ตอนเช้า" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "then" },
+        { "thai": "ไป", "roman": "bpai", "gloss": "go", "match": "ไป" },
+        { "thai": "ทำงาน", "roman": "tham-ngaan", "gloss": "work", "match": "ทำงาน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_03",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/day_03.webp",
+      "thai": "เริ่มงานกี่โมงครับ",
+      "roman": "rə̂əm ngaan gìi-moong khráp",
+      "english": "What time do you start work?",
+      "focus": "clock time",
+      "register": "polite",
+      "new_words": ["เริ่ม", "กี่โมง"],
+      "tip": "กี่โมง = 'which hour' = what time. Thai daytime hours use โมง: แปดโมง = 8 a.m. เริ่ม = start.",
+      "tokens": [
+        { "thai": "เริ่ม", "roman": "rə̂əm", "gloss": "start" },
+        { "thai": "งาน", "roman": "ngaan", "gloss": "work", "match": "งาน" },
+        { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_04",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/day_04.webp",
+      "thai": "เริ่มแปดโมงค่ะ",
+      "roman": "rə̂əm bpɛ̀ɛt moong khâ",
+      "english": "I start at eight.",
+      "focus": "clock time",
+      "register": "polite",
+      "new_words": ["โมง"],
+      "tip": "แปด = eight (a Phase 2 word: it has the leading vowel แ). แปดโมง = 8 o'clock in the morning.",
+      "tokens": [
+        { "thai": "เริ่ม", "roman": "rə̂əm", "gloss": "start" },
+        { "thai": "แปด", "roman": "bpɛ̀ɛt", "gloss": "eight", "match": "แปด" },
+        { "thai": "โมง", "roman": "moong", "gloss": "o'clock" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_05",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/day_05.webp",
+      "thai": "แล้วเลิกงานกี่โมง",
+      "roman": "láew lə̂ək ngaan gìi-moong",
+      "english": "And what time do you finish?",
+      "focus": "finishing",
+      "register": "polite",
+      "new_words": ["เลิก"],
+      "tip": "เลิก = finish/stop — the same เลิก you'd use to stop working or end a class. แล้ว at the front means 'and then'.",
+      "tokens": [
+        { "thai": "แล้ว", "roman": "láew", "gloss": "and then" },
+        { "thai": "เลิก", "roman": "lə̂ək", "gloss": "finish" },
+        { "thai": "งาน", "roman": "ngaan", "gloss": "work", "match": "งาน" },
+        { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_06",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/day_06.webp",
+      "thai": "หกโมงเย็นค่ะกลับบ้านแล้วนอน",
+      "roman": "hòk moong yen khâ glàp-bâan láew naawn",
+      "english": "Six in the evening — home, then sleep.",
+      "focus": "evening",
+      "register": "polite",
+      "new_words": ["หก", "เย็น"],
+      "tip": "เย็น means both 'evening' and 'cool'. หกโมงเย็น = 6 p.m. — after noon the hour phrase adds เย็น.",
+      "tokens": [
+        { "thai": "หก", "roman": "hòk", "gloss": "six" },
+        { "thai": "โมง", "roman": "moong", "gloss": "o'clock" },
+        { "thai": "เย็น", "roman": "yen", "gloss": "evening" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "กลับบ้าน", "roman": "glàp-bâan", "gloss": "go home", "match": "กลับบ้าน" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "then" },
+        { "thai": "นอน", "roman": "naawn", "gloss": "sleep", "match": "นอน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_07",
+      "speaker": "james",
+      "listener": "mai",
+      "image": "art/day_07.webp",
+      "thai": "คุณเหนื่อยไหม",
+      "roman": "khun nʉ̀ai mǎi",
+      "english": "Are you tired?",
+      "focus": "checking in",
+      "register": "polite",
+      "new_words": [],
+      "tip": "The simplest question shape: adjective + ไหม. เหนื่อยไหม = tired? Same as ไกลไหม (far?) and แพงไหม (expensive?).",
+      "tokens": [
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "เหนื่อย", "roman": "nʉ̀ai", "gloss": "tired", "match": "เหนื่อย" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "day_08",
+      "speaker": "mai",
+      "listener": "james",
+      "image": "art/day_08.webp",
+      "thai": "เหนื่อยแต่มีความสุข",
+      "roman": "nʉ̀ai dtàe mii khwaam-sùk",
+      "english": "Tired — but happy.",
+      "focus": "feelings",
+      "register": "casual",
+      "new_words": [],
+      "tip": "มีความสุข = to be happy, literally 'have happiness'. ความ turns an adjective into a noun — the same trick as in ความรัก (love).",
+      "tokens": [
+        { "thai": "เหนื่อย", "roman": "nʉ̀ai", "gloss": "tired", "match": "เหนื่อย" },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "ความสุข", "roman": "khwaam-sùk", "gloss": "happiness", "note": "มีความสุข = to be happy." }
+      ],
+      "audio": null
+    }
+  ]
+}

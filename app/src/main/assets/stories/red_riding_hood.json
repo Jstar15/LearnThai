@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "id": "red_riding_hood",
+  "title_en": "Little Red Riding Hood",
+  "title_th": "หนูน้อยหมวกแดง",
+  "teaches_label": "Directions & body parts",
+  "teaches_detail": "Ask where someone is going, give directions, and describe big ears and big eyes.",
+  "level": 1,
+  "bg": "forest",
+  "phases": [1, 2, 5, 6, 8, 11, 15],
+  "aim": "Give directions with แล้ว (then), and describe someone's eyes, ears and mouth.",
+  "characters": [
+    { "id": "red", "name_en": "Red", "name_th": "หนูน้อยหมวกแดง", "color": "#B23A3A", "art_rig": "girl_hood" },
+    { "id": "wolf", "name_en": "Wolf", "name_th": "หมาป่า", "color": "#5A5A62", "art_rig": "wolf" }
+  ],
+  "extra_words": [
+    { "thai": "จ้ะ", "roman": "jâ", "gloss": "friendly particle (older to younger)" },
+    { "thai": "หนูน้อย", "roman": "nǔu-nɔ́ɔy", "gloss": "little one" },
+    { "thai": "คุณยาย", "roman": "khun-yaai", "gloss": "grandma" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female, statement)" },
+    { "thai": "ป่า", "roman": "bpàa", "gloss": "forest" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "แล้ว", "roman": "láew", "gloss": "then / already" },
+    { "thai": "หู", "roman": "hǔu", "gloss": "ear" },
+    { "thai": "จัง", "roman": "jang", "gloss": "so…! (emotional intensifier)" },
+    { "thai": "ด้วย", "roman": "dûai", "gloss": "too / also" },
+    { "thai": "หนู", "roman": "nǔu", "gloss": "you (to a child) / mouse" },
+    { "thai": "ไง", "roman": "ngai", "gloss": "of course (casual)" },
+    { "thai": "หมาป่า", "roman": "mǎa-bpàa", "gloss": "wolf" }
+  ],
+  "cards": [
+    {
+      "id": "lrr_01",
+      "speaker": "wolf",
+      "listener": "red",
+      "image": "art/red_01.webp",
+      "thai": "สวัสดีจ้ะหนูน้อยจะไปไหน",
+      "roman": "sà-wàt-dii jâ nǔu-nɔ́ɔy jà bpai nǎi",
+      "english": "Hello, little one. Where are you going?",
+      "focus": "where to",
+      "register": "casual",
+      "new_words": ["จ้ะ", "หนูน้อย"],
+      "tip": "จะไปไหน = 'will go where?' — the normal way to ask where someone is heading. จ้ะ is a friendly particle an older person uses with a child.",
+      "tokens": [
+        { "thai": "สวัสดี", "roman": "sà-wàt-dii", "gloss": "hello", "match": "สวัสดี" },
+        { "thai": "จ้ะ", "roman": "jâ", "gloss": "friendly particle", "note": "Warm, older-to-younger." },
+        { "thai": "หนูน้อย", "roman": "nǔu-nɔ́ɔy", "gloss": "little one", "note": "หนู = child/mouse, น้อย = little." },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "ไป", "roman": "bpai", "gloss": "to go", "match": "ไป" },
+        { "thai": "ไหน", "roman": "nǎi", "gloss": "where", "match": "ไหน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_02",
+      "speaker": "red",
+      "listener": "wolf",
+      "image": "art/red_02.webp",
+      "thai": "ไปบ้านคุณยายค่ะ",
+      "roman": "bpai bâan khun-yaai khâ",
+      "english": "To grandma's house.",
+      "focus": "destination",
+      "register": "polite",
+      "new_words": ["คุณยาย", "ค่ะ"],
+      "tip": "No word for 'to the' — ไป + place is enough. ค่ะ closes a polite answer from a female speaker.",
+      "tokens": [
+        { "thai": "ไป", "roman": "bpai", "gloss": "to go", "match": "ไป" },
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "home / house", "match": "บ้าน" },
+        { "thai": "คุณยาย", "roman": "khun-yaai", "gloss": "grandma", "note": "ยาย alone = maternal grandmother." },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (statement)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_03",
+      "speaker": "wolf",
+      "listener": "red",
+      "image": "art/red_03.webp",
+      "thai": "บ้านคุณยายอยู่ที่ไหน",
+      "roman": "bâan khun-yaai yùu thîi-nǎi",
+      "english": "Where is grandma's house?",
+      "focus": "location",
+      "register": "casual",
+      "new_words": [],
+      "tip": "อยู่ = 'to be located'. Thai asks ...อยู่ที่ไหน = 'is located where?' — the question word stays at the end.",
+      "tokens": [
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "คุณยาย", "roman": "khun-yaai", "gloss": "grandma" },
+        { "thai": "อยู่", "roman": "yùu", "gloss": "to be at", "match": "อยู่" },
+        { "thai": "ที่ไหน", "roman": "thîi-nǎi", "gloss": "where", "match": "ที่ไหน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_04",
+      "speaker": "red",
+      "listener": "wolf",
+      "image": "art/red_04.webp",
+      "thai": "อยู่ใกล้ป่าตรงไปแล้วเลี้ยวขวา",
+      "roman": "yùu glâi bpàa dtrong bpai láew líao khwǎa",
+      "english": "It's near the forest — go straight, then turn right.",
+      "focus": "directions",
+      "register": "casual",
+      "new_words": ["ป่า"],
+      "tip": "แล้ว = 'then' when you link two actions. ตรงไป = go straight, เลี้ยวขวา = turn right. All three are keyboard words!",
+      "tokens": [
+        { "thai": "อยู่", "roman": "yùu", "gloss": "is located", "match": "อยู่" },
+        { "thai": "ใกล้", "roman": "glâi", "gloss": "near", "match": "ใกล้" },
+        { "thai": "ป่า", "roman": "bpàa", "gloss": "forest", "note": "ป่า = forest, sounds like bpàa." },
+        { "thai": "ตรงไป", "roman": "dtrong bpai", "gloss": "go straight", "match": "ตรงไป" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "then", "note": "Links the two instructions." },
+        { "thai": "เลี้ยวขวา", "roman": "líao khwǎa", "gloss": "turn right", "match": "เลี้ยวขวา" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_05",
+      "speaker": "wolf",
+      "listener": "red",
+      "image": "art/red_05.webp",
+      "thai": "คุณยายหูใหญ่จัง",
+      "roman": "khun-yaai hǔu yài jang",
+      "english": "Grandma has such big ears!",
+      "focus": "intensifier",
+      "register": "casual",
+      "new_words": ["หู", "จัง"],
+      "tip": "จัง at the end = 'so…!' with feeling: ใหญ่จัง = so big! Thai doesn't say 'has big ears' — it just puts the noun first: คุณยาย + หู + ใหญ่.",
+      "tokens": [
+        { "thai": "คุณยาย", "roman": "khun-yaai", "gloss": "grandma" },
+        { "thai": "หู", "roman": "hǔu", "gloss": "ear", "note": "A short, high word — fun to type." },
+        { "thai": "ใหญ่", "roman": "yài", "gloss": "big", "match": "ใหญ่" },
+        { "thai": "จัง", "roman": "jang", "gloss": "so…!", "note": "Emotional, spoken Thai." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_06",
+      "speaker": "red",
+      "listener": "wolf",
+      "image": "art/red_06.webp",
+      "thai": "ตาโตจังปากใหญ่ด้วย",
+      "roman": "dtaa dtoh jang bpàak yài dûai",
+      "english": "What big eyes — and a big mouth too!",
+      "focus": "too / also",
+      "register": "casual",
+      "new_words": ["ด้วย"],
+      "tip": "ด้วย at the end = 'too'. ตา = eye, ปาก = mouth, โต = big/grown — three of your Phase 1–3 words in one line.",
+      "tokens": [
+        { "thai": "ตา", "roman": "dtaa", "gloss": "eye", "match": "ตา" },
+        { "thai": "โต", "roman": "dtoh", "gloss": "big", "match": "โต" },
+        { "thai": "จัง", "roman": "jang", "gloss": "so…!" },
+        { "thai": "ปาก", "roman": "bpàak", "gloss": "mouth", "match": "ปาก" },
+        { "thai": "ใหญ่", "roman": "yài", "gloss": "big", "match": "ใหญ่" },
+        { "thai": "ด้วย", "roman": "dûai", "gloss": "too", "note": "At the end = also/too." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_07",
+      "speaker": "wolf",
+      "listener": "red",
+      "image": "art/red_07.webp",
+      "thai": "เพราะผมจะกินหนูไง",
+      "roman": "phrɔ́ pǒm jà gin nǔu ngai",
+      "english": "Because I'm going to eat you!",
+      "focus": "because",
+      "register": "casual",
+      "new_words": ["หนู", "ไง"],
+      "tip": "เพราะ = because, and it starts the sentence. ไง is a cheeky 'of course' at the end — very colloquial, very wolf.",
+      "tokens": [
+        { "thai": "เพราะ", "roman": "phrɔ́", "gloss": "because", "match": "เพราะ" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "กิน", "roman": "gin", "gloss": "eat", "match": "กิน" },
+        { "thai": "หนู", "roman": "nǔu", "gloss": "you (child)", "note": "Literally 'mouse'; also how adults address a small child." },
+        { "thai": "ไง", "roman": "ngai", "gloss": "of course", "note": "Casual, slightly teasing." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lrr_08",
+      "speaker": "red",
+      "listener": "wolf",
+      "image": "art/red_08.webp",
+      "thai": "ช่วยด้วยมีหมาป่า",
+      "roman": "chûai dûai mii mǎa-bpàa",
+      "english": "Help! There's a wolf!",
+      "focus": "emergency",
+      "register": "casual",
+      "new_words": ["หมาป่า"],
+      "tip": "ช่วยด้วย is a fixed cry for help. มี... = 'there is/are...' — so มีหมาป่า = there's a wolf. Worth knowing by heart.",
+      "tokens": [
+        { "thai": "ช่วยด้วย", "roman": "chûai dûai", "gloss": "help!", "match": "ช่วยด้วย" },
+        { "thai": "มี", "roman": "mii", "gloss": "there is", "match": "มี" },
+        { "thai": "หมาป่า", "roman": "mǎa-bpàa", "gloss": "wolf", "note": "หมา = dog, ป่า = forest → forest dog." }
+      ],
+      "audio": null
+    }
+  ]
+}

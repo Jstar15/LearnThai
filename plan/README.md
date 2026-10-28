@@ -53,3 +53,30 @@
    - Consonant Clusters, False Clusters (ทร/ศร/จร/สร) & 2nd-letter tone stacking rules.
    - Silent markers (Karan `์`) and conversational repeaters (Mai Yamok `ๆ`).
    - The 3-Mode Practice Ladder (Guided $\rightarrow$ Translation $\rightarrow$ Blind Audio Dictation).
+
+8. [08. Story Mode & Settings Relocation](./08_STORY_MODE_AND_SETTINGS_RELOCATION.md)
+   - Settings moves out of the tab bar into a small top-right gear; the bottom bar becomes Lessons · Stories · Keyboard · Speech Lab.
+   - **Stories** replace Flashcards: a library of short dialogue scenes, each line a flip card (scene art + Thai + native TTS on the front, English + romanization + word breakdown + "why it's not obvious" tip on the back).
+   - Data-driven content: one JSON file + art per story, reusing the 300-word curriculum for token-level tone/class breakdowns.
+   - Deterministic Pillow art generator, story validator toolchain, and a teaching-focus backlog (ordering food, directions, bargaining, taxi, hotel, doctor).
+
+9. [09. Four More Stories](./09_FOUR_MORE_STORIES.md)
+   - Pinocchio (truth & negation), Little Red Riding Hood (directions & body parts), Asking Her Out (invitations & compliments), The Cat Who Wants to Type Thai (keyboard words).
+   - New art rigs: person/boy/oldman/girl/girl_hood/man/wolf/cat, plus forest, street and room backgrounds and a desk-keyboard prop.
+   - Every line declares its tokens; the validator enforces that each token is either in the 300-word deck or declared in `extra_words`.
+
+10. [10. Story Curriculum Coverage: 5 or 10 More?](./10_STORY_CURRICULUM_WAVE2.md)
+   - Measured coverage: 5 stories use 52/300 deck words and 9/15 core patterns; 10 stories reach 82/300 and 12/15.
+   - Argues the deck is a **typing corpus**, not a conversation corpus — so pattern coverage, not deck coverage, is the goal.
+   - **Waves 1 + 2 shipped**: ten new scenes (stories 6–15) covering comparatives, prices, materials, transport, health, family, routine/time, hotel requests, why/how questions, and complaints.
+   - Final measured coverage: 115/300 deck words (38 %), 15/15 core patterns; the deck is a typing corpus, so patterns — not word count — are the success metric.
+
+11. [11. What Level Does This Actually Take You To?](./11_WHAT_LEVEL_DOES_THIS_TAKE_YOU_TO.md)
+   - Skill-by-skill CEFR estimate: typing A2+, reading A1, listening A1+ at slow speed, speaking A1, vocabulary ~450 words.
+   - Verdict: **strong A1+** with A2 survival in 20 covered situations — and the gaps (listening speed, tones, free conversation) that more stories cannot close.
+   - Why stories 16–20 are *functions* (repair, small talk, plans, quantities, wayfinding) rather than new grammar, and what would genuinely reach A2.
+
+12. [12. Story "Say It" — per-card transcription check](./12_STORY_SAY_IT_TRANSCRIPTION_CHECK.md)
+   - On the back of every card: record the line, transcribe it with the `th-TH` recogniser, and get a percentage match with retry.
+   - Words only — no pitch/tone analysis (Speech Lab owns tones); Levenshtein similarity over normalised Thai.
+   - New: `TranscriptScorer` (+8 unit tests) and `StorySpeechCheck` (mic lifecycle, permissions, friendly errors).

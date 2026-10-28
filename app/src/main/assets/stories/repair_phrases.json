@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "id": "repair_phrases",
+  "title_en": "I Don't Understand",
+  "title_th": "ไม่เข้าใจ",
+  "teaches_label": "Repair phrases",
+  "teaches_detail": "Ask someone to slow down, repeat, and explain a word — the phrases that keep a conversation alive.",
+  "level": 2,
+  "bg": "street",
+  "phases": [1, 5, 7, 8, 9, 15],
+  "aim": "Stay in the conversation: ฟังไม่เข้าใจ, พูดช้าลงหน่อย, พูดอีกครั้ง, หมายถึงอะไร.",
+  "characters": [
+    { "id": "tom", "name_en": "Tom", "name_th": "ทอม", "color": "#2F5F9E", "art_rig": "man" },
+    { "id": "nan", "name_en": "Nan", "name_th": "แนน", "color": "#B23A6B", "art_rig": "girl" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "ลง", "roman": "long", "gloss": "down (after a verb: more so)" },
+    { "thai": "ครั้ง", "roman": "khráng", "gloss": "time / occasion" },
+    { "thai": "นะ", "roman": "ná", "gloss": "softening particle ('okay?')" },
+    { "thai": "คำ", "roman": "kham", "gloss": "word" },
+    { "thai": "หมายถึง", "roman": "mǎai-thʉ̌ng", "gloss": "to mean" },
+    { "thai": "อ๋อ", "roman": "ɔ̌ɔ", "gloss": "oh! (I see)" },
+    { "thai": "เก่ง", "roman": "gèng", "gloss": "skilled / good at" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "แล้ว", "roman": "láew", "gloss": "now / already" }
+  ],
+  "cards": [
+    {
+      "id": "rep_01",
+      "speaker": "tom",
+      "listener": "nan",
+      "image": "art/rep_01.webp",
+      "thai": "ขอโทษครับผมฟังไม่เข้าใจ",
+      "roman": "khɔ̌ɔ-thôot khráp pǒm fang mâi khâo-jai",
+      "english": "Sorry — I'm listening but I don't understand.",
+      "focus": "not understanding",
+      "register": "polite",
+      "new_words": [],
+      "tip": "The single most useful sentence a beginner owns. ฟัง = listen; ไม่เข้าใจ = don't understand. Saying it is not rude — it's how people learn.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khɔ̌ɔ-thôot", "gloss": "sorry", "match": "ขอโทษ" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "ฟัง", "roman": "fang", "gloss": "listen", "match": "ฟัง" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "เข้าใจ", "roman": "khâo-jai", "gloss": "understand", "match": "เข้าใจ" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_02",
+      "speaker": "nan",
+      "listener": "tom",
+      "image": "art/rep_02.webp",
+      "thai": "ไม่เป็นไรค่ะฉันพูดช้าลง",
+      "roman": "mâi bpen rai khâ chǎn phûut cháa long",
+      "english": "No worries — I'll speak more slowly.",
+      "focus": "helping",
+      "register": "polite",
+      "new_words": ["ลง"],
+      "tip": "ลง after an adjective = 'more so' / 'down': ช้าลง = slower than before. (ขึ้น does the opposite: เร็วขึ้น = faster.)",
+      "tokens": [
+        { "thai": "ไม่เป็นไร", "roman": "mâi bpen rai", "gloss": "no worries", "match": "ไม่เป็นไร" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ฉัน", "roman": "chǎn", "gloss": "I (female)", "match": "ฉัน" },
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "ช้า", "roman": "cháa", "gloss": "slow", "match": "ช้า" },
+        { "thai": "ลง", "roman": "long", "gloss": "more so (down)", "note": "ช้าลง = slower; เร็วขึ้น = faster." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_03",
+      "speaker": "tom",
+      "listener": "nan",
+      "image": "art/rep_03.webp",
+      "thai": "พูดอีกครั้งได้ไหมครับ",
+      "roman": "phûut ìik khráng dâi mǎi khráp",
+      "english": "Could you say that again?",
+      "focus": "repeat",
+      "register": "polite",
+      "new_words": ["ครั้ง"],
+      "tip": "อีก = again, ครั้ง = time/occasion. So อีกครั้ง = one more time. ได้ไหม makes it a polite request.",
+      "tokens": [
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "อีก", "roman": "ìik", "gloss": "again", "match": "อีก" },
+        { "thai": "ครั้ง", "roman": "khráng", "gloss": "time", "note": "ครั้งหน้า = next time." },
+        { "thai": "ได้", "roman": "dâi", "gloss": "can", "match": "ได้" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_04",
+      "speaker": "nan",
+      "listener": "tom",
+      "image": "art/rep_04.webp",
+      "thai": "ได้ค่ะฟังนะ",
+      "roman": "dâi khâ fang ná",
+      "english": "Sure — listen, okay?",
+      "focus": "getting attention",
+      "register": "polite",
+      "new_words": ["นะ"],
+      "tip": "นะ at the end means 'okay?' — it keeps the tone warm when you're giving an instruction.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ฟัง", "roman": "fang", "gloss": "listen", "match": "ฟัง" },
+        { "thai": "นะ", "roman": "ná", "gloss": "okay?" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_05",
+      "speaker": "tom",
+      "listener": "nan",
+      "image": "art/rep_05.webp",
+      "thai": "คำนี้หมายถึงอะไร",
+      "roman": "kham níi mǎai-thʉ̌ng à-rai",
+      "english": "What does this word mean?",
+      "focus": "asking meaning",
+      "register": "polite",
+      "new_words": ["คำ", "หมายถึง"],
+      "tip": "คำ = word. หมายถึง = to mean (literally 'point at meaning'). อะไร at the end. You'll use this sentence more than any other in your first month.",
+      "tokens": [
+        { "thai": "คำ", "roman": "kham", "gloss": "word" },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "หมายถึง", "roman": "mǎai-thʉ̌ng", "gloss": "mean", "note": "หมาย + ถึง." },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_06",
+      "speaker": "nan",
+      "listener": "tom",
+      "image": "art/rep_06.webp",
+      "thai": "หมายถึงอาหารที่อร่อย",
+      "roman": "mǎai-thʉ̌ng aa-hǎan thîi à-rɔ̀i",
+      "english": "It means food that's delicious.",
+      "focus": "explaining",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ที่ here links a noun to a description: อาหารที่อร่อย = 'food that is delicious'. The same ที่ as in ผัดไทยที่ฉันสั่ง.",
+      "tokens": [
+        { "thai": "หมายถึง", "roman": "mǎai-thʉ̌ng", "gloss": "means" },
+        { "thai": "อาหาร", "roman": "aa-hǎan", "gloss": "food", "match": "อาหาร" },
+        { "thai": "ที่", "roman": "thîi", "gloss": "that (relative)", "match": "ที่" },
+        { "thai": "อร่อย", "roman": "à-rɔ̀i", "gloss": "delicious", "match": "อร่อย" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_07",
+      "speaker": "tom",
+      "listener": "nan",
+      "image": "art/rep_07.webp",
+      "thai": "อ๋อเข้าใจแล้วครับ",
+      "roman": "ɔ̌ɔ khâo-jai láew khráp",
+      "english": "Ohh — I get it now.",
+      "focus": "realising",
+      "register": "polite",
+      "new_words": ["อ๋อ"],
+      "tip": "อ๋อ is the sound of realisation — hugely frequent in speech. เข้าใจแล้ว = understood now (แล้ว = change of state).",
+      "tokens": [
+        { "thai": "อ๋อ", "roman": "ɔ̌ɔ", "gloss": "oh!", "note": "The 'now I get it' sound." },
+        { "thai": "เข้าใจ", "roman": "khâo-jai", "gloss": "understand", "match": "เข้าใจ" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "now", "note": "Change of state." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "rep_08",
+      "speaker": "nan",
+      "listener": "tom",
+      "image": "art/rep_08.webp",
+      "thai": "เก่งมากค่ะ",
+      "roman": "gèng mâak khâ",
+      "english": "Very good!",
+      "focus": "praise",
+      "register": "polite",
+      "new_words": ["เก่ง"],
+      "tip": "เก่ง = good at something (a skill), not 'good' in general. เก่งมาก = very skilled — the standard encouragement you'll hear.",
+      "tokens": [
+        { "thai": "เก่ง", "roman": "gèng", "gloss": "skilled" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" }
+      ],
+      "audio": null
+    }
+  ]
+}

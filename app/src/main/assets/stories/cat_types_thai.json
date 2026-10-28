@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "id": "cat_types_thai",
+  "title_en": "The Cat Who Wants to Type Thai",
+  "title_th": "แมวอยากพิมพ์ไทย",
+  "teaches_label": "Keyboard words",
+  "teaches_detail": "Type, letters, wrong, practise, easy, good at — the words that surround every keyboard drill.",
+  "level": 2,
+  "bg": "room",
+  "phases": [2, 3, 5, 6, 7, 8, 15],
+  "aim": "Talk about typing: กำลังพิมพ์, ผิด, ฝึกอีก, and encourage someone to keep going.",
+  "characters": [
+    { "id": "cat", "name_en": "Cat", "name_th": "แมว", "color": "#C2732F", "art_rig": "cat" },
+    { "id": "noon", "name_en": "Noon", "name_th": "นุ่น", "color": "#3E7A5E", "art_rig": "girl" }
+  ],
+  "extra_words": [
+    { "thai": "นุ่น", "roman": "nûn", "gloss": "Noon (name)" },
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "กำลัง", "roman": "gam-lang", "gloss": "currently doing (before a verb)" },
+    { "thai": "พิมพ์", "roman": "phim", "gloss": "to type / print" },
+    { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "the Thai language" },
+    { "thai": "บ้าง", "roman": "bâang", "gloss": "some too / my turn" },
+    { "thai": "สิ", "roman": "sì", "gloss": "encouraging particle ('go on')" },
+    { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must / have to" },
+    { "thai": "ช้าๆ", "roman": "cháa-cháa", "gloss": "slowly (ช้า + ๆ)" },
+    { "thai": "นะ", "roman": "ná", "gloss": "softening particle ('okay?')" },
+    { "thai": "ตัวอักษร", "roman": "dtua-àk-sɔ̌ɔn", "gloss": "letter / character" },
+    { "thai": "ก", "roman": "gɔɔ", "gloss": "the letter ก (first Thai letter)" },
+    { "thai": "ก่อน", "roman": "gàawn", "gloss": "first / before" },
+    { "thai": "ผิด", "roman": "phìt", "gloss": "wrong / incorrect" },
+    { "thai": "ฝึก", "roman": "fʉ̀k", "gloss": "to practise" },
+    { "thai": "ทุก", "roman": "thúk", "gloss": "every" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "เก่ง", "roman": "gèng", "gloss": "skilled / good at" }
+  ],
+  "cards": [
+    {
+      "id": "cat_01",
+      "speaker": "cat",
+      "listener": "noon",
+      "image": "art/cat_01.webp",
+      "thai": "นุ่นครับคุณกำลังทำอะไร",
+      "roman": "nûn khráp khun gam-lang tham à-rai",
+      "english": "Noon, what are you doing?",
+      "focus": "doing right now",
+      "register": "polite",
+      "new_words": ["กำลัง"],
+      "tip": "กำลัง goes before a verb to mean 'doing it right now' — the closest thing Thai has to '-ing'. ทำ = do, ทำอะไร = doing what?",
+      "tokens": [
+        { "thai": "นุ่น", "roman": "nûn", "gloss": "Noon", "note": "A short, friendly Thai name." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "กำลัง", "roman": "gam-lang", "gloss": "currently", "note": "Same as the app's 'now'." },
+        { "thai": "ทำ", "roman": "tham", "gloss": "to do", "match": "ทำ" },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_02",
+      "speaker": "noon",
+      "listener": "cat",
+      "image": "art/cat_02.webp",
+      "thai": "ฉันกำลังพิมพ์ภาษาไทย",
+      "roman": "chǎn gam-lang phim phaa-sǎa-thai",
+      "english": "I'm typing Thai.",
+      "focus": "keyboard",
+      "register": "casual",
+      "new_words": ["พิมพ์", "ภาษาไทย"],
+      "tip": "ภาษา = language, ไทย = Thai. So ภาษาไทย is the Thai language — and พิมพ์ is to type, the verb you'll use every session.",
+      "tokens": [
+        { "thai": "ฉัน", "roman": "chǎn", "gloss": "I (female)", "match": "ฉัน" },
+        { "thai": "กำลัง", "roman": "gam-lang", "gloss": "currently" },
+        { "thai": "พิมพ์", "roman": "phim", "gloss": "to type", "note": "พิมพ์ไทย = type Thai." },
+        { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "Thai language", "note": "ภาษา = language." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_03",
+      "speaker": "cat",
+      "listener": "noon",
+      "image": "art/cat_03.webp",
+      "thai": "ผมอยากพิมพ์บ้าง",
+      "roman": "pǒm yàak phim bâang",
+      "english": "I want to type too.",
+      "focus": "me too",
+      "register": "casual",
+      "new_words": [],
+      "tip": "บ้าง at the end = 'some too, my turn'. อยาก + verb = want to. Put them together and you can ask for a turn at almost anything.",
+      "tokens": [
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "อยาก", "roman": "yàak", "gloss": "want to", "match": "อยาก" },
+        { "thai": "พิมพ์", "roman": "phim", "gloss": "type" },
+        { "thai": "บ้าง", "roman": "bâang", "gloss": "some too", "note": "Asks for your turn." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_04",
+      "speaker": "noon",
+      "listener": "cat",
+      "image": "art/cat_04.webp",
+      "thai": "ได้สิแต่ต้องช้าๆนะ",
+      "roman": "dâi sì dtàe dtâwng cháa-cháa ná",
+      "english": "Sure — but slowly, okay?",
+      "focus": "encouragement",
+      "register": "casual",
+      "new_words": ["สิ", "ช้าๆ", "นะ"],
+      "tip": "ได้สิ = 'sure, go on' — สิ makes it encouraging. ๆ repeats the word before it, so ช้าๆ = slowly. นะ softens the warning.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "สิ", "roman": "sì", "gloss": "go on", "note": "Encouraging particle." },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must" },
+        { "thai": "ช้าๆ", "roman": "cháa-cháa", "gloss": "slowly", "note": "ช้า + ๆ = slowly. Opposite: เร็วๆ." },
+        { "thai": "นะ", "roman": "ná", "gloss": "okay?" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_05",
+      "speaker": "cat",
+      "listener": "noon",
+      "image": "art/cat_05.webp",
+      "thai": "พิมพ์ตัวอักษรอะไรดี",
+      "roman": "phim dtua-àk-sɔ̌ɔn à-rai dii",
+      "english": "Which letter should I type?",
+      "focus": "choosing",
+      "register": "casual",
+      "new_words": ["ตัวอักษร"],
+      "tip": "ตัวอักษร = a letter/character. อะไรดี = 'what would be good?' — the soft way to ask someone to choose for you.",
+      "tokens": [
+        { "thai": "พิมพ์", "roman": "phim", "gloss": "type" },
+        { "thai": "ตัวอักษร", "roman": "dtua-àk-sɔ̌ɔn", "gloss": "letter", "note": "ตัว = body, อักษร = letter." },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" },
+        { "thai": "ดี", "roman": "dii", "gloss": "good", "match": "ดี", "note": "อะไรดี = what's best?" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_06",
+      "speaker": "noon",
+      "listener": "cat",
+      "image": "art/cat_06.webp",
+      "thai": "พิมพ์กไก่ก่อนง่ายมาก",
+      "roman": "phim gɔɔ gài gàawn ngâai mâak",
+      "english": "Type \"ก ไก่\" first — it's really easy.",
+      "focus": "first steps",
+      "register": "casual",
+      "new_words": ["ก", "ก่อน"],
+      "tip": "ก ไก่ is how Thais name the first letter — every letter gets a word, like 'A as in apple'. ก่อน = first. ง่ายมาก = very easy.",
+      "tokens": [
+        { "thai": "พิมพ์", "roman": "phim", "gloss": "type" },
+        { "thai": "ก", "roman": "gɔɔ", "gloss": "the letter ก", "note": "Phase 1's first consonant." },
+        { "thai": "ไก่", "roman": "gài", "gloss": "chicken", "match": "ไก่", "note": "ก ไก่ = 'g as in gài'." },
+        { "thai": "ก่อน", "roman": "gàawn", "gloss": "first", "note": "ก่อน = before/first." },
+        { "thai": "ง่าย", "roman": "ngâai", "gloss": "easy", "match": "ง่าย" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_07",
+      "speaker": "cat",
+      "listener": "noon",
+      "image": "art/cat_07.webp",
+      "thai": "ผมพิมพ์ผิดอยากฝึกอีก",
+      "roman": "pǒm phim phìt yàak fʉ̀k ìik",
+      "english": "I typed it wrong — I want to practise more.",
+      "focus": "mistakes",
+      "register": "casual",
+      "new_words": ["ผิด", "ฝึก"],
+      "tip": "ผิด = wrong (opposite of ถูก). อีก = 'again/more', the same อีก as in the keyboard's replay button.",
+      "tokens": [
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "พิมพ์", "roman": "phim", "gloss": "type" },
+        { "thai": "ผิด", "roman": "phìt", "gloss": "wrong", "note": "พิมพ์ผิด = typed it wrong." },
+        { "thai": "อยาก", "roman": "yàak", "gloss": "want to", "match": "อยาก" },
+        { "thai": "ฝึก", "roman": "fʉ̀k", "gloss": "practise" },
+        { "thai": "อีก", "roman": "ìik", "gloss": "more / again", "match": "อีก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cat_08",
+      "speaker": "noon",
+      "listener": "cat",
+      "image": "art/cat_08.webp",
+      "thai": "ไม่เป็นไรฝึกทุกวันจะเก่ง",
+      "roman": "mâi bpen rai fʉ̀k thúk wan jà gèng",
+      "english": "No worries — practise every day and you'll be good.",
+      "focus": "encouragement",
+      "register": "casual",
+      "new_words": ["ทุก", "เก่ง"],
+      "tip": "ทุกวัน = every day. Thai doesn't need a future word, but จะ makes it clear: จะเก่ง = will be good. This is the app's whole pitch in one sentence.",
+      "tokens": [
+        { "thai": "ไม่เป็นไร", "roman": "mâi bpen rai", "gloss": "no worries", "match": "ไม่เป็นไร" },
+        { "thai": "ฝึก", "roman": "fʉ̀k", "gloss": "practise" },
+        { "thai": "ทุก", "roman": "thúk", "gloss": "every", "note": "ทุกวัน = every day." },
+        { "thai": "วัน", "roman": "wan", "gloss": "day", "match": "วัน" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "เก่ง", "roman": "gèng", "gloss": "good at" }
+      ],
+      "audio": null
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "id": "three_little_pigs",
+  "title_en": "The Three Little Pigs",
+  "title_th": "ลูกหมูสามตัว",
+  "teaches_label": "Building & weather",
+  "teaches_detail": "Materials, strong/weak, wind and cold — plus the best-known 'because' sentence in any language.",
+  "level": 1,
+  "bg": "forest",
+  "phases": [1, 2, 5, 6, 7, 8, 10],
+  "aim": "Talk about materials and strength: ทำจาก, ดีกว่า, แข็งแรง, because.",
+  "characters": [
+    { "id": "pig1", "name_en": "Pig 1", "name_th": "ลูกหมูหนึ่ง", "color": "#E39A9A", "art_rig": "pig" },
+    { "id": "pig2", "name_en": "Pig 2", "name_th": "ลูกหมูสอง", "color": "#D98282", "art_rig": "pig" },
+    { "id": "pig3", "name_en": "Pig 3", "name_th": "ลูกหมูสาม", "color": "#C96F6F", "art_rig": "pig" },
+    { "id": "wolf", "name_en": "Wolf", "name_th": "หมาป่า", "color": "#5A5A62", "art_rig": "wolf" }
+  ],
+  "extra_words": [
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "ฟาง", "roman": "faang", "gloss": "straw" },
+    { "thai": "ไม้", "roman": "mái", "gloss": "wood" },
+    { "thai": "กว่า", "roman": "gwàa", "gloss": "more than (comparative)" },
+    { "thai": "ประตู", "roman": "bprà-dtuu", "gloss": "door" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+    { "thai": "เป่า", "roman": "bpào", "gloss": "to blow" },
+    { "thai": "ลม", "roman": "lom", "gloss": "wind" },
+    { "thai": "แรง", "roman": "rɛɛng", "gloss": "strong (force)" },
+    { "thai": "ด้วย", "roman": "dûai", "gloss": "too / also" },
+    { "thai": "อิฐ", "roman": "ìt", "gloss": "brick" },
+    { "thai": "พัง", "roman": "phang", "gloss": "to collapse / fall apart" },
+    { "thai": "แข็งแรง", "roman": "kɛ̌ng-rɛɛng", "gloss": "strong / sturdy" },
+    { "thai": "จัง", "roman": "jang", "gloss": "so…! (emotional intensifier)" }
+  ],
+  "cards": [
+    {
+      "id": "pig_01",
+      "speaker": "pig1",
+      "listener": "pig2",
+      "image": "art/pig_01.webp",
+      "thai": "ผมจะทำบ้านจากฟาง",
+      "roman": "pǒm jà tham bâan jàak faang",
+      "english": "I'll build a house from straw.",
+      "focus": "made from",
+      "register": "casual",
+      "new_words": ["ฟาง"],
+      "tip": "ทำจาก = make from. ฟาง is straw; the word appears in ฟางข้าว (rice straw). จาก is also 'from' (จากบ้าน = from home).",
+      "tokens": [
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "ทำ", "roman": "tham", "gloss": "to make", "match": "ทำ" },
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "จาก", "roman": "jàak", "gloss": "from", "match": "จาก" },
+        { "thai": "ฟาง", "roman": "faang", "gloss": "straw" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_02",
+      "speaker": "pig2",
+      "listener": "pig1",
+      "image": "art/pig_02.webp",
+      "thai": "บ้านไม้ดีกว่า",
+      "roman": "bâan mái dii gwàa",
+      "english": "A wooden house is better.",
+      "focus": "better",
+      "register": "casual",
+      "new_words": ["ไม้", "กว่า"],
+      "tip": "ดี = good → ดีกว่า = better. No 'than' word is needed; กว่า carries it. บ้านไม้ = wood house (the material comes straight after the noun).",
+      "tokens": [
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "ไม้", "roman": "mái", "gloss": "wood", "note": "บ้านไม้ = wooden house." },
+        { "thai": "ดี", "roman": "dii", "gloss": "good", "match": "ดี" },
+        { "thai": "กว่า", "roman": "gwàa", "gloss": "more", "note": "Comparative marker." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_03",
+      "speaker": "wolf",
+      "listener": "pig1",
+      "image": "art/pig_03.webp",
+      "thai": "เปิดประตู!",
+      "roman": "bpə̀ət bprà-dtuu",
+      "english": "Open the door!",
+      "focus": "command",
+      "register": "casual",
+      "new_words": ["ประตู"],
+      "tip": "เปิด = open (a Phase 7 keyboard word); its opposite is ปิด = close. Commands need no subject or particle in Thai — just the verb.",
+      "tokens": [
+        { "thai": "เปิด", "roman": "bpə̀ət", "gloss": "to open", "match": "เปิด" },
+        { "thai": "ประตู!", "roman": "bprà-dtuu", "gloss": "door" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_04",
+      "speaker": "pig1",
+      "listener": "wolf",
+      "image": "art/pig_04.webp",
+      "thai": "ไม่เปิด!",
+      "roman": "mâi bpə̀ət",
+      "english": "Not opening!",
+      "focus": "negated command",
+      "register": "casual",
+      "new_words": [],
+      "tip": "ไม่ + verb negates the whole sentence: ไม่เปิด = 'won't open / not opening'. With ไม่ you don't need a subject — Thai drops it happily.",
+      "tokens": [
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "เปิด!", "roman": "bpə̀ət", "gloss": "to open", "match": "เปิด" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_05",
+      "speaker": "wolf",
+      "listener": "pig1",
+      "image": "art/pig_05.webp",
+      "thai": "ผมจะเป่าบ้านคุณ",
+      "roman": "pǒm jà bpào bâan khun",
+      "english": "I'll blow your house down.",
+      "focus": "future threat",
+      "register": "casual",
+      "new_words": ["เป่า"],
+      "tip": "เป่า = blow (also used for blowing out candles). จะ before the verb = will. บ้านคุณ = your house — no 'your' prefix needed beyond คุณ.",
+      "tokens": [
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "เป่า", "roman": "bpào", "gloss": "to blow" },
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "คุณ", "roman": "khun", "gloss": "your", "match": "คุณ" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_06",
+      "speaker": "pig2",
+      "listener": "pig1",
+      "image": "art/pig_06.webp",
+      "thai": "ลมแรงมากหนาวด้วย",
+      "roman": "lom rɛɛng mâak nǎao dûai",
+      "english": "The wind is strong — and it's cold too.",
+      "focus": "weather",
+      "register": "casual",
+      "new_words": ["ลม", "แรง", "ด้วย"],
+      "tip": "แรง = strong (for force, not flavour). หนาว = cold (weather), whereas เย็น = cool/cold to touch — a common mix-up. ด้วย at the end = 'too'.",
+      "tokens": [
+        { "thai": "ลม", "roman": "lom", "gloss": "wind", "note": "ลมแรง = strong wind." },
+        { "thai": "แรง", "roman": "rɛɛng", "gloss": "strong", "note": "For force/wind." },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" },
+        { "thai": "หนาว", "roman": "nǎao", "gloss": "cold (weather)", "match": "หนาว" },
+        { "thai": "ด้วย", "roman": "dûai", "gloss": "too", "note": "End of sentence = also." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_07",
+      "speaker": "pig3",
+      "listener": "wolf",
+      "image": "art/pig_07.webp",
+      "thai": "บ้านอิฐไม่พัง",
+      "roman": "bâan ìt mâi phang",
+      "english": "The brick house won't fall down.",
+      "focus": "negation",
+      "register": "casual",
+      "new_words": ["อิฐ", "พัง"],
+      "tip": "พัง = collapse/break down (for buildings and machines). บ้านอิฐ = brick house. ไม่พัง = won't collapse — same pattern as ไม่เปิด.",
+      "tokens": [
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "อิฐ", "roman": "ìt", "gloss": "brick" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "พัง", "roman": "phang", "gloss": "collapse" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pig_08",
+      "speaker": "wolf",
+      "listener": "pig3",
+      "image": "art/pig_08.webp",
+      "thai": "บ้านนี้แข็งแรงจัง",
+      "roman": "bâan níi kɛ̌ng-rɛɛng jang",
+      "english": "This house is so strong!",
+      "focus": "strong",
+      "register": "casual",
+      "new_words": ["แข็งแรง"],
+      "tip": "แข็งแรง = strong/sturdy (แข็ง = hard + แรง = force). จัง = 'so…!' — the wolf is impressed, which is the whole joke.",
+      "tokens": [
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "แข็งแรง", "roman": "kɛ̌ng-rɛɛng", "gloss": "strong" },
+        { "thai": "จัง", "roman": "jang", "gloss": "so…!" }
+      ],
+      "audio": null
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "id": "restaurant_complaint",
+  "title_en": "Something's Wrong",
+  "title_th": "อาหารผิด",
+  "teaches_label": "Complaints & fixes",
+  "teaches_detail": "Say the food is late or wrong, that it's too spicy, and ask for a replacement politely.",
+  "level": 2,
+  "bg": "market",
+  "phases": [1, 5, 6, 7, 8, 9, 12],
+  "aim": "Complain kindly: ช้า, ไม่ใช่, เกินไป, ถ้า…, ขอ…ใหม่.",
+  "characters": [
+    { "id": "customer", "name_en": "Customer", "name_th": "ลูกค้า", "color": "#B23A6B", "art_rig": "girl" },
+    { "id": "waiter", "name_en": "Waiter", "name_th": "บริกร", "color": "#5A4632", "art_rig": "man" }
+  ],
+  "extra_words": [
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "เดี๋ยว", "roman": "dǐao", "gloss": "in a moment / soon" },
+    { "thai": "มา", "roman": "maa", "gloss": "to come" },
+    { "thai": "แล้วก็", "roman": "láew-gɔ̂ɔ", "gloss": "and also" },
+    { "thai": "เกินไป", "roman": "gəən-bpai", "gloss": "too much" },
+    { "thai": "ด้วย", "roman": "dûai", "gloss": "too / also" },
+    { "thai": "เปลี่ยน", "roman": "bplìan", "gloss": "to change / swap" },
+    { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must" },
+    { "thai": "เร็วๆ", "roman": "reo-reo", "gloss": "quickly" },
+    { "thai": "นะ", "roman": "ná", "gloss": "softening particle ('okay?')" },
+    { "thai": "ครั้งหน้า", "roman": "khráng-nâa", "gloss": "next time" },
+    { "thai": "สั่ง", "roman": "sàng", "gloss": "to order" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" }
+  ],
+  "cards": [
+    {
+      "id": "comp_01",
+      "speaker": "customer",
+      "listener": "waiter",
+      "image": "art/comp_01.webp",
+      "thai": "ขอโทษค่ะอาหารช้ามาก",
+      "roman": "khɔ̌ɔ-thôot khâ aa-hǎan cháa mâak",
+      "english": "Excuse me — the food is very slow.",
+      "focus": "complaining",
+      "register": "polite",
+      "new_words": [],
+      "tip": "Start with ขอโทษ ('excuse me') — in Thai a complaint without it sounds harsh. ช้า = slow, มาก = very.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khɔ̌ɔ-thôot", "gloss": "excuse me", "match": "ขอโทษ" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "อาหาร", "roman": "aa-hǎan", "gloss": "food", "match": "อาหาร" },
+        { "thai": "ช้า", "roman": "cháa", "gloss": "slow", "match": "ช้า" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_02",
+      "speaker": "waiter",
+      "listener": "customer",
+      "image": "art/comp_02.webp",
+      "thai": "ขอโทษครับเดี๋ยวมาตอนนี้",
+      "roman": "khɔ̌ɔ-thôot khráp dǐao maa dtɔɔn-níi",
+      "english": "Sorry — it's coming right now.",
+      "focus": "reassuring",
+      "register": "polite",
+      "new_words": ["เดี๋ยว", "มา"],
+      "tip": "เดี๋ยว = 'in a moment' and it softens any promise. ตอนนี้ = right now. So เดี๋ยวมาตอนนี้ = 'coming in a moment, right now'.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khɔ̌ɔ-thôot", "gloss": "sorry", "match": "ขอโทษ" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "เดี๋ยว", "roman": "dǐao", "gloss": "in a moment" },
+        { "thai": "มา", "roman": "maa", "gloss": "come" },
+        { "thai": "ตอนนี้", "roman": "dtɔɔn-níi", "gloss": "right now", "match": "ตอนนี้" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_03",
+      "speaker": "customer",
+      "listener": "waiter",
+      "image": "art/comp_03.webp",
+      "thai": "นี่ไม่ใช่ผัดไทยที่ฉันสั่ง",
+      "roman": "nîi mâi châi phàt-thai thîi chǎn sàng",
+      "english": "This isn't the Pad Thai I ordered.",
+      "focus": "wrong order",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ที่ here is the relative pronoun: ผัดไทยที่ฉันสั่ง = 'the Pad Thai that I ordered'. Not a place — context decides. นี่ is a Phase 4 keyboard word again.",
+      "tokens": [
+        { "thai": "นี่", "roman": "nîi", "gloss": "this", "match": "นี่" },
+        { "thai": "ไม่ใช่", "roman": "mâi châi", "gloss": "is not", "match": "ไม่ใช่" },
+        { "thai": "ผัดไทย", "roman": "phàt-thai", "gloss": "Pad Thai", "match": "ผัดไทย" },
+        { "thai": "ที่", "roman": "thîi", "gloss": "that (relative)", "match": "ที่" },
+        { "thai": "ฉัน", "roman": "chǎn", "gloss": "I (female)", "match": "ฉัน" },
+        { "thai": "สั่ง", "roman": "sàng", "gloss": "order", "note": "สั่งอาหาร = order food." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_04",
+      "speaker": "waiter",
+      "listener": "customer",
+      "image": "art/comp_04.webp",
+      "thai": "ขอโทษครับผมเอาให้ใหม่",
+      "roman": "khɔ̌ɔ-thôot khráp pǒm ao hâi mài",
+      "english": "Sorry — I'll bring you a new one.",
+      "focus": "benefactive",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ให้ here means 'for you': เอาให้ใหม่ = take + give + new = 'I'll get you a new one'. เอา = take (a Phase 2 word); ใหม่ = new.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khɔ̌ɔ-thôot", "gloss": "sorry", "match": "ขอโทษ" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "เอา", "roman": "ao", "gloss": "take", "match": "เอา" },
+        { "thai": "ให้", "roman": "hâi", "gloss": "for (you)", "match": "ให้", "note": "Benefactive: do something FOR someone." },
+        { "thai": "ใหม่", "roman": "mài", "gloss": "new", "match": "ใหม่" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_05",
+      "speaker": "customer",
+      "listener": "waiter",
+      "image": "art/comp_05.webp",
+      "thai": "แล้วก็เผ็ดเกินไปด้วย",
+      "roman": "láew-gɔ̂ɔ phèt gəən-bpai dûai",
+      "english": "And it's too spicy, too.",
+      "focus": "too much",
+      "register": "polite",
+      "new_words": ["แล้วก็", "เกินไป", "ด้วย"],
+      "tip": "แล้วก็ = 'and also'. เกินไป = too much (as in ร้อนเกินไป). ด้วย at the end = 'too/as well' — stack complaints politely.",
+      "tokens": [
+        { "thai": "แล้วก็", "roman": "láew-gɔ̂ɔ", "gloss": "and also", "note": "แล้ว + ก็." },
+        { "thai": "เผ็ด", "roman": "phèt", "gloss": "spicy", "match": "เผ็ด" },
+        { "thai": "เกินไป", "roman": "gəən-bpai", "gloss": "too much" },
+        { "thai": "ด้วย", "roman": "dûai", "gloss": "too" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_06",
+      "speaker": "waiter",
+      "listener": "customer",
+      "image": "art/comp_06.webp",
+      "thai": "ถ้าไม่เผ็ดผมเปลี่ยนให้",
+      "roman": "thâa mâi phèt pǒm bplìan hâi",
+      "english": "If you don't want it spicy, I'll swap it for you.",
+      "focus": "if",
+      "register": "polite",
+      "new_words": ["เปลี่ยน"],
+      "tip": "ถ้า = if, at the start of the clause. เปลี่ยนให้ = change it for you (ให้ again). Conditionals don't need a 'then' word.",
+      "tokens": [
+        { "thai": "ถ้า", "roman": "thâa", "gloss": "if", "match": "ถ้า" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "เผ็ด", "roman": "phèt", "gloss": "spicy", "match": "เผ็ด" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "เปลี่ยน", "roman": "bplìan", "gloss": "change" },
+        { "thai": "ให้", "roman": "hâi", "gloss": "for you", "match": "ให้" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_07",
+      "speaker": "customer",
+      "listener": "waiter",
+      "image": "art/comp_07.webp",
+      "thai": "ขอบคุณค่ะแต่ต้องเร็วๆนะ",
+      "roman": "khàawp-khun khâ dtàe dtâwng reo-reo ná",
+      "english": "Thanks — but please make it quick.",
+      "focus": "polite push",
+      "register": "polite",
+      "new_words": ["ต้อง", "เร็วๆ", "นะ"],
+      "tip": "ต้อง = must. เร็วๆ = quickly (เร็ว + ๆ). นะ softens the demand — without it, the same sentence sounds like an order.",
+      "tokens": [
+        { "thai": "ขอบคุณ", "roman": "khàawp-khun", "gloss": "thank you", "match": "ขอบคุณ" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must" },
+        { "thai": "เร็วๆ", "roman": "reo-reo", "gloss": "quickly" },
+        { "thai": "นะ", "roman": "ná", "gloss": "okay?" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "comp_08",
+      "speaker": "waiter",
+      "listener": "customer",
+      "image": "art/comp_08.webp",
+      "thai": "ได้ครับครั้งหน้าบอกผมได้",
+      "roman": "dâi khráp khráng-nâa bɔ̀ɔk pǒm dâi",
+      "english": "Of course — next time just tell me.",
+      "focus": "next time",
+      "register": "polite",
+      "new_words": ["ครั้งหน้า"],
+      "tip": "ครั้งหน้า = next time (ครั้ง = occasion, หน้า = next). บอกผมได้ = 'you can tell me' — verb + ได้ = can. บอก is a Phase 1 keyboard word.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ครั้งหน้า", "roman": "khráng-nâa", "gloss": "next time" },
+        { "thai": "บอก", "roman": "bɔ̀ɔk", "gloss": "tell", "match": "บอก" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "me", "match": "ผม" },
+        { "thai": "ได้", "roman": "dâi", "gloss": "can", "match": "ได้" }
+      ],
+      "audio": null
+    }
+  ]
+}

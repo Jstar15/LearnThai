@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "id": "taxi_airport",
+  "title_en": "Taxi to the Airport",
+  "title_th": "แท็กซี่ไปสนามบิน",
+  "teaches_label": "Transport & time",
+  "teaches_detail": "Ask the fare, ask if it's far, ask what time you'll arrive, and ask the driver to hurry.",
+  "level": 2,
+  "bg": "street",
+  "phases": [2, 5, 7, 8, 10, 11, 15],
+  "aim": "Take a taxi: ไป…เท่าไหร่, ไกลไหม, กี่โมง, ช่วย…หน่อย.",
+  "characters": [
+    { "id": "passenger", "name_en": "Passenger", "name_th": "ผู้โดยสาร", "color": "#2F5F9E", "art_rig": "man" },
+    { "id": "driver", "name_en": "Driver", "name_th": "คนขับ", "color": "#5A4632", "art_rig": "oldman" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "สาม", "roman": "sǎam", "gloss": "three" },
+    { "thai": "ร้อย", "roman": "rɔ́ɔi", "gloss": "hundred" },
+    { "thai": "บาท", "roman": "bàat", "gloss": "baht (currency)" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+    { "thai": "ถึง", "roman": "thʉ̌ng", "gloss": "to arrive / reach" },
+    { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time" },
+    { "thai": "ประมาณ", "roman": "bprà-maan", "gloss": "approximately" },
+    { "thai": "ครึ่ง", "roman": "khrʉ̂ng", "gloss": "half" },
+    { "thai": "เร็วๆ", "roman": "reo-reo", "gloss": "quickly (เร็ว + ๆ)" },
+    { "thai": "หน่อย", "roman": "nɔ̀i", "gloss": "a little / please (softener)" },
+    { "thai": "รีบ", "roman": "rîip", "gloss": "to be in a hurry" }
+  ],
+  "cards": [
+    {
+      "id": "taxi_01",
+      "speaker": "passenger",
+      "listener": "driver",
+      "image": "art/taxi_01.webp",
+      "thai": "ไปสนามบินเท่าไหร่ครับ",
+      "roman": "bpai sà-nǎam-bin thâo-rài khráp",
+      "english": "How much to the airport?",
+      "focus": "fare",
+      "register": "polite",
+      "new_words": [],
+      "tip": "The taxi formula is ไป + place + เท่าไหร่. สนามบิน = airport (สนาม = field, บิน = fly). ครับ goes last.",
+      "tokens": [
+        { "thai": "ไป", "roman": "bpai", "gloss": "to go", "match": "ไป" },
+        { "thai": "สนามบิน", "roman": "sà-nǎam-bin", "gloss": "airport", "match": "สนามบิน", "note": "สนาม + บิน (fly)." },
+        { "thai": "เท่าไหร่", "roman": "thâo-rài", "gloss": "how much", "match": "เท่าไหร่" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_02",
+      "speaker": "driver",
+      "listener": "passenger",
+      "image": "art/taxi_02.webp",
+      "thai": "สามร้อยบาทครับ",
+      "roman": "sǎam rɔ́ɔi bàat khráp",
+      "english": "Three hundred baht.",
+      "focus": "price",
+      "register": "polite",
+      "new_words": ["สาม", "ร้อย", "บาท"],
+      "tip": "สามร้อย = three hundred. Prices in Thailand are often quoted as a flat number + บาท — no 'it is'.",
+      "tokens": [
+        { "thai": "สาม", "roman": "sǎam", "gloss": "three" },
+        { "thai": "ร้อย", "roman": "rɔ́ɔi", "gloss": "hundred" },
+        { "thai": "บาท", "roman": "bàat", "gloss": "baht" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_03",
+      "speaker": "passenger",
+      "listener": "driver",
+      "image": "art/taxi_03.webp",
+      "thai": "ไกลไหมครับ",
+      "roman": "glai mǎi khráp",
+      "english": "Is it far?",
+      "focus": "distance",
+      "register": "polite",
+      "new_words": ["ไหม"],
+      "tip": "Two-word question: adjective + ไหม. ไกล = far, ใกล้ = near. This pattern works for anything: แพงไหม (expensive?), ดีไหม (good?).",
+      "tokens": [
+        { "thai": "ไกล", "roman": "glai", "gloss": "far", "match": "ไกล" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_04",
+      "speaker": "driver",
+      "listener": "passenger",
+      "image": "art/taxi_04.webp",
+      "thai": "ไม่ไกลแต่รถติดมาก",
+      "roman": "mâi glai dtàe rót-dtìt mâak",
+      "english": "Not far — but the traffic is terrible.",
+      "focus": "traffic",
+      "register": "polite",
+      "new_words": ["ไม่"],
+      "tip": "รถติด is literally 'car stuck' = traffic jam, and it's one of the most useful street phrases in Bangkok. มาก after it = very bad.",
+      "tokens": [
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "ไกล", "roman": "glai", "gloss": "far", "match": "ไกล" },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "รถติด", "roman": "rót-dtìt", "gloss": "traffic jam", "match": "รถติด" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_05",
+      "speaker": "passenger",
+      "listener": "driver",
+      "image": "art/taxi_05.webp",
+      "thai": "ถึงกี่โมงครับ",
+      "roman": "thʉ̌ng gìi-moong khráp",
+      "english": "What time will we get there?",
+      "focus": "what time",
+      "register": "polite",
+      "new_words": ["ถึง", "กี่โมง"],
+      "tip": "กี่โมง = 'which hour' = what time. ถึง = arrive. The order is verb + question word: ถึงกี่โมง = arrive at what time.",
+      "tokens": [
+        { "thai": "ถึง", "roman": "thʉ̌ng", "gloss": "arrive", "note": "ถึงแล้ว = arrived." },
+        { "thai": "กี่โมง", "roman": "gìi-moong", "gloss": "what time", "note": "กี่ = how many, โมง = hour (colloquial)." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_06",
+      "speaker": "driver",
+      "listener": "passenger",
+      "image": "art/taxi_06.webp",
+      "thai": "ประมาณครึ่งชั่วโมงครับ",
+      "roman": "bprà-maan khrʉ̂ng chûua-moong khráp",
+      "english": "About half an hour.",
+      "focus": "duration",
+      "register": "polite",
+      "new_words": ["ประมาณ", "ครึ่ง"],
+      "tip": "ชั่วโมง = hour (a long word worth practising on the keyboard). ครึ่งชั่วโมง = half an hour. ประมาณ = approximately, before the number.",
+      "tokens": [
+        { "thai": "ประมาณ", "roman": "bprà-maan", "gloss": "about", "note": "Before a number." },
+        { "thai": "ครึ่ง", "roman": "khrʉ̂ng", "gloss": "half" },
+        { "thai": "ชั่วโมง", "roman": "chûua-moong", "gloss": "hour", "match": "ชั่วโมง" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_07",
+      "speaker": "passenger",
+      "listener": "driver",
+      "image": "art/taxi_07.webp",
+      "thai": "ช่วยเร็วๆหน่อยครับผมรีบ",
+      "roman": "chûai reo-reo nɔ̀i khráp pǒm rîip",
+      "english": "Please go faster — I'm in a hurry.",
+      "focus": "soft request",
+      "register": "polite",
+      "new_words": ["เร็วๆ", "หน่อย", "รีบ"],
+      "tip": "ช่วย…หน่อย = 'please …' (literally 'help … a little'). It makes any request polite. เร็วๆ = quickly; รีบ = be in a hurry.",
+      "tokens": [
+        { "thai": "ช่วย", "roman": "chûai", "gloss": "please / help", "match": "ช่วย" },
+        { "thai": "เร็วๆ", "roman": "reo-reo", "gloss": "quickly", "note": "เร็ว + ๆ." },
+        { "thai": "หน่อย", "roman": "nɔ̀i", "gloss": "a little", "note": "Softens the request." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "รีบ", "roman": "rîip", "gloss": "hurry" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "taxi_08",
+      "speaker": "driver",
+      "listener": "passenger",
+      "image": "art/taxi_08.webp",
+      "thai": "ถึงแล้วครับ",
+      "roman": "thʉ̌ng láew khráp",
+      "english": "We're here.",
+      "focus": "arrival",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ถึงแล้ว = arrived. The pattern verb + แล้ว marks completion — the same แล้ว you saw as 'then' and 'now'. End a taxi ride with it and you'll sound local.",
+      "tokens": [
+        { "thai": "ถึงแล้ว", "roman": "thʉ̌ng láew", "gloss": "arrived", "match": "ถึงแล้ว" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    }
+  ]
+}

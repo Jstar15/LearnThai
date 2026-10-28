@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "id": "at_the_doctor",
+  "title_en": "At the Doctor",
+  "title_th": "ไปหาหมอ",
+  "teaches_label": "Symptoms & advice",
+  "teaches_detail": "Say what hurts, how much, and understand a simple prescription: take this, three times a day.",
+  "level": 2,
+  "bg": "room",
+  "phases": [4, 5, 6, 7, 8, 9, 12],
+  "aim": "Describe a symptom (ปวด/เจ็บ), get advice (ต้อง…), and follow a dosage (วันละ…ครั้ง).",
+  "characters": [
+    { "id": "patient", "name_en": "Patient", "name_th": "คนไข้", "color": "#B23A6B", "art_rig": "girl" },
+    { "id": "doctor", "name_en": "Doctor", "name_th": "หมอ", "color": "#2F6F7A", "art_rig": "doctor" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ปวด", "roman": "bpùat", "gloss": "to ache / hurt (dull pain)" },
+    { "thai": "หัว", "roman": "hǔa", "gloss": "head" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+    { "thai": "สบาย", "roman": "sà-baai", "gloss": "well / comfortable" },
+    { "thai": "เจ็บ", "roman": "jèp", "gloss": "to hurt (sharp pain)" },
+    { "thai": "คอ", "roman": "khaaw", "gloss": "throat / neck" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must / have to" },
+    { "thai": "กินยา", "roman": "gin-yaa", "gloss": "to take medicine" },
+    { "thai": "มากๆ", "roman": "mâak-mâak", "gloss": "a lot (มาก + ๆ)" },
+    { "thai": "วันละ", "roman": "wan-lá", "gloss": "per day" },
+    { "thai": "กี่", "roman": "gìi", "gloss": "how many" },
+    { "thai": "ครั้ง", "roman": "khráng", "gloss": "time / occasion" },
+    { "thai": "คะ", "roman": "khá", "gloss": "polite particle (female, question)" },
+    { "thai": "สาม", "roman": "sǎam", "gloss": "three" },
+    { "thai": "หลัง", "roman": "lǎng", "gloss": "after (also: back)" }
+  ],
+  "cards": [
+    {
+      "id": "doc_01",
+      "speaker": "doctor",
+      "listener": "patient",
+      "image": "art/doc_01.webp",
+      "thai": "เป็นอะไรครับ",
+      "roman": "bpen à-rai khráp",
+      "english": "What's the matter?",
+      "focus": "asking symptoms",
+      "register": "polite",
+      "new_words": [],
+      "tip": "เป็นอะไร = 'are you what?' — the standard opener for a doctor, and also for 'what's wrong?' among friends. เป็น = to be (a state/illness).",
+      "tokens": [
+        { "thai": "เป็น", "roman": "bpen", "gloss": "to be / to have (illness)", "match": "เป็น" },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_02",
+      "speaker": "patient",
+      "listener": "doctor",
+      "image": "art/doc_02.webp",
+      "thai": "ฉันปวดหัวและไม่สบาย",
+      "roman": "chǎn bpùat hǔa láe mâi sà-baai",
+      "english": "I have a headache and I feel unwell.",
+      "focus": "symptoms",
+      "register": "polite",
+      "new_words": ["ปวด", "หัว", "สบาย"],
+      "tip": "ปวดหัว = head + ache, no 'have' needed. ไม่สบาย is the everyday phrase for 'unwell' — it literally means 'not comfortable'.",
+      "tokens": [
+        { "thai": "ฉัน", "roman": "chǎn", "gloss": "I (female)", "match": "ฉัน" },
+        { "thai": "ปวด", "roman": "bpùat", "gloss": "ache", "note": "Dull pain: ปวดหัว, ปวดท้อง." },
+        { "thai": "หัว", "roman": "hǔa", "gloss": "head" },
+        { "thai": "และ", "roman": "láe", "gloss": "and", "match": "และ" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "สบาย", "roman": "sà-baai", "gloss": "well", "note": "สบายดี = I'm fine." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_03",
+      "speaker": "doctor",
+      "listener": "patient",
+      "image": "art/doc_03.webp",
+      "thai": "เจ็บคอไหม",
+      "roman": "jèp khaaw mǎi",
+      "english": "Does your throat hurt?",
+      "focus": "sharp pain",
+      "register": "polite",
+      "new_words": ["เจ็บ", "คอ"],
+      "tip": "เจ็บ is sharp pain (a cut, a sore throat); ปวด is dull ache (headache, backache). Using the wrong one is the classic learner mix-up. เจ็บคอ = sore throat.",
+      "tokens": [
+        { "thai": "เจ็บ", "roman": "jèp", "gloss": "hurt (sharp)", "note": "เจ็บคอ = sore throat." },
+        { "thai": "คอ", "roman": "khaaw", "gloss": "throat", "note": "Also means neck." },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_04",
+      "speaker": "patient",
+      "listener": "doctor",
+      "image": "art/doc_04.webp",
+      "thai": "เจ็บนิดหน่อยค่ะ",
+      "roman": "jèp nít-nɔ̀i khâ",
+      "english": "It hurts a little.",
+      "focus": "degree",
+      "register": "polite",
+      "new_words": [],
+      "tip": "นิดหน่อย = a little bit, and it goes after the adjective. เจ็บนิดหน่อย = hurts a little; แพงนิดหน่อย = a bit expensive.",
+      "tokens": [
+        { "thai": "เจ็บ", "roman": "jèp", "gloss": "hurt" },
+        { "thai": "นิดหน่อย", "roman": "nít-nɔ̀i", "gloss": "a little", "match": "นิดหน่อย" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_05",
+      "speaker": "doctor",
+      "listener": "patient",
+      "image": "art/doc_05.webp",
+      "thai": "ต้องกินยาและดื่มน้ำมากๆ",
+      "roman": "dtâwng gin-yaa láe dʉ̀m náam mâak-mâak",
+      "english": "You must take medicine and drink lots of water.",
+      "focus": "advice",
+      "register": "polite",
+      "new_words": ["กินยา", "มากๆ"],
+      "tip": "ต้อง = must, before the verb. กินยา = take medicine (eat medicine — กิน covers both). มากๆ = lots, with ๆ doubling it.",
+      "tokens": [
+        { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must" },
+        { "thai": "กินยา", "roman": "gin-yaa", "gloss": "take medicine", "note": "กิน + ยา (medicine)." },
+        { "thai": "และ", "roman": "láe", "gloss": "and", "match": "และ" },
+        { "thai": "ดื่ม", "roman": "dʉ̀m", "gloss": "to drink", "match": "ดื่ม" },
+        { "thai": "น้ำ", "roman": "náam", "gloss": "water", "match": "น้ำ" },
+        { "thai": "มากๆ", "roman": "mâak-mâak", "gloss": "a lot", "note": "มาก + ๆ." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_06",
+      "speaker": "patient",
+      "listener": "doctor",
+      "image": "art/doc_06.webp",
+      "thai": "วันละกี่ครั้งคะ",
+      "roman": "wan-lá gìi khráng khá",
+      "english": "How many times a day?",
+      "focus": "dosage",
+      "register": "polite",
+      "new_words": ["วันละ", "กี่", "ครั้ง"],
+      "tip": "วันละ = per day (วัน + ละ 'each'). กี่ = how many, before the counter ครั้ง (times). This is the single most useful pharmacy sentence.",
+      "tokens": [
+        { "thai": "วันละ", "roman": "wan-lá", "gloss": "per day", "note": "ละ = each." },
+        { "thai": "กี่", "roman": "gìi", "gloss": "how many", "note": "กี่โมง = what time." },
+        { "thai": "ครั้ง", "roman": "khráng", "gloss": "times", "note": "Classifier for occurrences." },
+        { "thai": "คะ", "roman": "khá", "gloss": "polite (question)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_07",
+      "speaker": "doctor",
+      "listener": "patient",
+      "image": "art/doc_07.webp",
+      "thai": "วันละสามครั้งหลังอาหาร",
+      "roman": "wan-lá sǎam khráng lǎng aa-hǎan",
+      "english": "Three times a day, after meals.",
+      "focus": "instructions",
+      "register": "polite",
+      "new_words": ["สาม", "หลัง"],
+      "tip": "หลัง = after (also 'back' — context decides). ก่อน = before. So 'after meals' = หลังอาหาร, 'before meals' = ก่อนอาหาร.",
+      "tokens": [
+        { "thai": "วันละ", "roman": "wan-lá", "gloss": "per day" },
+        { "thai": "สาม", "roman": "sǎam", "gloss": "three" },
+        { "thai": "ครั้ง", "roman": "khráng", "gloss": "times" },
+        { "thai": "หลัง", "roman": "lǎng", "gloss": "after", "note": "Opposite: ก่อน = before." },
+        { "thai": "อาหาร", "roman": "aa-hǎan", "gloss": "food / meal", "match": "อาหาร" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "doc_08",
+      "speaker": "patient",
+      "listener": "doctor",
+      "image": "art/doc_08.webp",
+      "thai": "ขอบคุณค่ะคุณหมอ",
+      "roman": "khàawp-khun khâ khun mǎaw",
+      "english": "Thank you, doctor.",
+      "focus": "thanks",
+      "register": "polite",
+      "new_words": [],
+      "tip": "คุณหมอ = 'doctor' with the polite title คุณ in front. You can use คุณ + job for teachers, drivers, police — a handy politeness habit.",
+      "tokens": [
+        { "thai": "ขอบคุณ", "roman": "khàawp-khun", "gloss": "thank you", "match": "ขอบคุณ" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "คุณ", "roman": "khun", "gloss": "polite title", "match": "คุณ" },
+        { "thai": "หมอ", "roman": "mǎaw", "gloss": "doctor", "match": "หมอ" }
+      ],
+      "audio": null
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "id": "hotel_checkin",
+  "title_en": "Hotel Check-in",
+  "title_th": "เช็คอินโรงแรม",
+  "teaches_label": "Rooms & requests",
+  "teaches_detail": "Ask if a room is free, single or double, the price per night, and request a room downstairs.",
+  "level": 2,
+  "bg": "room",
+  "phases": [4, 5, 6, 7, 8, 13],
+  "aim": "Book a room: มีห้องว่างไหม, คืนละ, ราคา, ขอ…ได้ไหม.",
+  "characters": [
+    { "id": "guest", "name_en": "Guest", "name_th": "แขก", "color": "#2F5F9E", "art_rig": "man" },
+    { "id": "reception", "name_en": "Reception", "name_th": "พนักงาน", "color": "#3E7A5E", "art_rig": "girl" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "ห้อง", "roman": "hɔ̂ng", "gloss": "room" },
+    { "thai": "ว่าง", "roman": "wâang", "gloss": "free / available" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "เดี่ยว", "roman": "dìao", "gloss": "single / alone" },
+    { "thai": "คืน", "roman": "khʉʉn", "gloss": "night (for hotel stays)" },
+    { "thai": "ละ", "roman": "lá", "gloss": "per / each" },
+    { "thai": "พัน", "roman": "phan", "gloss": "thousand" },
+    { "thai": "รวม", "roman": "ruam", "gloss": "including / total" },
+    { "thai": "อาหารเช้า", "roman": "aa-hǎan-cháao", "gloss": "breakfast" },
+    { "thai": "ชั้น", "roman": "chán", "gloss": "floor / storey" },
+    { "thai": "สาม", "roman": "sǎam", "gloss": "three" },
+    { "thai": "ล่าง", "roman": "lâang", "gloss": "lower / downstairs" },
+    { "thai": "กุญแจ", "roman": "gun-jae", "gloss": "key" },
+    { "thai": "สอง", "roman": "sǎawng", "gloss": "two" },
+    { "thai": "ขอ", "roman": "khɔ̌ɔ", "gloss": "may I have" }
+  ],
+  "cards": [
+    {
+      "id": "hotel_01",
+      "speaker": "guest",
+      "listener": "reception",
+      "image": "art/hotel_01.webp",
+      "thai": "สวัสดีครับมีห้องว่างไหม",
+      "roman": "sà-wàt-dii khráp mii hɔ̂ng wâang mǎi",
+      "english": "Hello — do you have a room free?",
+      "focus": "availability",
+      "register": "polite",
+      "new_words": ["ห้อง", "ว่าง"],
+      "tip": "มี…ไหม = 'do you have…?' and it's the workhorse of every shop, hotel and restaurant. ห้อง = room; ว่าง = free/available.",
+      "tokens": [
+        { "thai": "สวัสดี", "roman": "sà-wàt-dii", "gloss": "hello", "match": "สวัสดี" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "ห้อง", "roman": "hɔ̂ng", "gloss": "room", "note": "ห้องน้ำ = bathroom." },
+        { "thai": "ว่าง", "roman": "wâang", "gloss": "free", "note": "Opposite: ไม่ว่าง = busy." },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_02",
+      "speaker": "reception",
+      "listener": "guest",
+      "image": "art/hotel_02.webp",
+      "thai": "มีค่ะห้องเดี่ยวหรือห้องคู่",
+      "roman": "mii khâ hɔ̂ng dìao rʉ̌ʉ hɔ̂ng khûu",
+      "english": "Yes — single or double?",
+      "focus": "choice",
+      "register": "polite",
+      "new_words": ["เดี่ยว"],
+      "tip": "หรือ = or, used for choosing between two things. คู่ = pair (a Phase 4 word) — ห้องคู่ = double room.",
+      "tokens": [
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ห้อง", "roman": "hɔ̂ng", "gloss": "room" },
+        { "thai": "เดี่ยว", "roman": "dìao", "gloss": "single" },
+        { "thai": "หรือ", "roman": "rʉ̌ʉ", "gloss": "or", "match": "หรือ" },
+        { "thai": "ห้อง", "roman": "hɔ̂ng", "gloss": "room" },
+        { "thai": "คู่", "roman": "khûu", "gloss": "double / pair", "match": "คู่" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_03",
+      "speaker": "guest",
+      "listener": "reception",
+      "image": "art/hotel_03.webp",
+      "thai": "ห้องคู่ครับราคาเท่าไหร่",
+      "roman": "hɔ̂ng khûu khráp raa-khaa thâo-rài",
+      "english": "A double — how much is it?",
+      "focus": "price",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ราคา = price, เท่าไหร่ = how much. ราคาเท่าไหร่ is the polite version you'll see on signs and menus.",
+      "tokens": [
+        { "thai": "ห้อง", "roman": "hɔ̂ng", "gloss": "room" },
+        { "thai": "คู่", "roman": "khûu", "gloss": "double", "match": "คู่" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ราคา", "roman": "raa-khaa", "gloss": "price", "match": "ราคา" },
+        { "thai": "เท่าไหร่", "roman": "thâo-rài", "gloss": "how much", "match": "เท่าไหร่" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_04",
+      "speaker": "reception",
+      "listener": "guest",
+      "image": "art/hotel_04.webp",
+      "thai": "คืนละพันสองค่ะรวมอาหารเช้า",
+      "roman": "khʉʉn lá phan sǎawng khâ ruam aa-hǎan-cháao",
+      "english": "1,200 a night — breakfast included.",
+      "focus": "per night",
+      "register": "polite",
+      "new_words": ["คืน", "พัน", "รวม"],
+      "tip": "คืนละ = per night (ละ = each). พันสอง = one thousand two hundred — Thais often say พัน + the hundreds. รวม = including.",
+      "tokens": [
+        { "thai": "คืน", "roman": "khʉʉn", "gloss": "night", "note": "For hotel stays: คืนละ = per night." },
+        { "thai": "ละ", "roman": "lá", "gloss": "per", "note": "วันละ = per day." },
+        { "thai": "พัน", "roman": "phan", "gloss": "thousand" },
+        { "thai": "สอง", "roman": "sǎawng", "gloss": "two", "note": "พันสอง = 1,200." },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "รวม", "roman": "ruam", "gloss": "including" },
+        { "thai": "อาหารเช้า", "roman": "aa-hǎan-cháao", "gloss": "breakfast", "note": "อาหาร + เช้า." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_05",
+      "speaker": "guest",
+      "listener": "reception",
+      "image": "art/hotel_05.webp",
+      "thai": "มีน้ำร้อนไหม",
+      "roman": "mii náam ráawn mǎi",
+      "english": "Is there hot water?",
+      "focus": "facilities",
+      "register": "polite",
+      "new_words": [],
+      "tip": "Again มี…ไหม. น้ำร้อน = hot water; น้ำเย็น = cold water. The same adjectives you use for weather work here.",
+      "tokens": [
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "น้ำ", "roman": "náam", "gloss": "water", "match": "น้ำ" },
+        { "thai": "ร้อน", "roman": "ráawn", "gloss": "hot", "match": "ร้อน" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_06",
+      "speaker": "reception",
+      "listener": "guest",
+      "image": "art/hotel_06.webp",
+      "thai": "มีค่ะอยู่ชั้นสาม",
+      "roman": "mii khâ yùu chán sǎam",
+      "english": "Yes, on the third floor.",
+      "focus": "location",
+      "register": "polite",
+      "new_words": ["ชั้น", "สาม"],
+      "tip": "ชั้น = floor/storey. อยู่ = is located. Notice there's no 'it is on' — Thai says 'have — located floor three'.",
+      "tokens": [
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "อยู่", "roman": "yùu", "gloss": "is located", "match": "อยู่" },
+        { "thai": "ชั้น", "roman": "chán", "gloss": "floor" },
+        { "thai": "สาม", "roman": "sǎam", "gloss": "three" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_07",
+      "speaker": "guest",
+      "listener": "reception",
+      "image": "art/hotel_07.webp",
+      "thai": "ขอห้องชั้นล่างได้ไหม",
+      "roman": "khɔ̌ɔ hɔ̂ng chán lâang dâi mǎi",
+      "english": "Could I have a room downstairs?",
+      "focus": "request",
+      "register": "polite",
+      "new_words": ["ล่าง"],
+      "tip": "ขอ…ได้ไหม = 'may I have…?' — the polite request frame you saw with ขอเบอร์. ล่าง = lower/downstairs; บน = upstairs.",
+      "tokens": [
+        { "thai": "ขอ", "roman": "khɔ̌ɔ", "gloss": "may I have" },
+        { "thai": "ห้อง", "roman": "hɔ̂ng", "gloss": "room" },
+        { "thai": "ชั้น", "roman": "chán", "gloss": "floor" },
+        { "thai": "ล่าง", "roman": "lâang", "gloss": "downstairs", "note": "บน = upstairs." },
+        { "thai": "ได้", "roman": "dâi", "gloss": "can", "match": "ได้" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "hotel_08",
+      "speaker": "reception",
+      "listener": "guest",
+      "image": "art/hotel_08.webp",
+      "thai": "ได้ค่ะนี่คือกุญแจ",
+      "roman": "dâi khâ nîi khʉʉ gun-jae",
+      "english": "Of course — here's your key.",
+      "focus": "handing over",
+      "register": "polite",
+      "new_words": ["กุญแจ"],
+      "tip": "นี่คือ + noun = 'here is / this is'. กุญแจ = key — a lovely keyboard word: กุ + ญแจ, with ญ in the middle.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "นี่", "roman": "nîi", "gloss": "this", "match": "นี่" },
+        { "thai": "คือ", "roman": "khʉʉ", "gloss": "is", "match": "คือ" },
+        { "thai": "กุญแจ", "roman": "gun-jae", "gloss": "key" }
+      ],
+      "audio": null
+    }
+  ]
+}

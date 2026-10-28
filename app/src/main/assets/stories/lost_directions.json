@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "lost_directions",
+  "title_en": "Lost in the City",
+  "title_th": "หลงทาง",
+  "teaches_label": "Asking strangers",
+  "teaches_detail": "Say you're lost, ask how to get somewhere, and follow the answer: straight, left, five minutes.",
+  "level": 2,
+  "bg": "street",
+  "phases": [4, 5, 6, 7, 8, 11, 15],
+  "aim": "Get unlost: หลงทาง, ไป…ยังไง, ตรงไป/เลี้ยวซ้าย, ใกล้ไหม.",
+  "characters": [
+    { "id": "tourist", "name_en": "Tourist", "name_th": "นักท่องเที่ยว", "color": "#2F5F9E", "art_rig": "man" },
+    { "id": "local", "name_en": "Local", "name_th": "คนไทย", "color": "#B23A6B", "art_rig": "girl" }
+  ],
+  "extra_words": [
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "หลง", "roman": "lǒng", "gloss": "to be lost" },
+    { "thai": "ทาง", "roman": "thaang", "gloss": "way / route" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "ยังไง", "roman": "yang-ngai", "gloss": "how (casual)" },
+    { "thai": "แล้ว", "roman": "láew", "gloss": "then" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ห้า", "roman": "hâa", "gloss": "five" },
+    { "thai": "ใจดี", "roman": "jai-dii", "gloss": "kind" },
+    { "thai": "ขอให้", "roman": "khɔ̌ɔ-hâi", "gloss": "may (you)… / wishing" }
+  ],
+  "cards": [
+    {
+      "id": "lost_01",
+      "speaker": "tourist",
+      "listener": "local",
+      "image": "art/lost_01.webp",
+      "thai": "ขอโทษครับผมหลงทาง",
+      "roman": "khɔ̌ɔ-thôot khráp pǒm lǒng thaang",
+      "english": "Excuse me — I'm lost.",
+      "focus": "being lost",
+      "register": "polite",
+      "new_words": ["หลง", "ทาง"],
+      "tip": "หลงทาง = lost (หลง = wander, ทาง = way). Start with ขอโทษ to stop a stranger politely — exactly how Thais do it.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khɔ̌ɔ-thôot", "gloss": "excuse me", "match": "ขอโทษ" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "หลง", "roman": "lǒng", "gloss": "lost" },
+        { "thai": "ทาง", "roman": "thaang", "gloss": "way" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_02",
+      "speaker": "local",
+      "listener": "tourist",
+      "image": "art/lost_02.webp",
+      "thai": "ไม่เป็นไรค่ะจะไปไหน",
+      "roman": "mâi bpen rai khâ jà bpai nǎi",
+      "english": "No problem — where are you going?",
+      "focus": "offering help",
+      "register": "polite",
+      "new_words": [],
+      "tip": "จะไปไหน = 'will go where?'. You met this in Red Riding Hood; here it's a stranger kindly taking charge.",
+      "tokens": [
+        { "thai": "ไม่เป็นไร", "roman": "mâi bpen rai", "gloss": "no problem", "match": "ไม่เป็นไร" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "ไป", "roman": "bpai", "gloss": "go", "match": "ไป" },
+        { "thai": "ไหน", "roman": "nǎi", "gloss": "where", "match": "ไหน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_03",
+      "speaker": "tourist",
+      "listener": "local",
+      "image": "art/lost_03.webp",
+      "thai": "ไปสถานีรถไฟฟ้ายังไงครับ",
+      "roman": "bpai sà-thǎa-nii rót-fai-fáa yang-ngai khráp",
+      "english": "How do I get to the SkyTrain station?",
+      "focus": "asking route",
+      "register": "polite",
+      "new_words": ["ยังไง"],
+      "tip": "The route question is ไป + place + ยังไง. ยังไง is the everyday form of อย่างไร (how) — same meaning, less formal.",
+      "tokens": [
+        { "thai": "ไป", "roman": "bpai", "gloss": "go", "match": "ไป" },
+        { "thai": "สถานี", "roman": "sà-thǎa-nii", "gloss": "station", "match": "สถานี" },
+        { "thai": "รถไฟฟ้า", "roman": "rót-fai-fáa", "gloss": "SkyTrain", "match": "รถไฟฟ้า" },
+        { "thai": "ยังไง", "roman": "yang-ngai", "gloss": "how", "note": "Casual อย่างไร." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_04",
+      "speaker": "local",
+      "listener": "tourist",
+      "image": "art/lost_04.webp",
+      "thai": "ตรงไปแล้วเลี้ยวซ้าย",
+      "roman": "dtrong bpai láew líao sáai",
+      "english": "Go straight, then turn left.",
+      "focus": "directions",
+      "register": "casual",
+      "new_words": [],
+      "tip": "ตรงไป = straight, เลี้ยวซ้าย = turn left, เลี้ยวขวา = turn right. แล้ว = then. Three keyboard words doing real navigation.",
+      "tokens": [
+        { "thai": "ตรงไป", "roman": "dtrong bpai", "gloss": "go straight", "match": "ตรงไป" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "then" },
+        { "thai": "เลี้ยวซ้าย", "roman": "líao sáai", "gloss": "turn left", "match": "เลี้ยวซ้าย" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_05",
+      "speaker": "tourist",
+      "listener": "local",
+      "image": "art/lost_05.webp",
+      "thai": "ใกล้ไหมครับ",
+      "roman": "glâi mǎi khráp",
+      "english": "Is it near?",
+      "focus": "distance",
+      "register": "polite",
+      "new_words": [],
+      "tip": "Adjective + ไหม — the same two-word question as ไกลไหม in the taxi. ใกล้ = near, ไกล = far.",
+      "tokens": [
+        { "thai": "ใกล้", "roman": "glâi", "gloss": "near", "match": "ใกล้" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_06",
+      "speaker": "local",
+      "listener": "tourist",
+      "image": "art/lost_06.webp",
+      "thai": "ใกล้มากเดินห้านาที",
+      "roman": "glâi mâak dəən hâa naa-thii",
+      "english": "Very near — a five-minute walk.",
+      "focus": "distance reply",
+      "register": "casual",
+      "new_words": ["ห้า"],
+      "tip": "เดิน = walk (a Phase 7 word). นาที = minute. Thai says 'walk five minutes' with no 'for' — the verb and the time just sit together.",
+      "tokens": [
+        { "thai": "ใกล้", "roman": "glâi", "gloss": "near", "match": "ใกล้" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" },
+        { "thai": "เดิน", "roman": "dəən", "gloss": "walk", "match": "เดิน" },
+        { "thai": "ห้า", "roman": "hâa", "gloss": "five" },
+        { "thai": "นาที", "roman": "naa-thii", "gloss": "minute", "match": "นาที" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_07",
+      "speaker": "tourist",
+      "listener": "local",
+      "image": "art/lost_07.webp",
+      "thai": "ขอบคุณมากครับคุณใจดี",
+      "roman": "khàawp-khun mâak khráp khun jai-dii",
+      "english": "Thank you so much — you're kind.",
+      "focus": "thanking",
+      "register": "polite",
+      "new_words": ["ใจดี"],
+      "tip": "ใจดี = kind (heart + good). You met it in the Shrek story; here it's the right thing to say to a stranger who helped.",
+      "tokens": [
+        { "thai": "ขอบคุณ", "roman": "khàawp-khun", "gloss": "thank you", "match": "ขอบคุณ" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "ใจดี", "roman": "jai-dii", "gloss": "kind" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lost_08",
+      "speaker": "local",
+      "listener": "tourist",
+      "image": "art/lost_08.webp",
+      "thai": "ไม่เป็นไรขอให้โชคดี",
+      "roman": "mâi bpen rai khɔ̌ɔ-hâi chôok-dii",
+      "english": "No problem — good luck!",
+      "focus": "goodbye",
+      "register": "casual",
+      "new_words": ["ขอให้"],
+      "tip": "ขอให้ = 'may you…' — a wishing pattern: ขอให้โชคดี (good luck), ขอให้มีความสุข (be happy). โชคดี is a Phase 10 word.",
+      "tokens": [
+        { "thai": "ไม่เป็นไร", "roman": "mâi bpen rai", "gloss": "no problem", "match": "ไม่เป็นไร" },
+        { "thai": "ขอให้", "roman": "khɔ̌ɔ-hâi", "gloss": "may you…" },
+        { "thai": "โชคดี", "roman": "chôok-dii", "gloss": "good luck", "match": "โชคดี" }
+      ],
+      "audio": null
+    }
+  ]
+}

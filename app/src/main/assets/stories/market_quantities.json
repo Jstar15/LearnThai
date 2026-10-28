@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "id": "market_quantities",
+  "title_en": "At the Fresh Market",
+  "title_th": "ตลาดสด",
+  "teaches_label": "Quantities & change",
+  "teaches_detail": "Buy by the kilo, ask for a bag and a bottle of water, and understand your change.",
+  "level": 2,
+  "bg": "market",
+  "phases": [4, 5, 8, 9, 12, 13],
+  "aim": "Buy by weight: สองกิโล, กิโลละ…, ขอถุง, เหลือเงินทอน.",
+  "characters": [
+    { "id": "customer", "name_en": "Customer", "name_th": "ลูกค้า", "color": "#B23A6B", "art_rig": "girl" },
+    { "id": "vendor", "name_en": "Vendor", "name_th": "ป้าแม่ค้า", "color": "#B5532A", "art_rig": "vendor" }
+  ],
+  "extra_words": [
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "คะ", "roman": "khá", "gloss": "polite particle (female, question)" },
+    { "thai": "ขอ", "roman": "khɔ̌ɔ", "gloss": "may I have" },
+    { "thai": "มะม่วง", "roman": "ma-mûang", "gloss": "mango" },
+    { "thai": "สอง", "roman": "sǎawng", "gloss": "two" },
+    { "thai": "กิโล", "roman": "gì-loo", "gloss": "kilogram" },
+    { "thai": "ละ", "roman": "lá", "gloss": "per / each" },
+    { "thai": "แปดสิบ", "roman": "bpɛ̀ɛt-sìp", "gloss": "eighty" },
+    { "thai": "บาท", "roman": "bàat", "gloss": "baht" },
+    { "thai": "ถุง", "roman": "tǔng", "gloss": "bag" },
+    { "thai": "หนึ่ง", "roman": "nʉ̀ng", "gloss": "one" },
+    { "thai": "ขวด", "roman": "khùat", "gloss": "bottle" },
+    { "thai": "แล้ว", "roman": "láew", "gloss": "then / already" },
+    { "thai": "กัน", "roman": "gan", "gloss": "together (friendly particle)" },
+    { "thai": "นะ", "roman": "ná", "gloss": "softening particle" }
+  ],
+  "cards": [
+    {
+      "id": "mkt_01",
+      "speaker": "customer",
+      "listener": "vendor",
+      "image": "art/mkt_01.webp",
+      "thai": "ขอมะม่วงสองกิโล",
+      "roman": "khɔ̌ɔ ma-mûang sǎawng gì-loo",
+      "english": "Two kilos of mangoes, please.",
+      "focus": "by weight",
+      "register": "polite",
+      "new_words": ["มะม่วง", "กิโล"],
+      "tip": "Thai needs no 'of': ขอ + noun + number + classifier. For weight the classifier is กิโล (kilogram), borrowed from English.",
+      "tokens": [
+        { "thai": "ขอ", "roman": "khɔ̌ɔ", "gloss": "may I have" },
+        { "thai": "มะม่วง", "roman": "ma-mûang", "gloss": "mango" },
+        { "thai": "สอง", "roman": "sǎawng", "gloss": "two" },
+        { "thai": "กิโล", "roman": "gì-loo", "gloss": "kilogram", "note": "A classifier and a unit." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_02",
+      "speaker": "vendor",
+      "listener": "customer",
+      "image": "art/mkt_02.webp",
+      "thai": "ได้ค่ะมีมะม่วงหวานมาก",
+      "roman": "dâi khâ mii ma-mûang wǎan mâak",
+      "english": "Sure — these mangoes are very sweet.",
+      "focus": "selling",
+      "register": "polite",
+      "new_words": [],
+      "tip": "หวาน = sweet (a Phase 12 word). มาก after the adjective = very. Vendors say this constantly; now you know it's a compliment, not a claim.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "มะม่วง", "roman": "ma-mûang", "gloss": "mango" },
+        { "thai": "หวาน", "roman": "wǎan", "gloss": "sweet", "match": "หวาน" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_03",
+      "speaker": "customer",
+      "listener": "vendor",
+      "image": "art/mkt_03.webp",
+      "thai": "เท่าไหร่คะ",
+      "roman": "thâo-rài khá",
+      "english": "How much?",
+      "focus": "asking price",
+      "register": "polite",
+      "new_words": ["คะ"],
+      "tip": "Two words and a particle — the most efficient question in Thai. คะ (high tone) makes it a polite question from a female speaker.",
+      "tokens": [
+        { "thai": "เท่าไหร่", "roman": "thâo-rài", "gloss": "how much", "match": "เท่าไหร่" },
+        { "thai": "คะ", "roman": "khá", "gloss": "polite (question)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_04",
+      "speaker": "vendor",
+      "listener": "customer",
+      "image": "art/mkt_04.webp",
+      "thai": "กิโลละแปดสิบบาทค่ะ",
+      "roman": "gì-loo lá bpɛ̀ɛt-sìp bàat khâ",
+      "english": "Eighty baht a kilo.",
+      "focus": "unit price",
+      "register": "polite",
+      "new_words": ["ละ", "แปดสิบ", "บาท"],
+      "tip": "ละ = per/each: กิโลละ = per kilo, วันละ = per day, คืนละ = per night. แปดสิบ = 80 (8 × 10).",
+      "tokens": [
+        { "thai": "กิโล", "roman": "gì-loo", "gloss": "kilogram" },
+        { "thai": "ละ", "roman": "lá", "gloss": "per" },
+        { "thai": "แปดสิบ", "roman": "bpɛ̀ɛt-sìp", "gloss": "eighty", "note": "แปด (8) + สิบ (10)." },
+        { "thai": "บาท", "roman": "bàat", "gloss": "baht" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_05",
+      "speaker": "customer",
+      "listener": "vendor",
+      "image": "art/mkt_05.webp",
+      "thai": "ขอถุงและน้ำหนึ่งขวด",
+      "roman": "khɔ̌ɔ tǔng láe náam nʉ̀ng khùat",
+      "english": "A bag too, and one bottle of water.",
+      "focus": "classifiers",
+      "register": "polite",
+      "new_words": ["ถุง", "หนึ่ง", "ขวด"],
+      "tip": "ถุง = bag, ขวด = bottle (Phase 13 words). หนึ่งขวด = one bottle — number before the classifier, as always.",
+      "tokens": [
+        { "thai": "ขอ", "roman": "khɔ̌ɔ", "gloss": "may I have" },
+        { "thai": "ถุง", "roman": "tǔng", "gloss": "bag", "match": "ถุง" },
+        { "thai": "และ", "roman": "láe", "gloss": "and", "match": "และ" },
+        { "thai": "น้ำ", "roman": "náam", "gloss": "water", "match": "น้ำ" },
+        { "thai": "หนึ่ง", "roman": "nʉ̀ng", "gloss": "one" },
+        { "thai": "ขวด", "roman": "khùat", "gloss": "bottle", "match": "ขวด" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_06",
+      "speaker": "vendor",
+      "listener": "customer",
+      "image": "art/mkt_06.webp",
+      "thai": "ได้ค่ะนี่เงินทอน",
+      "roman": "dâi khâ nîi ngən-thɔɔn",
+      "english": "Here's your change.",
+      "focus": "change",
+      "register": "polite",
+      "new_words": [],
+      "tip": "เงินทอน = change (money back) — เงิน = money, ทอน = to give change. นี่ + noun = 'here is…'.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure", "match": "ได้" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "นี่", "roman": "nîi", "gloss": "here is", "match": "นี่" },
+        { "thai": "เงินทอน", "roman": "ngən-thɔɔn", "gloss": "change", "match": "เงินทอน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_07",
+      "speaker": "customer",
+      "listener": "vendor",
+      "image": "art/mkt_07.webp",
+      "thai": "ขอบคุณค่ะราคาดีมาก",
+      "roman": "khàawp-khun khâ raa-khaa dii mâak",
+      "english": "Thank you — good price!",
+      "focus": "closing",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ราคา = price, ดี = good. ราคาดี is the friendly thing to say when you're happy — Thai markets run on this kind of warmth.",
+      "tokens": [
+        { "thai": "ขอบคุณ", "roman": "khàawp-khun", "gloss": "thank you", "match": "ขอบคุณ" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ราคา", "roman": "raa-khaa", "gloss": "price", "match": "ราคา" },
+        { "thai": "ดี", "roman": "dii", "gloss": "good", "match": "ดี" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "mkt_08",
+      "speaker": "vendor",
+      "listener": "customer",
+      "image": "art/mkt_08.webp",
+      "thai": "แล้วพบกันใหม่นะคะ",
+      "roman": "láew phóp gan mài ná khá",
+      "english": "See you again — take care!",
+      "focus": "goodbye",
+      "register": "polite",
+      "new_words": ["แล้ว", "นะ"],
+      "tip": "แล้วพบกันใหม่ is the warm 'see you again'. พบ = meet, ใหม่ = again/new, กัน = each other. Say it leaving any shop.",
+      "tokens": [
+        { "thai": "แล้ว", "roman": "láew", "gloss": "then" },
+        { "thai": "พบ", "roman": "phóp", "gloss": "meet", "match": "พบ" },
+        { "thai": "กัน", "roman": "gan", "gloss": "each other" },
+        { "thai": "ใหม่", "roman": "mài", "gloss": "again", "match": "ใหม่" },
+        { "thai": "นะ", "roman": "ná", "gloss": "okay?" },
+        { "thai": "คะ", "roman": "khá", "gloss": "polite (question)" }
+      ],
+      "audio": null
+    }
+  ]
+}

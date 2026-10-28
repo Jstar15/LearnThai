@@ -35,12 +35,22 @@ With deliberate practice of 1 hour daily, a beginner can achieve blind auditory 
 * **Dual Evaluation Modes**: Switch seamlessly between **Tone Mode** (pitch contour analysis) and **Transcribe Mode** (Google Speech Services STT recognition).
 * **Randomized Session Decks**: Words are shuffled per phase with a live progress counter (`${current + 1} / 20`), matching the Keyboard Practice experience.
 
-### 🗂️ 3. Flashcards & Leitner Spaced Repetition (SRS)
+### 🎭 3. Story Mode — Interactive Dialogue Scenes
+* **Data-driven scenes**: A story is one JSON file plus art in `assets/stories/`; adding a new story needs **no Kotlin changes**.
+* **Flip card per line**: the front shows the speaker's scene art with their Thai line in a speech bubble and native TTS; flip it to get English, romanisation, a tappable word-by-word breakdown, and a "why it's not obvious" tip.
+* **Play scene**: reads every line in order, auto-advancing the cards, and ends on a completion card.
+* **Say it**: on the back of every card, record yourself reading the line and get a percentage match from Thai speech recognition — with the target and transcript coloured character by character (amber = missed, red = different) and "focus on" chips for the words that didn't land. Words only; tone scoring lives in Speech Lab.
+* **Curriculum-linked breakdowns**: tokens that exist in the 300-word deck open the existing tone/class dialog.
+* **Ships with twenty scenes** (8 lines each), each teaching one pattern or one conversational function: ordering food, truth & negation, directions & body parts, invitations, keyboard words, comparatives, prices & bargaining, materials & weather, transport & time, symptoms & dosage, family & first meetings, daily routine, hotel requests, why/how questions, complaints, repair phrases, small talk, making plans, market quantities, and asking strangers for directions.
+* **Authoring tools**: `tools/generate_story_art.py` (deterministic Pillow scene art) and `tools/validate_stories.py` (token integrity, asset references, vocabulary coverage, new-word budget).
+
+### 🗂️ 4. Flashcards & Leitner Spaced Repetition (review deck)
+* Opens from **Lessons → "Review vocabulary (SRS)"** — the Stories tab takes the old flashcard slot, but no SRS progress is lost.
 * **3D Flip Cards**: Front shows the Thai script; tap to flip and reveal English meaning, phonetic transliteration, and tone rules.
 * **Leitner Algorithm**: Automated review intervals (10 min, 1 day, 3 days, 7 days, 14 days, 30 days) based on rating (`Again`, `Hard`, `Good`, `Easy`).
 * **Progress Persistence**: User SRS levels, mistake counts, and review timestamps persist locally across app restarts.
 
-### 📚 4. High-Frequency Thai Curriculum (Phases 1–15)
+### 📚 5. High-Frequency Thai Curriculum (Phases 1–15)
 A curated **300-word dataset** with **0 duplicates** structured into 15 progressive phases (20 words each):
 
 | Phases | Linguistic Focus | Example Words |
@@ -65,18 +75,21 @@ A curated **300-word dataset** with **0 duplicates** structured into 15 progress
 com.example.learnthai/
 ├── audio/                   # PitchDetector (YIN + DTW tone scoring), AudioRecorderManager
 ├── data/
-│   ├── model/               # WordEntity, WordItem, PitchComparison, ToneLabel
-│   └── repository/          # WordRepository (Asset loading + SRS progress persistence)
+│   ├── model/               # WordEntity, WordItem, PitchComparison, ToneLabel, Story*
+│   └── repository/          # WordRepository (words + SRS), StoryRepository, StoryProgressStore
 ├── domain/
 │   └── tone/                # ToneRuleEvaluator, ConsonantClass, ToneType
 ├── tts/                     # TtsManager (Android TextToSpeech th-TH)
+├── assets/stories/          # index.json, <story>.json, art/*.webp (content, not code)
+├── tools/                   # generate_story_art.py, validate_stories.py
 └── ui/
-    ├── components/          # WordBreakdownDialog, PitchVisualizer, AudioWaveformVisualizer
+    ├── components/          # WordBreakdownDialog, PitchVisualizer, StoryImage (asset art loader)
     │   └── keyboard/        # KedmaneeLayout, KedmaneeKeyboard (Interactive 4-row layout)
-    ├── flashcards/          # FlashcardsScreen (3D flip cards + SRS Leitner buttons)
+    ├── flashcards/          # FlashcardsScreen (SRS review deck, opened from Lessons)
     ├── keyboardpractice/    # KeyboardPracticeScreen (Guided & Blind modes, seed shuffle)
     ├── speechlab/           # SpeechLabScreen (DTW pitch visualization, STT transcribe)
-    └── settings/            # SettingsScreen (TTS speed rate slider, curriculum details)
+    ├── stories/             # StoriesScreen, StoryPlayerScreen, flip card / token sheet / tip card
+    └── settings/            # SettingsScreen (TTS speed, story playback; opened from the top-right gear)
 ```
 
 * **Jetpack Compose**: 100% declarative UI with Material 3 theming.

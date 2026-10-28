@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "goldilocks_bears",
+  "title_en": "Goldilocks & the Bears",
+  "title_th": "หนูทองกับสามหมี",
+  "teaches_label": "Comparing things",
+  "teaches_detail": "Say something is too hot, sweeter, or the hardest — and ask who did it.",
+  "level": 2,
+  "bg": "room",
+  "phases": [4, 5, 6, 7, 8, 10, 12],
+  "aim": "Compare with เกินไป (too), กว่า (more), and ที่สุด (the most).",
+  "characters": [
+    { "id": "goldilocks", "name_en": "Goldilocks", "name_th": "หนูทอง", "color": "#C8543F", "art_rig": "girl_blonde" },
+    { "id": "papa", "name_en": "Papa Bear", "name_th": "หมีพ่อ", "color": "#7A5230", "art_rig": "bear" },
+    { "id": "baby", "name_en": "Baby Bear", "name_th": "หมีน้อย", "color": "#A9762F", "art_rig": "bear" }
+  ],
+  "extra_words": [
+    { "thai": "หลัง", "roman": "lǎng", "gloss": "classifier for houses" },
+    { "thai": "มา", "roman": "maa", "gloss": "to come" },
+    { "thai": "จัง", "roman": "jang", "gloss": "so…! (emotional intensifier)" },
+    { "thai": "ข้าวต้ม", "roman": "khâao-dtôm", "gloss": "rice porridge" },
+    { "thai": "เกินไป", "roman": "gəən-bpai", "gloss": "too much / too (excessive)" },
+    { "thai": "ของ", "roman": "khǎawng", "gloss": "of / belonging to" },
+    { "thai": "กว่า", "roman": "gwàa", "gloss": "more than (comparative)" },
+    { "thai": "เตียง", "roman": "dtiiang", "gloss": "bed" },
+    { "thai": "แข็ง", "roman": "kɛ̌ng", "gloss": "hard / firm" },
+    { "thai": "ที่สุด", "roman": "thîi-sùt", "gloss": "the most (superlative)" },
+    { "thai": "เธอ", "roman": "thəə", "gloss": "she / her" },
+    { "thai": "บน", "roman": "bon", "gloss": "on / above" },
+    { "thai": "หนูน้อย", "roman": "nǔu-nɔ́ɔy", "gloss": "little one" },
+    { "thai": "อย่า", "roman": "yàa", "gloss": "don't (command)" },
+    { "thai": "กลัว", "roman": "glua", "gloss": "afraid" },
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" }
+  ],
+  "cards": [
+    {
+      "id": "gold_01",
+      "speaker": "goldilocks",
+      "listener": "papa",
+      "image": "art/gold_01.webp",
+      "thai": "บ้านหลังนี้ใหญ่จัง",
+      "roman": "bâan lǎng níi yài jang",
+      "english": "This house is so big!",
+      "focus": "house classifier",
+      "register": "casual",
+      "new_words": ["หลัง"],
+      "tip": "For houses you count with หลัง (literally 'back'): บ้านหลังนี้ = 'this house'. จัง at the end adds 'so…!' — you'll hear it constantly in spoken Thai.",
+      "tokens": [
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "หลัง", "roman": "lǎng", "gloss": "classifier: houses", "note": "บ้านหลังนี้ = this house." },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "ใหญ่", "roman": "yài", "gloss": "big", "match": "ใหญ่" },
+        { "thai": "จัง", "roman": "jang", "gloss": "so…!", "note": "Emotional intensifier." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_02",
+      "speaker": "papa",
+      "listener": "goldilocks",
+      "image": "art/gold_02.webp",
+      "thai": "ใครมาที่บ้านเรา",
+      "roman": "khrai maa thîi bâan rao",
+      "english": "Who came to our house?",
+      "focus": "who",
+      "register": "casual",
+      "new_words": ["มา"],
+      "tip": "ใคร = who, and Thai puts it where the answer would go — at the front here. มา = come; ที่ marks the place: มาที่บ้าน = come to the house.",
+      "tokens": [
+        { "thai": "ใคร", "roman": "khrai", "gloss": "who", "match": "ใคร" },
+        { "thai": "มา", "roman": "maa", "gloss": "to come", "note": "คู่กับ ไป (go)." },
+        { "thai": "ที่", "roman": "thîi", "gloss": "at / place", "match": "ที่" },
+        { "thai": "บ้าน", "roman": "bâan", "gloss": "house", "match": "บ้าน" },
+        { "thai": "เรา", "roman": "rao", "gloss": "our / we", "match": "เรา" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_03",
+      "speaker": "goldilocks",
+      "listener": "baby",
+      "image": "art/gold_03.webp",
+      "thai": "ข้าวต้มนี้ร้อนเกินไป",
+      "roman": "khâao-dtôm níi ráawn gəən-bpai",
+      "english": "This porridge is too hot.",
+      "focus": "too much",
+      "register": "casual",
+      "new_words": ["ข้าวต้ม", "เกินไป"],
+      "tip": "เกินไป after an adjective means 'too …': ร้อนเกินไป = too hot. Compare ร้อนมาก = very hot — มาก is a lot, เกินไป is past the limit.",
+      "tokens": [
+        { "thai": "ข้าวต้ม", "roman": "khâao-dtôm", "gloss": "rice porridge", "note": "ข้าว + ต้ม (boiled)." },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "ร้อน", "roman": "ráawn", "gloss": "hot", "match": "ร้อน" },
+        { "thai": "เกินไป", "roman": "gəən-bpai", "gloss": "too much", "note": "เกิน = exceed + ไป." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_04",
+      "speaker": "baby",
+      "listener": "goldilocks",
+      "image": "art/gold_04.webp",
+      "thai": "ของผมหวานกว่าและอร่อยกว่า",
+      "roman": "khǎawng pǒm wǎan gwàa láe à-rɔ̀i gwàa",
+      "english": "Mine is sweeter — and tastier.",
+      "focus": "comparative",
+      "register": "casual",
+      "new_words": ["กว่า"],
+      "tip": "กว่า after the adjective = '-er / more than': หวานกว่า = sweeter. Unlike English, 'than' is inside กว่า — you often don't name the thing you're comparing to.",
+      "tokens": [
+        { "thai": "ของ", "roman": "khǎawng", "gloss": "of / mine", "note": "ของผม = mine." },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "หวาน", "roman": "wǎan", "gloss": "sweet", "match": "หวาน" },
+        { "thai": "กว่า", "roman": "gwàa", "gloss": "more than", "note": "Comparative suffix." },
+        { "thai": "และ", "roman": "láe", "gloss": "and", "match": "และ" },
+        { "thai": "อร่อย", "roman": "à-rɔ̀i", "gloss": "delicious", "match": "อร่อย" },
+        { "thai": "กว่า", "roman": "gwàa", "gloss": "more than" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_05",
+      "speaker": "goldilocks",
+      "listener": "baby",
+      "image": "art/gold_05.webp",
+      "thai": "เตียงนี้แข็งที่สุด",
+      "roman": "dtiiang níi kɛ̌ng thîi-sùt",
+      "english": "This bed is the hardest.",
+      "focus": "superlative",
+      "register": "casual",
+      "new_words": ["เตียง", "แข็ง", "ที่สุด"],
+      "tip": "ที่สุด after the adjective = 'the most': แข็งที่สุด = hardest of all. It's the same word you'll see in ads: ดีที่สุด = best.",
+      "tokens": [
+        { "thai": "เตียง", "roman": "dtiiang", "gloss": "bed" },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "แข็ง", "roman": "kɛ̌ng", "gloss": "hard", "note": "แข็งแรง = strong (hard + strong)." },
+        { "thai": "ที่สุด", "roman": "thîi-sùt", "gloss": "the most" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_06",
+      "speaker": "papa",
+      "listener": "baby",
+      "image": "art/gold_06.webp",
+      "thai": "เธอนอนบนเตียงเรา",
+      "roman": "thəə naawn bon dtiiang rao",
+      "english": "She slept on our bed.",
+      "focus": "past without tense",
+      "register": "casual",
+      "new_words": ["เธอ", "บน"],
+      "tip": "Thai has no past tense — นอน is just 'sleep/slept'. Time comes from context or a word like แล้ว. บน = on top of; ใต้ = under.",
+      "tokens": [
+        { "thai": "เธอ", "roman": "thəə", "gloss": "she", "note": "Casual 'she/her'." },
+        { "thai": "นอน", "roman": "naawn", "gloss": "to sleep", "match": "นอน" },
+        { "thai": "บน", "roman": "bon", "gloss": "on", "note": "บน/ใต้ = on/under." },
+        { "thai": "เตียง", "roman": "dtiiang", "gloss": "bed" },
+        { "thai": "เรา", "roman": "rao", "gloss": "our", "match": "เรา" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_07",
+      "speaker": "papa",
+      "listener": "goldilocks",
+      "image": "art/gold_07.webp",
+      "thai": "หนูน้อยอย่ากลัว",
+      "roman": "nǔu-nɔ́ɔy yàa glua",
+      "english": "Little one, don't be afraid.",
+      "focus": "negative command",
+      "register": "casual",
+      "new_words": ["อย่า", "กลัว"],
+      "tip": "อย่า + verb = 'don't …'. It's the command form of ไม่. อย่ากลัว = don't be scared; อย่าไป = don't go.",
+      "tokens": [
+        { "thai": "หนูน้อย", "roman": "nǔu-nɔ́ɔy", "gloss": "little one" },
+        { "thai": "อย่า", "roman": "yàa", "gloss": "don't", "note": "Negative command." },
+        { "thai": "กลัว", "roman": "glua", "gloss": "afraid" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "gold_08",
+      "speaker": "goldilocks",
+      "listener": "papa",
+      "image": "art/gold_08.webp",
+      "thai": "ขอโทษค่ะฉันจะกลับบ้าน",
+      "roman": "khǎaw-thôot khâ chǎn jà glàp-bâan",
+      "english": "Sorry — I'll go home.",
+      "focus": "apology",
+      "register": "polite",
+      "new_words": [],
+      "tip": "กลับบ้าน = return home, one of the most useful two-word verbs. จะ marks the future: ฉันจะกลับบ้าน = I will go home.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khǎaw-thôot", "gloss": "sorry", "match": "ขอโทษ" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ฉัน", "roman": "chǎn", "gloss": "I (female)", "match": "ฉัน" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "กลับบ้าน", "roman": "glàp-bâan", "gloss": "go home", "match": "กลับบ้าน" }
+      ],
+      "audio": null
+    }
+  ]
+}

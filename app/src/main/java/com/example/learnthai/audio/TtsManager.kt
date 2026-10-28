@@ -10,6 +10,14 @@ import java.util.Locale
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlinx.coroutines.suspendCancellableCoroutine
 
+data class ThaiVoiceInfo(
+    val name: String,
+    val displayName: String,
+    val isNetwork: Boolean,
+    val isHighQuality: Boolean,
+    val voice: Voice
+)
+
 class TtsManager(
     private val context: Context,
     private val onInitComplete: (Boolean) -> Unit = {}
@@ -18,6 +26,11 @@ class TtsManager(
     private var tts: TextToSpeech? = null
     var isReady: Boolean = false
         private set
+
+    var currentVoiceName: String? = null
+        private set
+
+    private var pendingPreferredVoiceName: String? = null
 
     var speechRate: Float = 0.85f
         set(value) {
@@ -40,6 +53,7 @@ class TtsManager(
                     if (fallbackStatus == TextToSpeech.SUCCESS) {
                         tts?.setLanguage(thaiLocale)
                         tts?.setSpeechRate(speechRate)
+                        applyVoiceSelection(pendingPreferredVoiceName)
                         isReady = true
                         onInitComplete(true)
                     } else {
@@ -49,6 +63,7 @@ class TtsManager(
                 }
             } else {
                 tts?.setSpeechRate(speechRate)
+                applyVoiceSelection(pendingPreferredVoiceName)
                 isReady = true
                 onInitComplete(true)
             }
@@ -56,6 +71,104 @@ class TtsManager(
             isReady = false
             onInitComplete(false)
         }
+    }
+
+    /**
+     * Sets or queues the preferred voice name. If TTS is ready, applies immediately.
+     */
+    fun applyPreferredVoice(voiceName: String?) {
+        pendingPreferredVoiceName = voiceName
+        if (isReady) {
+            applyVoiceSelection(voiceName)
+        }
+    }
+
+    /**
+     * Enumerates all Thai voices installed or available through the current engine.
+     */
+    fun getAvailableThaiVoices(): List<ThaiVoiceInfo> {
+        val engine = tts ?: return emptyList()
+        val voices = try {
+            engine.voices
+        } catch (_: Exception) {
+            null
+        } ?: return emptyList()
+
+        return voices.filter { voice ->
+            val lang = voice.locale?.language.orEmpty()
+            lang.equals("th", ignoreCase = true)
+        }.sortedWith(
+            compareByDescending<Voice> { it.isNetworkConnectionRequired }
+                .thenByDescending { it.quality }
+                .thenBy { it.name }
+        ).mapIndexed { index, voice ->
+            val isNetwork = voice.isNetworkConnectionRequired
+            val nameLower = voice.name.lowercase()
+            val gender = when {
+                nameLower.contains("female") || nameLower.contains("cfn") || nameLower.contains("cfo") -> "Female"
+                nameLower.contains("male") || nameLower.contains("thb") || nameLower.contains("tha") -> "Male"
+                else -> "Voice ${index + 1}"
+            }
+            val typeLabel = if (isNetwork) "Neural HD" else "On-Device"
+            val displayName = "$gender ($typeLabel)"
+
+            ThaiVoiceInfo(
+                name = voice.name,
+                displayName = displayName,
+                isNetwork = isNetwork,
+                isHighQuality = voice.quality >= Voice.QUALITY_HIGH || isNetwork,
+                voice = voice
+            )
+        }
+    }
+
+    /**
+     * Sets the active TTS voice by exact name. Pass null to reset to best default.
+     */
+    fun setVoiceByName(voiceName: String?): Boolean {
+        val engine = tts ?: return false
+        if (voiceName.isNullOrBlank()) {
+            return autoSelectBestVoice()
+        }
+        val target = try {
+            engine.voices?.firstOrNull { it.name == voiceName }
+        } catch (_: Exception) {
+            null
+        }
+        return if (target != null) {
+            try {
+                engine.voice = target
+                currentVoiceName = target.name
+                true
+            } catch (_: Exception) {
+                false
+            }
+        } else {
+            false
+        }
+    }
+
+    private fun applyVoiceSelection(preferredVoiceName: String?) {
+        if (!preferredVoiceName.isNullOrBlank()) {
+            if (setVoiceByName(preferredVoiceName)) return
+        }
+        // If no preference or preference voice unavailable, pick the best non-robotic voice available
+        autoSelectBestVoice()
+    }
+
+    private fun autoSelectBestVoice(): Boolean {
+        val engine = tts ?: return false
+        val available = getAvailableThaiVoices()
+        val best = available.firstOrNull { it.isNetwork } ?: available.firstOrNull()
+        if (best != null) {
+            try {
+                engine.voice = best.voice
+                currentVoiceName = best.name
+                return true
+            } catch (_: Exception) {}
+        }
+        currentVoiceName = null
+        return false
     }
 
     fun speak(text: String, rate: Float = speechRate) {

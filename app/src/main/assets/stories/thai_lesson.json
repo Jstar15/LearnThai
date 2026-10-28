@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "id": "thai_lesson",
+  "title_en": "First Thai Lesson",
+  "title_th": "เรียนภาษาไทยครั้งแรก",
+  "teaches_label": "Learning & why",
+  "teaches_detail": "Ask why and how, talk about reading and listening, and say you understand.",
+  "level": 2,
+  "bg": "room",
+  "phases": [5, 6, 7, 8, 10, 14],
+  "aim": "Talk about learning: ทำไม…, อย่างไร, อ่าน/ฟัง/เข้าใจ.",
+  "characters": [
+    { "id": "teacher", "name_en": "Teacher", "name_th": "ครู", "color": "#8A5A2E", "art_rig": "girl" },
+    { "id": "student", "name_en": "Student", "name_th": "นักเรียน", "color": "#2F5F9E", "art_rig": "man" }
+  ],
+  "extra_words": [
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "the Thai language" },
+    { "thai": "ไทย", "roman": "thai", "gloss": "Thai / Thailand" },
+    { "thai": "ทุก", "roman": "thúk", "gloss": "every" },
+    { "thai": "ทีละ", "roman": "thîi-lá", "gloss": "one at a time" },
+    { "thai": "คำ", "roman": "kham", "gloss": "word" },
+    { "thai": "เสียง", "roman": "sǐang", "gloss": "sound / voice" },
+    { "thai": "แล้ว", "roman": "láew", "gloss": "already / then" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" }
+  ],
+  "cards": [
+    {
+      "id": "lesson_01",
+      "speaker": "teacher",
+      "listener": "student",
+      "image": "art/lesson_01.webp",
+      "thai": "วันนี้ครูจะสอนภาษาไทย",
+      "roman": "wan-níi khruu jà sɔ̌ɔn phaa-sǎa-thai",
+      "english": "Today I'm going to teach Thai.",
+      "focus": "teaching",
+      "register": "polite",
+      "new_words": ["ภาษาไทย"],
+      "tip": "ครู = teacher (a Phase 14 word — the family/social phase finally appears in a story). สอน = teach; นักเรียน = student. จะ marks the plan.",
+      "tokens": [
+        { "thai": "วันนี้", "roman": "wan-níi", "gloss": "today", "match": "วันนี้" },
+        { "thai": "ครู", "roman": "khruu", "gloss": "teacher", "match": "ครู", "note": "A Phase 14 word." },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "สอน", "roman": "sɔ̌ɔn", "gloss": "teach", "match": "สอน" },
+        { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "Thai language" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_02",
+      "speaker": "student",
+      "listener": "teacher",
+      "image": "art/lesson_02.webp",
+      "thai": "ภาษาไทยยากไหมครับ",
+      "roman": "phaa-sǎa-thai yâak mǎi khráp",
+      "english": "Is Thai difficult?",
+      "focus": "difficulty",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ยาก = difficult, ง่าย = easy. Adjective + ไหม again — the same shape as ไกลไหม and เหนื่อยไหม.",
+      "tokens": [
+        { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "Thai language" },
+        { "thai": "ยาก", "roman": "yâak", "gloss": "difficult", "match": "ยาก" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_03",
+      "speaker": "teacher",
+      "listener": "student",
+      "image": "art/lesson_03.webp",
+      "thai": "ยากนิดหน่อยแต่สนุกมาก",
+      "roman": "yâak nít-nɔ̀i dtàe sà-nùk mâak",
+      "english": "A little hard — but a lot of fun.",
+      "focus": "balance",
+      "register": "polite",
+      "new_words": [],
+      "tip": "นิดหน่อย = a little, สนุก = fun, มาก = very. This is the sentence every teacher says — and now you can say it back.",
+      "tokens": [
+        { "thai": "ยาก", "roman": "yâak", "gloss": "difficult", "match": "ยาก" },
+        { "thai": "นิดหน่อย", "roman": "nít-nɔ̀i", "gloss": "a little", "match": "นิดหน่อย" },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "สนุก", "roman": "sà-nùk", "gloss": "fun", "match": "สนุก" },
+        { "thai": "มาก", "roman": "mâak", "gloss": "very", "match": "มาก" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_04",
+      "speaker": "student",
+      "listener": "teacher",
+      "image": "art/lesson_04.webp",
+      "thai": "ทำไมคนไทยพูดเร็ว",
+      "roman": "tham-mai khon thai phûut reo",
+      "english": "Why do Thai people speak fast?",
+      "focus": "why",
+      "register": "polite",
+      "new_words": ["ไทย"],
+      "tip": "ทำไม = why, and it goes at the front. คนไทย = Thai person/people (คน = person, ไทย = Thai). เร็ว = fast; ช้า = slow.",
+      "tokens": [
+        { "thai": "ทำไม", "roman": "tham-mai", "gloss": "why", "match": "ทำไม" },
+        { "thai": "คน", "roman": "khon", "gloss": "person", "match": "คน" },
+        { "thai": "ไทย", "roman": "thai", "gloss": "Thai" },
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "เร็ว", "roman": "reo", "gloss": "fast", "match": "เร็ว" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_05",
+      "speaker": "teacher",
+      "listener": "student",
+      "image": "art/lesson_05.webp",
+      "thai": "เพราะเราพูดทุกวัน",
+      "roman": "phrɔ́ rao phûut thúk wan",
+      "english": "Because we speak it every day.",
+      "focus": "because",
+      "register": "polite",
+      "new_words": ["ทุก"],
+      "tip": "เพราะ = because, at the start of the answer. ทุกวัน = every day — the same phrase from the cat story: ฝึกทุกวัน.",
+      "tokens": [
+        { "thai": "เพราะ", "roman": "phrɔ́", "gloss": "because", "match": "เพราะ" },
+        { "thai": "เรา", "roman": "rao", "gloss": "we", "match": "เรา" },
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "ทุก", "roman": "thúk", "gloss": "every" },
+        { "thai": "วัน", "roman": "wan", "gloss": "day", "match": "วัน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_06",
+      "speaker": "student",
+      "listener": "teacher",
+      "image": "art/lesson_06.webp",
+      "thai": "ผมอ่านภาษาไทยอย่างไร",
+      "roman": "pǒm àan phaa-sǎa-thai yàang-rai",
+      "english": "How do I read Thai?",
+      "focus": "how",
+      "register": "polite",
+      "new_words": [],
+      "tip": "อย่างไร = how, at the end of the question. อ่าน = read (a Phase 7 word). Formal อย่างไร is usually ยังไง in speech.",
+      "tokens": [
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "อ่าน", "roman": "àan", "gloss": "read", "match": "อ่าน" },
+        { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "Thai language" },
+        { "thai": "อย่างไร", "roman": "yàang-rai", "gloss": "how", "match": "อย่างไร" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_07",
+      "speaker": "teacher",
+      "listener": "student",
+      "image": "art/lesson_07.webp",
+      "thai": "นักเรียนอ่านทีละคำแล้วฟังเสียง",
+      "roman": "nák-rian àan thîi-lá kham láew fang sǐang",
+      "english": "Students read one word at a time, then listen to the sound.",
+      "focus": "method",
+      "register": "polite",
+      "new_words": ["ทีละ", "คำ", "เสียง"],
+      "tip": "ทีละ = one at a time (ทีละคำ = word by word). ฟัง = listen; เสียง = sound/voice. Read, then listen — exactly how this app trains you.",
+      "tokens": [
+        { "thai": "นักเรียน", "roman": "nák-rian", "gloss": "student", "match": "นักเรียน" },
+        { "thai": "อ่าน", "roman": "àan", "gloss": "read", "match": "อ่าน" },
+        { "thai": "ทีละ", "roman": "thîi-lá", "gloss": "one at a time" },
+        { "thai": "คำ", "roman": "kham", "gloss": "word" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "then" },
+        { "thai": "ฟัง", "roman": "fang", "gloss": "listen", "match": "ฟัง" },
+        { "thai": "เสียง", "roman": "sǐang", "gloss": "sound" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "lesson_08",
+      "speaker": "student",
+      "listener": "teacher",
+      "image": "art/lesson_08.webp",
+      "thai": "ผมเข้าใจแล้วขอบคุณครับ",
+      "roman": "pǒm khâo-jai láew khàawp-khun khráp",
+      "english": "I understand now — thank you.",
+      "focus": "understanding",
+      "register": "polite",
+      "new_words": [],
+      "tip": "เข้าใจ = understand (เข้า = enter, ใจ = heart — 'it entered the heart'). แล้ว here means 'now/already'. เข้าใจแล้ว is the phrase to say when the lightbulb goes on.",
+      "tokens": [
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "เข้าใจ", "roman": "khâo-jai", "gloss": "understand", "match": "เข้าใจ" },
+        { "thai": "แล้ว", "roman": "láew", "gloss": "now / already" },
+        { "thai": "ขอบคุณ", "roman": "khàawp-khun", "gloss": "thank you", "match": "ขอบคุณ" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    }
+  ]
+}

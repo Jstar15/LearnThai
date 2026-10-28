@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "id": "pinocchio_lie",
+  "title_en": "Pinocchio Tells a Lie",
+  "title_th": "ปิโนคีโอโกหก",
+  "teaches_label": "Telling the truth",
+  "teaches_detail": "Say what happened, deny it, and understand a gentle telling-off.",
+  "level": 1,
+  "bg": "street",
+  "phases": [1, 3, 4, 5, 6, 8, 9, 10, 14],
+  "aim": "Deny something with ไม่, say 'really?', and hear why lying is a bad idea.",
+  "characters": [
+    { "id": "pinocchio", "name_en": "Pinocchio", "name_th": "ปิโนคีโอ", "color": "#A9762F", "art_rig": "boy" },
+    { "id": "geppetto", "name_en": "Geppetto", "name_th": "เกปเปตโต", "color": "#6B4A2F", "art_rig": "oldman" }
+  ],
+  "extra_words": [
+    { "thai": "ปิโนคีโอ", "roman": "bpì-noo-khîi-oh", "gloss": "Pinocchio" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+    { "thai": "โกหก", "roman": "go-hòk", "gloss": "to lie / a lie" },
+    { "thai": "จมูก", "roman": "ja-mùuk", "gloss": "nose" },
+    { "thai": "ของ", "roman": "khǎawng", "gloss": "of / belonging to" },
+    { "thai": "ยาว", "roman": "yaao", "gloss": "long" },
+    { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must / have to" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" }
+  ],
+  "cards": [
+    {
+      "id": "pin_01",
+      "speaker": "geppetto",
+      "listener": "pinocchio",
+      "image": "art/pinocchio_01.webp",
+      "thai": "ปิโนคีโอวันนี้ไปโรงเรียนไหม",
+      "roman": "bpì-noo-khîi-oh wan-níi bpai roong-rian mǎi",
+      "english": "Pinocchio, are you going to school today?",
+      "focus": "question particle",
+      "register": "casual",
+      "new_words": ["ไหม"],
+      "tip": "ไหม at the end turns any statement into a yes/no question — no word order change. ไปโรงเรียน = go + school, no 'to' needed.",
+      "tokens": [
+        { "thai": "ปิโนคีโอ", "roman": "bpì-noo-khîi-oh", "gloss": "Pinocchio" },
+        { "thai": "วันนี้", "roman": "wan-níi", "gloss": "today", "match": "วันนี้" },
+        { "thai": "ไป", "roman": "bpai", "gloss": "to go", "match": "ไป" },
+        { "thai": "โรงเรียน", "roman": "roong-rian", "gloss": "school", "match": "โรงเรียน" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word", "note": "Yes/no question marker." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_02",
+      "speaker": "pinocchio",
+      "listener": "geppetto",
+      "image": "art/pinocchio_02.webp",
+      "thai": "ไปครับแต่โรงเรียนปิดครับ",
+      "roman": "bpai khráp dtàe roong-rian bpìt khráp",
+      "english": "I'm going — but school is closed.",
+      "focus": "adjective after noun",
+      "register": "polite",
+      "new_words": [],
+      "tip": "Thai puts the describing word after the noun: โรงเรียนปิด = school + closed. ไม่มี 'is' in the middle.",
+      "tokens": [
+        { "thai": "ไป", "roman": "bpai", "gloss": "to go", "match": "ไป" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "แต่", "roman": "dtàe", "gloss": "but", "match": "แต่" },
+        { "thai": "โรงเรียน", "roman": "roong-rian", "gloss": "school", "match": "โรงเรียน" },
+        { "thai": "ปิด", "roman": "bpìt", "gloss": "closed", "match": "ปิด", "note": "ปิด = to close; after a place it means 'closed'." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_03",
+      "speaker": "geppetto",
+      "listener": "pinocchio",
+      "image": "art/pinocchio_03.webp",
+      "thai": "จริงหรือโรงเรียนปิดวันนี้",
+      "roman": "jing rʉ̌ʉ roong-rian bpìt wan-níi",
+      "english": "Really? School is closed today?",
+      "focus": "echo question",
+      "register": "casual",
+      "new_words": [],
+      "tip": "จริงหรือ = 'really?' — หรือ at the end repeats the other person's claim back in surprise, like a raised eyebrow.",
+      "tokens": [
+        { "thai": "จริง", "roman": "jing", "gloss": "true / really", "match": "จริง" },
+        { "thai": "หรือ", "roman": "rʉ̌ʉ", "gloss": "or / really?", "match": "หรือ", "note": "End of sentence = surprised echo." },
+        { "thai": "โรงเรียน", "roman": "roong-rian", "gloss": "school", "match": "โรงเรียน" },
+        { "thai": "ปิด", "roman": "bpìt", "gloss": "closed", "match": "ปิด" },
+        { "thai": "วันนี้", "roman": "wan-níi", "gloss": "today", "match": "วันนี้" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_04",
+      "speaker": "pinocchio",
+      "listener": "geppetto",
+      "image": "art/pinocchio_04.webp",
+      "thai": "จริงครับผมไม่โกหก",
+      "roman": "jing khráp pǒm mâi go-hòk",
+      "english": "It's true — I don't lie.",
+      "focus": "negation",
+      "register": "polite",
+      "new_words": ["โกหก"],
+      "tip": "ไม่ sits right before the verb: ไม่โกหก = not lie. Thai has no 'do' — no 'I don't' helper word at all.",
+      "tokens": [
+        { "thai": "จริง", "roman": "jing", "gloss": "true", "match": "จริง" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "โกหก", "roman": "go-hòk", "gloss": "to lie", "note": "The word for any lie, big or small." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_05",
+      "speaker": "geppetto",
+      "listener": "pinocchio",
+      "image": "art/pinocchio_05.webp",
+      "thai": "จมูกของคุณยาวขึ้น",
+      "roman": "ja-mùuk khǎawng khun yaao khʉ̂n",
+      "english": "Your nose is getting longer!",
+      "focus": "more and more",
+      "register": "casual",
+      "new_words": ["จมูก", "ของ", "ยาว"],
+      "tip": "ขึ้น after a describing word means 'more than before' — ยาวขึ้น = longer (it grew). ของ = 'of': จมูกของคุณ = the nose of you.",
+      "tokens": [
+        { "thai": "จมูก", "roman": "ja-mùuk", "gloss": "nose", "note": "A body part; no space needed." },
+        { "thai": "ของ", "roman": "khǎawng", "gloss": "of", "note": "ของผม = mine, ของคุณ = yours." },
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "ยาว", "roman": "yaao", "gloss": "long" },
+        { "thai": "ขึ้น", "roman": "khʉ̂n", "gloss": "up / more so", "match": "ขึ้น", "note": "After an adjective: 'getting more'." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_06",
+      "speaker": "pinocchio",
+      "listener": "geppetto",
+      "image": "art/pinocchio_06.webp",
+      "thai": "ไม่ใช่ครับจมูกผมไม่ยาว",
+      "roman": "mâi châi khráp ja-mùuk pǒm mâi yaao",
+      "english": "No! My nose isn't long.",
+      "focus": "denial",
+      "register": "polite",
+      "new_words": [],
+      "tip": "ไม่ใช่ = 'no, that's not right' (used to deny a statement), while ไม่ just negates a verb or adjective. Both appear here.",
+      "tokens": [
+        { "thai": "ไม่ใช่", "roman": "mâi châi", "gloss": "no / not so", "match": "ไม่ใช่", "note": "Denies what was just said." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "จมูก", "roman": "ja-mùuk", "gloss": "nose" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I / my", "match": "ผม", "note": "Here it means 'my' — Thai drops the 's." },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "ยาว", "roman": "yaao", "gloss": "long" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_07",
+      "speaker": "geppetto",
+      "listener": "pinocchio",
+      "image": "art/pinocchio_07.webp",
+      "thai": "ปิโนคีโอโกหกไม่ดีต้องพูดจริง",
+      "roman": "bpì-noo-khîi-oh go-hòk mâi dii dtâwng phûut jing",
+      "english": "Pinocchio, lying isn't good. You must tell the truth.",
+      "focus": "must",
+      "register": "casual",
+      "new_words": ["ต้อง"],
+      "tip": "ต้อง = must, and it goes before the verb: ต้องพูด = must speak. โกหกไม่ดี = 'lying is not good' — no 'is' needed.",
+      "tokens": [
+        { "thai": "ปิโนคีโอ", "roman": "bpì-noo-khîi-oh", "gloss": "Pinocchio" },
+        { "thai": "โกหก", "roman": "go-hòk", "gloss": "to lie" },
+        { "thai": "ไม่", "roman": "mâi", "gloss": "not" },
+        { "thai": "ดี", "roman": "dii", "gloss": "good", "match": "ดี" },
+        { "thai": "ต้อง", "roman": "dtâwng", "gloss": "must" },
+        { "thai": "พูด", "roman": "phûut", "gloss": "to speak", "match": "พูด" },
+        { "thai": "จริง", "roman": "jing", "gloss": "true", "match": "จริง", "note": "พูดจริง = tell the truth." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "pin_08",
+      "speaker": "pinocchio",
+      "listener": "geppetto",
+      "image": "art/pinocchio_08.webp",
+      "thai": "ขอโทษครับผมจะพูดจริง",
+      "roman": "khǎaw-thôot khráp pǒm jà phûut jing",
+      "english": "Sorry — I'll tell the truth.",
+      "focus": "future",
+      "register": "polite",
+      "new_words": [],
+      "tip": "จะ before a verb marks the future, like 'will'. ขอโทษ is 'sorry' — literally 'asking forgiveness'.",
+      "tokens": [
+        { "thai": "ขอโทษ", "roman": "khǎaw-thôot", "gloss": "sorry", "match": "ขอโทษ" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" },
+        { "thai": "ผม", "roman": "pǒm", "gloss": "I (male)", "match": "ผม" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will", "note": "Future marker before the verb." },
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "จริง", "roman": "jing", "gloss": "true", "match": "จริง" }
+      ],
+      "audio": null
+    }
+  ]
+}

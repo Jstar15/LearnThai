@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "family_meeting",
+  "title_en": "Meeting the Family",
+  "title_th": "เจอครอบครัว",
+  "teaches_label": "Family & first meetings",
+  "teaches_detail": "Introduce your partner, say your age, where you work, and whether you speak Thai.",
+  "level": 2,
+  "bg": "room",
+  "phases": [4, 5, 6, 7, 8, 10, 14],
+  "aim": "Meet the parents: นี่คือ, อายุเท่าไหร่, ทำงานที่ไหน, พูดไทยได้ไหม.",
+  "characters": [
+    { "id": "fon", "name_en": "Fon", "name_th": "ฝน", "color": "#B23A6B", "art_rig": "girl" },
+    { "id": "ton", "name_en": "Ton", "name_th": "ต้น", "color": "#2F5F9E", "art_rig": "man" },
+    { "id": "mom", "name_en": "Mom", "name_th": "แม่", "color": "#8A5A2E", "art_rig": "vendor" },
+    { "id": "grandpa", "name_en": "Grandpa", "name_th": "คุณตา", "color": "#5A4632", "art_rig": "oldman" }
+  ],
+  "extra_words": [
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "ครับ", "roman": "khráp", "gloss": "polite particle (male)" },
+    { "thai": "ต้น", "roman": "dtôn", "gloss": "Ton (name); also 'tree'" },
+    { "thai": "จ้ะ", "roman": "jâ", "gloss": "friendly particle (older to younger)" },
+    { "thai": "อายุ", "roman": "aa-yú", "gloss": "age" },
+    { "thai": "ยี่สิบห้า", "roman": "yîi-sìp-hâa", "gloss": "twenty-five" },
+    { "thai": "กรุงเทพ", "roman": "grung-thêep", "gloss": "Bangkok" },
+    { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "the Thai language" },
+    { "thai": "ฝน", "roman": "fǒn", "gloss": "Fon (name); also 'rain'" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" }
+  ],
+  "cards": [
+    {
+      "id": "fam_01",
+      "speaker": "fon",
+      "listener": "mom",
+      "image": "art/fam_01.webp",
+      "thai": "แม่ค่ะนี่คือต้น",
+      "roman": "mâe khâ nîi khʉʉ dtôn",
+      "english": "Mom, this is Ton.",
+      "focus": "introducing",
+      "register": "polite",
+      "new_words": ["ต้น"],
+      "tip": "นี่คือ = 'this is' for introducing people. นี่ is a Phase 4 keyboard word — you've already typed it; now it's doing real work.",
+      "tokens": [
+        { "thai": "แม่", "roman": "mâe", "gloss": "mom", "match": "แม่" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "นี่", "roman": "nîi", "gloss": "this", "match": "นี่", "note": "นี่คือ = this is." },
+        { "thai": "คือ", "roman": "khʉʉ", "gloss": "is (equals)", "match": "คือ" },
+        { "thai": "ต้น", "roman": "dtôn", "gloss": "Ton", "note": "Also 'tree/trunk'." }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_02",
+      "speaker": "mom",
+      "listener": "ton",
+      "image": "art/fam_02.webp",
+      "thai": "สวัสดีจ้ะต้นอายุเท่าไหร่",
+      "roman": "sà-wàt-dii jâ dtôn aa-yú thâo-rài",
+      "english": "Hello Ton — how old are you?",
+      "focus": "age",
+      "register": "casual",
+      "new_words": ["อายุ"],
+      "tip": "อายุเท่าไหร่ = 'age how much?' — the standard age question. เท่าไหร่ is the same word you use for prices.",
+      "tokens": [
+        { "thai": "สวัสดี", "roman": "sà-wàt-dii", "gloss": "hello", "match": "สวัสดี" },
+        { "thai": "จ้ะ", "roman": "jâ", "gloss": "friendly particle" },
+        { "thai": "ต้น", "roman": "dtôn", "gloss": "Ton" },
+        { "thai": "อายุ", "roman": "aa-yú", "gloss": "age" },
+        { "thai": "เท่าไหร่", "roman": "thâo-rài", "gloss": "how much", "match": "เท่าไหร่" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_03",
+      "speaker": "ton",
+      "listener": "mom",
+      "image": "art/fam_03.webp",
+      "thai": "ยี่สิบห้าครับ",
+      "roman": "yîi-sìp-hâa khráp",
+      "english": "Twenty-five.",
+      "focus": "numbers",
+      "register": "polite",
+      "new_words": ["ยี่สิบห้า"],
+      "tip": "Thai numbers build in tens: ยี่สิบ = 20, ห้า = 5, so 25 = ยี่สิบห้า. No 'and' — just stack them.",
+      "tokens": [
+        { "thai": "ยี่สิบห้า", "roman": "yîi-sìp-hâa", "gloss": "25", "note": "ยี่สิบ + ห้า." },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_04",
+      "speaker": "mom",
+      "listener": "ton",
+      "image": "art/fam_04.webp",
+      "thai": "ทำงานที่ไหน",
+      "roman": "tham-ngaan thîi-nǎi",
+      "english": "Where do you work?",
+      "focus": "workplace",
+      "register": "casual",
+      "new_words": [],
+      "tip": "ทำงาน = work (ทำ + งาน). ที่ไหน = where. Thai asks 'work at where' — place word at the end, no preposition needed.",
+      "tokens": [
+        { "thai": "ทำงาน", "roman": "tham-ngaan", "gloss": "to work", "match": "ทำงาน", "note": "A Phase 10 word." },
+        { "thai": "ที่ไหน", "roman": "thîi-nǎi", "gloss": "where", "match": "ที่ไหน" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_05",
+      "speaker": "ton",
+      "listener": "mom",
+      "image": "art/fam_05.webp",
+      "thai": "ทำงานที่กรุงเทพครับ",
+      "roman": "tham-ngaan thîi grung-thêep khráp",
+      "english": "I work in Bangkok.",
+      "focus": "place",
+      "register": "polite",
+      "new_words": ["กรุงเทพ"],
+      "tip": "ที่ here means 'at/in'. กรุงเทพ is Bangkok — Thais usually shorten it to กทม. in writing. ที่ is another Phase 4 word doing everyday work.",
+      "tokens": [
+        { "thai": "ทำงาน", "roman": "tham-ngaan", "gloss": "to work", "match": "ทำงาน" },
+        { "thai": "ที่", "roman": "thîi", "gloss": "at", "match": "ที่" },
+        { "thai": "กรุงเทพ", "roman": "grung-thêep", "gloss": "Bangkok" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_06",
+      "speaker": "grandpa",
+      "listener": "ton",
+      "image": "art/fam_06.webp",
+      "thai": "คุณพูดภาษาไทยได้ไหม",
+      "roman": "khun phûut phaa-sǎa-thai dâi mǎi",
+      "english": "Can you speak Thai?",
+      "focus": "ability",
+      "register": "formal",
+      "new_words": ["ภาษาไทย"],
+      "tip": "ได้ after a verb = 'can'. พูดได้ = can speak. The pattern is verb + ได้ + ไหม — worth drilling, it unlocks 'can I / can you' for everything.",
+      "tokens": [
+        { "thai": "คุณ", "roman": "khun", "gloss": "you", "match": "คุณ" },
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "ภาษาไทย", "roman": "phaa-sǎa-thai", "gloss": "Thai language", "note": "ภาษา = language." },
+        { "thai": "ได้", "roman": "dâi", "gloss": "can", "match": "ได้", "note": "Verb + ได้ = able to." },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_07",
+      "speaker": "ton",
+      "listener": "grandpa",
+      "image": "art/fam_07.webp",
+      "thai": "พูดได้นิดหน่อยครับ",
+      "roman": "phûut dâi nít-nɔ̀i khráp",
+      "english": "I can speak a little.",
+      "focus": "hedging",
+      "register": "polite",
+      "new_words": [],
+      "tip": "นิดหน่อย = a little. This exact sentence is the most useful thing a beginner can say — modest, polite, and it invites the other person to slow down.",
+      "tokens": [
+        { "thai": "พูด", "roman": "phûut", "gloss": "speak", "match": "พูด" },
+        { "thai": "ได้", "roman": "dâi", "gloss": "can", "match": "ได้" },
+        { "thai": "นิดหน่อย", "roman": "nít-nɔ̀i", "gloss": "a little", "match": "นิดหน่อย" },
+        { "thai": "ครับ", "roman": "khráp", "gloss": "polite (male)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "fam_08",
+      "speaker": "fon",
+      "listener": "mom",
+      "image": "art/fam_08.webp",
+      "thai": "แม่ชอบเขาค่ะ",
+      "roman": "mâe chɔ̂ɔp khǎo khâ",
+      "english": "Mom likes him.",
+      "focus": "third person",
+      "register": "polite",
+      "new_words": [],
+      "tip": "เขา = he/she (same word for both). ชอบ = like. Thai verbs don't change for person, so เขา is doing a lot of quiet work here.",
+      "tokens": [
+        { "thai": "แม่", "roman": "mâe", "gloss": "mom", "match": "แม่" },
+        { "thai": "ชอบ", "roman": "chɔ̂ɔp", "gloss": "like", "match": "ชอบ" },
+        { "thai": "เขา", "roman": "khǎo", "gloss": "him / her", "match": "เขา" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" }
+      ],
+      "audio": null
+    }
+  ]
+}

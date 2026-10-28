@@ -26,6 +26,7 @@ import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -61,6 +62,7 @@ fun LessonsScreen(
     lessonRepository: LessonRepository,
     ttsManager: TtsManager,
     onNavigateToKeyboardPhase: (Int) -> Unit,
+    onOpenFlashcards: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val lessonsState = lessonRepository.getLessons().collectAsState(initial = emptyList())
@@ -84,6 +86,12 @@ fun LessonsScreen(
             text = "10 progressive lessons from zero to fluent typing",
             fontSize = 13.sp,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+
+        AssistChip(
+            onClick = onOpenFlashcards,
+            label = { Text("Review vocabulary (SRS)", fontSize = 11.sp) },
             modifier = Modifier.padding(bottom = 10.dp)
         )
 

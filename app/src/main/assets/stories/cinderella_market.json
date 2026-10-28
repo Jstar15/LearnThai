@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "cinderella_market",
+  "title_en": "Cinderella at Chatuchak",
+  "title_th": "ซินเดอเรลล่าที่จตุจักร",
+  "teaches_label": "Prices & bargaining",
+  "teaches_detail": "Ask how much, say it's expensive, ask for a discount, pick a colour and a size.",
+  "level": 2,
+  "bg": "market",
+  "phases": [2, 4, 5, 6, 8, 13],
+  "aim": "Buy something: เท่าไหร่, แพง, ลดได้ไหม, สี, ไซซ์, จ่ายเงิน.",
+  "characters": [
+    { "id": "cinderella", "name_en": "Cinderella", "name_th": "ซินเดอเรลล่า", "color": "#3A6BB5", "art_rig": "girl" },
+    { "id": "vendor", "name_en": "Vendor", "name_th": "ป้าแม่ค้า", "color": "#B5532A", "art_rig": "vendor" }
+  ],
+  "extra_words": [
+    { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite particle (female)" },
+    { "thai": "คะ", "roman": "khá", "gloss": "polite particle (female, question)" },
+    { "thai": "เสื้อ", "roman": "sʉ̂a", "gloss": "shirt / top" },
+    { "thai": "ตัว", "roman": "dtua", "gloss": "classifier: clothes, animals" },
+    { "thai": "สาม", "roman": "sǎam", "gloss": "three" },
+    { "thai": "ร้อย", "roman": "rɔ́ɔi", "gloss": "hundred" },
+    { "thai": "บาท", "roman": "bàat", "gloss": "baht (currency)" },
+    { "thai": "จัง", "roman": "jang", "gloss": "so…! (emotional intensifier)" },
+    { "thai": "สอง", "roman": "sǎawng", "gloss": "two" },
+    { "thai": "ห้า", "roman": "hâa", "gloss": "five" },
+    { "thai": "สิบ", "roman": "sìp", "gloss": "ten" },
+    { "thai": "ไหม", "roman": "mǎi", "gloss": "yes/no question particle" },
+    { "thai": "ไซซ์", "roman": "sai", "gloss": "size (from 'size')" },
+    { "thai": "กลาง", "roman": "glaang", "gloss": "medium / middle" },
+    { "thai": "จะ", "roman": "jà", "gloss": "will (future marker)" },
+    { "thai": "ตรงนี้", "roman": "dtrong-níi", "gloss": "right here" }
+  ],
+  "cards": [
+    {
+      "id": "cind_01",
+      "speaker": "cinderella",
+      "listener": "vendor",
+      "image": "art/cind_01.webp",
+      "thai": "สวัสดีค่ะเสื้อตัวนี้เท่าไหร่",
+      "roman": "sà-wàt-dii khâ sʉ̂a dtua níi thâo-rài",
+      "english": "Hello — how much is this shirt?",
+      "focus": "asking a price",
+      "register": "polite",
+      "new_words": ["เสื้อ", "ตัว"],
+      "tip": "เท่าไหร่ = how much, and it goes at the end of the question. Clothes use the classifier ตัว: เสื้อตัวนี้ = 'this shirt'.",
+      "tokens": [
+        { "thai": "สวัสดี", "roman": "sà-wàt-dii", "gloss": "hello", "match": "สวัสดี" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "เสื้อ", "roman": "sʉ̂a", "gloss": "shirt", "note": "เสื้อผ้า = clothes." },
+        { "thai": "ตัว", "roman": "dtua", "gloss": "classifier: clothes", "note": "Same ตัว as in ตัวอักษร." },
+        { "thai": "นี้", "roman": "níi", "gloss": "this", "match": "นี้" },
+        { "thai": "เท่าไหร่", "roman": "thâo-rài", "gloss": "how much", "match": "เท่าไหร่" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_02",
+      "speaker": "vendor",
+      "listener": "cinderella",
+      "image": "art/cind_02.webp",
+      "thai": "สามร้อยบาทค่ะ",
+      "roman": "sǎam rɔ́ɔi bàat khâ",
+      "english": "Three hundred baht.",
+      "focus": "numbers",
+      "register": "polite",
+      "new_words": ["สาม", "ร้อย", "บาท"],
+      "tip": "Thai numbers stack like English: สามร้อย = 3 + hundred. Currency goes after: ...บาท. 300 = สามร้อย.",
+      "tokens": [
+        { "thai": "สาม", "roman": "sǎam", "gloss": "three", "note": "Two = สอง, three = สาม." },
+        { "thai": "ร้อย", "roman": "rɔ́ɔi", "gloss": "hundred" },
+        { "thai": "บาท", "roman": "bàat", "gloss": "baht" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_03",
+      "speaker": "cinderella",
+      "listener": "vendor",
+      "image": "art/cind_03.webp",
+      "thai": "แพงจังลดได้ไหมคะ",
+      "roman": "phɛɛng jang lót dâi mǎi khá",
+      "english": "That's pricey — can you discount?",
+      "focus": "bargaining",
+      "register": "polite",
+      "new_words": ["คะ"],
+      "tip": "ลดได้ไหม is the standard bargaining line — ลด = reduce, ได้ = can, ไหม = question. จัง softens the complaint ('so pricey!') so it sounds friendly.",
+      "tokens": [
+        { "thai": "แพง", "roman": "phɛɛng", "gloss": "expensive", "match": "แพง" },
+        { "thai": "จัง", "roman": "jang", "gloss": "so…!", "note": "Takes the sting out." },
+        { "thai": "ลดได้ไหม", "roman": "lót dâi mǎi", "gloss": "can you discount?", "match": "ลดได้ไหม" },
+        { "thai": "คะ", "roman": "khá", "gloss": "polite (question)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_04",
+      "speaker": "vendor",
+      "listener": "cinderella",
+      "image": "art/cind_04.webp",
+      "thai": "ได้ค่ะสองร้อยห้าสิบบาท",
+      "roman": "dâi khâ sǎawng rɔ́ɔi hâa sìp bàat",
+      "english": "Sure — two hundred and fifty baht.",
+      "focus": "numbers",
+      "register": "polite",
+      "new_words": ["สอง", "ห้า", "สิบ"],
+      "tip": "250 = สองร้อยห้าสิบ: two-hundred + five-ten. Notice there's no 'and' — just stack the parts.",
+      "tokens": [
+        { "thai": "ได้", "roman": "dâi", "gloss": "sure / can", "match": "ได้" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "สอง", "roman": "sǎawng", "gloss": "two" },
+        { "thai": "ร้อย", "roman": "rɔ́ɔi", "gloss": "hundred" },
+        { "thai": "ห้า", "roman": "hâa", "gloss": "five" },
+        { "thai": "สิบ", "roman": "sìp", "gloss": "ten" },
+        { "thai": "บาท", "roman": "bàat", "gloss": "baht" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_05",
+      "speaker": "cinderella",
+      "listener": "vendor",
+      "image": "art/cind_05.webp",
+      "thai": "มีสีน้ำเงินไหมคะ",
+      "roman": "mii sǐi-nám-ngən mǎi khá",
+      "english": "Do you have it in blue?",
+      "focus": "colour",
+      "register": "polite",
+      "new_words": ["ไหม"],
+      "tip": "มี...ไหม = 'do you have…?' สี = colour, so สีน้ำเงิน is literally 'the colour of silver water' = blue. Colours follow the pattern สี + noun.",
+      "tokens": [
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "สีน้ำเงิน", "roman": "sǐi-nám-ngən", "gloss": "blue", "match": "สีน้ำเงิน" },
+        { "thai": "ไหม", "roman": "mǎi", "gloss": "question word" },
+        { "thai": "คะ", "roman": "khá", "gloss": "polite (question)" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_06",
+      "speaker": "vendor",
+      "listener": "cinderella",
+      "image": "art/cind_06.webp",
+      "thai": "มีค่ะไซซ์อะไรดี",
+      "roman": "mii khâ sai à-rai dii",
+      "english": "Yes — what size?",
+      "focus": "choosing",
+      "register": "polite",
+      "new_words": ["ไซซ์"],
+      "tip": "ไซซ์ is a loanword from English 'size'. อะไรดี = 'what would be good?' — a soft way to ask someone to choose.",
+      "tokens": [
+        { "thai": "มี", "roman": "mii", "gloss": "have", "match": "มี" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ไซซ์", "roman": "sai", "gloss": "size", "note": "Loanword — easy to remember." },
+        { "thai": "อะไร", "roman": "à-rai", "gloss": "what", "match": "อะไร" },
+        { "thai": "ดี", "roman": "dii", "gloss": "good", "match": "ดี" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_07",
+      "speaker": "cinderella",
+      "listener": "vendor",
+      "image": "art/cind_07.webp",
+      "thai": "ไซซ์กลางค่ะฉันจะซื้อ",
+      "roman": "sai glaang khâ chǎn jà sʉ́ʉ",
+      "english": "Medium — I'll take it.",
+      "focus": "buying",
+      "register": "polite",
+      "new_words": ["กลาง"],
+      "tip": "กลาง = middle, so 'medium'. ซื้อ = to buy — a Phase 4 keyboard word. จะซื้อ = will buy, i.e. 'I'll take it'.",
+      "tokens": [
+        { "thai": "ไซซ์", "roman": "sai", "gloss": "size" },
+        { "thai": "กลาง", "roman": "glaang", "gloss": "medium / middle", "note": "กลางวัน = daytime." },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "ฉัน", "roman": "chǎn", "gloss": "I (female)", "match": "ฉัน" },
+        { "thai": "จะ", "roman": "jà", "gloss": "will" },
+        { "thai": "ซื้อ", "roman": "sʉ́ʉ", "gloss": "to buy", "match": "ซื้อ" }
+      ],
+      "audio": null
+    },
+    {
+      "id": "cind_08",
+      "speaker": "vendor",
+      "listener": "cinderella",
+      "image": "art/cind_08.webp",
+      "thai": "ขอบคุณค่ะจ่ายเงินตรงนี้",
+      "roman": "khàawp-khun khâ jàai-ngən dtrong-níi",
+      "english": "Thank you — pay here.",
+      "focus": "paying",
+      "register": "polite",
+      "new_words": ["ตรงนี้"],
+      "tip": "จ่ายเงิน = pay money (จ่าย = pay). ตรงนี้ = right here — ตรง = straight/exact, นี้ = this. You met ตรงไป earlier: 'go straight'.",
+      "tokens": [
+        { "thai": "ขอบคุณ", "roman": "khàawp-khun", "gloss": "thank you", "match": "ขอบคุณ" },
+        { "thai": "ค่ะ", "roman": "khâ", "gloss": "polite (female)" },
+        { "thai": "จ่ายเงิน", "roman": "jàai-ngən", "gloss": "pay", "match": "จ่ายเงิน" },
+        { "thai": "ตรงนี้", "roman": "dtrong-níi", "gloss": "right here", "note": "ตรง + นี้." }
+      ],
+      "audio": null
+    }
+  ]
+}
